@@ -1,7 +1,7 @@
 # Личный проект «Погнали» 
 
 * Студент: [Сергей Чугаев](https://up.htmlacademy.ru/adaptive/22/user/1046285).
-* Наставник: `Неизвестно`.
+* Наставник:  [Руслан Бреев](https://htmlacademy.ru/profile/blckwltz).
 
 ---
 
