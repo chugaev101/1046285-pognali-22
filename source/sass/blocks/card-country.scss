@@ -1,0 +1,65 @@
+.card-country {
+  position: relative;
+}
+
+.card-country__description {
+  box-sizing: border-box;
+  position: relative;
+  width: 270px;
+  height: 88px;
+  margin-top: -18px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.card-country__title {
+  position: absolute;
+  top: 104px;
+  left: 24px;
+  z-index: 1;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: $basic-text-color;
+}
+
+.card-country__flag {
+  position: absolute;
+  bottom: 77px;
+  left: 25px;
+  width: 35px;
+  height: 24px;
+}
+
+.card-country__text {
+  position: absolute;
+  top: 33px;
+  left: 25px;
+  opacity: 0.3;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.card-country__user-counter {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  opacity: 0.3;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 0 5px 2px 0;
+    background: url(../../img/icons/user_icon.svg) no-repeat center transparent;
+  }
+}

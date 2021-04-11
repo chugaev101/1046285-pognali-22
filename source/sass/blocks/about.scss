@@ -1,0 +1,47 @@
+.about {
+  position: relative;
+  background-color: $site-bg-color;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  z-index: 3;
+
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 113px;
+    height: 132px;
+    background-color: $bg-element-rectangle-color;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.about__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../../img/content/about_bg.png) no-repeat 76% 9px;
+}
+
+.about__content {
+  padding: 51px 24px;
+  z-index: 2;
+}
+
+.about__title {
+  margin: -9px 0 19px 0;
+  padding: 0;
+}
+
+.about__text {
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,45 @@
+.instructions {
+  list-style-type: none;
+  box-sizing: border-box;
+  counter-reset: list;
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $button-authorized-text-color;
+}
+
+.instructions__item {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 80px;
+  padding: 5px 24px;
+  border-radius: 12px;
+
+  &:not(:first-child) {
+    margin-top: -60px;
+  }
+
+  &:not(:last-child) {
+    min-height: 140px;
+  }
+}
+
+@for $i from 1 through 4 {
+
+  .instructions__item:nth-child(#{$i}) {
+    background-color: rgb(255, 117 + 24 * $i, 48);
+
+    &::after {
+      content: counter(list);
+      counter-increment: list;
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 21px;
+      color: #ffffff;
+    }
+  }
+}
