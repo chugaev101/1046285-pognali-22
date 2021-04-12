@@ -1,0 +1,84 @@
+.feedback {
+  padding: 102px 0 31px 0;
+  background-color: $site-bg-color;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.feedback__title {
+  display: block;
+  width: max-content;
+  margin: 0 auto 19px auto;
+}
+
+.feedback__description {
+  margin: 0 0 0 0;
+  padding: 0;
+
+  text-align: center;
+  color: $basic-text-invert-color;
+}
+
+.feedback__login-link {
+  display: inline-block;
+  position: relative;
+  width: max-content;
+  color: $button-color-basic;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient($button-color-basic 20%, transparent 20%);
+  }
+}
+
+.feedback__registration-form {
+  position: relative;
+  margin: 29px 0 29px 0;
+}
+
+.feedback__registration-form-email {
+  box-sizing: border-box;
+  position: relative;
+  width: calc(100% - 50px);
+  height: 62px;
+  padding: 0 0 0 24px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    opacity: 0.3;
+  }
+}
+
+.feedback__registration-form-button {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 62px;
+  padding: 0;
+  border: none;
+
+  &::after {
+    margin-left: 3px;
+  }
+}
+
+.feedback__contacts-list {
+  margin: 15px 0 0 0;
+
+  color: $button-color-basic;
+}

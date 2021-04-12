@@ -1,0 +1,35 @@
+.fellow-travelers {
+  padding: 68px 0 31px 0;
+  background-color: $site-bg-color;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.fellow-travelers__description {
+  padding: 0 25px 0 24px;
+
+  color: $basic-text-invert-color
+}
+
+.fellow-travelers__title {
+  margin: 0 0 19px 0;
+  padding: 0;
+}
+
+.fellow-travelers__text {
+  margin: 0 0 54px 0;
+  padding: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
+}
+
+.fellow-travelers__card-user {
+  margin-bottom: 9px;
+}
+
+.fellow-travelers__button {
+  height: 61px;
+  margin: 20px 0 0 0;
+}

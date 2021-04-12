@@ -1,0 +1,106 @@
+.rates {
+  position: relative;
+  padding: 53px 0 8px 0;
+  background-color: $site-bg-color-light;
+
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   bottom: -30px;
+  //   width: 100%;
+  //   height: 31px;
+  //   background-color: inherit;
+  //   border-bottom-right-radius: 30px;
+  //   border-bottom-left-radius: 30px;
+  // }
+}
+
+.rates__title {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -16px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: url(../../img/icons/rates_icon.png) no-repeat center;
+    background-size: contain;
+  }
+}
+
+.rates__list {
+  list-style-type: none;
+  counter-reset: list;
+  position: relative;
+  margin: 0 0 45px 0;
+  padding: 56px 0 0 24px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -14px;
+    width: 199.75px;
+    height: 1px;
+    background-color: #e1e3e9;
+  }
+}
+
+@for $i from 1 through 3 {
+
+  .rates__item:nth-child(#{$i}) {
+    position: relative;
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -15px;
+      width: 199.75px;
+      height: 1px;
+      background-color: #e1e3e9;
+    }
+
+    &::after {
+      content: counter(list);
+      counter-increment: list;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -10px;
+      right: 1px;
+      width: 34px;
+      height: 34px;
+      background-color: rgb(255, 117 + 24 * $i, 48);
+      border-radius: 50%;
+
+      color: #ffffff;
+    }
+  }
+}
+
+.rates__description {
+  margin: 0 0 6px 0;
+
+  line-height: 16px;
+  color: $tags-text-color;
+}
+
+.rates__button {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  color: $rates-button-text-color;
+}

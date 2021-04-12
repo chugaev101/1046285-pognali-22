@@ -1,0 +1,14 @@
+.page {
+  height: 100%;
+  background-color: $site-bg-color-light;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}

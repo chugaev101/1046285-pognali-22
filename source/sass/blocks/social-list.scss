@@ -1,0 +1,12 @@
+.social-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list__item:not(:first-child) {
+  margin-left: 26px;
+}

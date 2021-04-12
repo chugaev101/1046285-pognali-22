@@ -1,0 +1,44 @@
+.directions {
+  position: relative;
+  padding-bottom: 34px;
+  background-color: $site-bg-color-light;
+  color: $tags-text-color;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 200px;
+    background-color: $site-bg-color;
+    z-index: -1;
+  }
+}
+
+.directions__description {
+  box-sizing: border-box;
+  margin-bottom: 60px;
+  padding: 70px 38px 0 25px;
+}
+
+.directions__title {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.directions__text {
+  margin: 0;
+  padding: 0;
+}
+
+.directions__card-country {
+  margin-bottom: 12px;
+}
+
+.directions__button {
+  height: 62px;
+  margin: 27px 0 0 0;
+}
