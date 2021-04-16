@@ -1,0 +1,267 @@
+.add-plan {
+  padding-top: 28px;
+  padding-bottom: 67px;
+  background-color: $form-block-bg-dark;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.add-plan__step {
+  position: relative;
+  margin: 0 0 9px 0;
+  padding: 24px 23px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+
+.add-plan__header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.add-plan__title {
+  margin: 0 0 0 0;
+
+  color: $button-text-color;
+}
+
+.add-plan__pagination-list {
+  list-style-type: none;
+  counter-reset: list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  right: 17px;
+  width: 48px;
+  height: min-content;
+}
+
+.add-plan__pagination-item {
+  &::after {
+    counter-increment: list;
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: $button-text-color;
+    opacity: 0.3;
+    border-radius: 50%;
+  }
+}
+
+.add-plan__pagination-item--current::after {
+  opacity: 1;
+  border: 1px solid;
+}
+
+.add-plan__step-title {
+  position: absolute;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: $button-text-color;
+}
+
+.add-plan__description {
+  margin: 55px 0 22px 0;
+  color: $tags-text-color;
+}
+
+.add-plan__fellow-travelers {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.add-plan__fellow-travelers-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $button-text-color;
+}
+
+.add-plan__fellow-travelers-unit {
+  letter-spacing: 0.07em;
+  opacity: 0.3;
+}
+
+.add-plan__fellow-travelers-controls {
+  box-sizing: border-box;
+  display: flex;
+  height: 43px;
+  margin: 8px 0 0 0;
+
+  border: 1px solid $input-border-color;
+  border-radius: 4px;
+}
+
+.add-plan__fellow-travelers-button {
+  position: relative;
+  width: 43px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--decrease::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 14px;
+    width: 12px;
+    border: 1px solid $hdr-menu-close-button-color;
+  }
+
+  &--increase {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 14px;
+      width: 12px;
+      border: 1px solid $hdr-menu-close-button-color;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 14px;
+      width: 12px;
+      border: 1px solid $hdr-menu-close-button-color;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.add-plan__input-number {
+  flex-grow: 1;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+  color: $button-text-color;
+}
+
+.add-plan__having-children {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 28px 0 0 0;
+  padding: 0 0 0 41px;
+
+  font-size: 15px;
+  line-height: 15px;
+  color: $button-text-color;
+}
+
+.add-plan__having-children-label::after {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $input-border-color;
+  border-radius: 4px;
+}
+
+.add-plan__having-children-input {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .add-plan__having-children-label::after {
+    background: url("../img/icons/check-mark_icon.svg") no-repeat center;
+  }
+}
+
+.add-plan__date {
+  margin-top: 27px;
+}
+
+.add-plan__mounth {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  margin: 0 0 11px 0;
+  border-top: 1px solid $add-plan-mounth-border;
+  border-bottom: 1px solid $add-plan-mounth-border;
+
+  &::before {
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -2px;
+    width: 18px;
+    height: 100%;
+    background: url("../img/icons/next-mounth-button_icon.svg") no-repeat center;
+    transform: rotate(180deg);
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    right: -2px;
+    width: 18px;
+    height: 100%;
+    background: url("../img/icons/next-mounth-button_icon.svg") no-repeat center;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+}
+
+.add-plan__mounth-current {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: $button-text-color;
+}
+
+.add-plan__calendar {
+  margin: 0 0 20px 0;
+}
+
+.add-plan__next-step-button {
+  height: 40px;
+  padding-top: 4px;
+}
+
+.add-plan__previous-step-button {
+  display: block;
+  margin-bottom: -15px;
+  padding-top: 14px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $button-text-color;
+}

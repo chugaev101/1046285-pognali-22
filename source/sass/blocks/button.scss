@@ -37,22 +37,22 @@
   &:active::after {
     border-left-color: rgba($button-text-color, 0.3);
   }
-}
 
-.button--no-pointer {
-  justify-content: center;
-  border-radius: 25px;
+  &--no-pointer {
+    justify-content: center;
+    border-radius: 25px;
 
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $button-authorized-text-color;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $button-authorized-text-color;
 
-  &::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
-}
 
-.button--map {
-  border: 3px solid $site-bg-color;
+  &--map {
+    border: 3px solid $site-bg-color;
+  }
 }

@@ -4,9 +4,89 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 270px;
   padding: 0 0 12px 0;
   border-radius: 10px;
   background-color: #ffffff;
+
+  &--in-form {
+    overflow: visible;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    border-radius: 0;
+
+    .card-user__avatar {
+      position: absolute;
+      top: 20px;
+      right: 18px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .card-user__lvl {
+      top: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+    }
+
+    .card-user__lvl-number {
+      top: 19px;
+      left: 29px;
+
+      font-size: 38px;
+      line-height: 38px;
+      color: $button-authorized-text-color;
+
+      &::after {
+        top: 37px;
+        left: -5px;
+        width: 51.06px;
+        background-color: $tags-text-color;
+        opacity: 0.3;
+      }
+    }
+
+    .card-user__lvl-text {
+      bottom: 0;
+      left: 35px;
+
+      font-size: 18px;
+      line-height: 18px;
+      color: $tags-text-color;
+    }
+
+    .card-user__lvl-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(-90deg);
+    }
+
+    .card-user__lvl-svg {
+      width: 102px;
+      height: 102px;
+    }
+
+    .card-user__lvl-progress-bar {
+      stroke-width: 2;
+      stroke-dashoffset: 276px;
+      stroke-dasharray: 276px;
+      stroke-linecap: butt;
+
+      transform: scale(1.73);
+    }
+
+    .card-user__lvl-progress-bar--tanya {
+      stroke-dashoffset: 7px;
+    }
+
+    .card-user__lvl-progress-bar--petr {
+      stroke-dashoffset: 130px;
+    }
+  }
 }
 
 .card-user__name {
@@ -88,7 +168,6 @@
 }
 
 .card-user__ways-of-travel-item {
-
   &:not(:last-of-type) {
     margin-right: 12px;
   }
