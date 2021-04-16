@@ -31,22 +31,17 @@
   &:nth-child(n+2) {
     margin-top: 10px;
   }
-}
 
-@for $i from 1 through 2 {
+  &::before {
+    content: counter(list) ".";
+    counter-increment: list;
+    display: block;
+    position: absolute;
+    left: 23px;
 
-  .plans__item:nth-child(#{$i}) {
-    &::before {
-      content: counter(list) ".";
-      counter-increment: list;
-      display: block;
-      position: absolute;
-      left: 23px;
-
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px;
-    }
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
