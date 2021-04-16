@@ -1,0 +1,46 @@
+.page-main__title-container {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 73px;
+  padding: 21px 0 0 0;
+  background-color: $button-color-basic;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 69px;
+    background-color: $site-bg-color;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: -1;
+  }
+}
+
+.page-main__title {
+  position: relative;
+  margin: 0 0 0 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-text-invert-color;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -14px;
+    width: 214px;
+    height: 5px;
+    background-color: $progress-bar-color;
+    border-radius: 4px;
+  }
+}
+
+.page-main__profile-info {
+  box-sizing: border-box;
+  min-height: 138px;
+}

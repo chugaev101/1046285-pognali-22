@@ -18,6 +18,22 @@
   padding: 5px 24px;
   border-radius: 12px;
 
+  &:nth-child(1) {
+    background-color: rgb(255, 117 + 24 * $i, 48);
+  }
+
+  &:nth-child(2) {
+    background-color: rgb(255, 141, 48);
+  }
+
+  &:nth-child(3) {
+    background-color: rgb(255, 165, 48);
+  }
+
+  &:nth-child(4) {
+    background-color: rgb(255, 189, 48);
+  }
+
   &:not(:first-child) {
     margin-top: -60px;
   }
@@ -25,21 +41,14 @@
   &:not(:last-child) {
     min-height: 140px;
   }
-}
 
-@for $i from 1 through 4 {
-
-  .instructions__item:nth-child(#{$i}) {
-    background-color: rgb(255, 117 + 24 * $i, 48);
-
-    &::after {
-      content: counter(list);
-      counter-increment: list;
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 21px;
-      color: #ffffff;
-    }
+  &::after {
+    content: counter(list);
+    counter-increment: list;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    color: #ffffff;
   }
 }
