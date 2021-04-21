@@ -24,10 +24,9 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("/source/img/content/about_bg.png");
+  background-image: url("../img/content/about_bg.png");
   background-repeat: no-repeat;
   background-position: 76% 9px;
-  background-color: $site-bg-color-dark;
 }
 
 .about__content {

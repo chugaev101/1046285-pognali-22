@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   padding: 21px 0 28px 0;
-  background: url("/img/content/promo-globe_bg.png") no-repeat 45% 13% $site-bg-color-dark;
+  background: url("../img/content/promo-globe_bg.png") no-repeat 45% 13% $site-bg-color-dark;
   background-size: 620px;
 
   &::before {
@@ -16,7 +16,7 @@
 }
 
 .promo__header {
-  background: url("/img/content/traveler.svg") no-repeat 70% 86.5%;
+  background: url("../img/content/traveler.svg") no-repeat 70% 86.5%;
 }
 
 .promo__title {

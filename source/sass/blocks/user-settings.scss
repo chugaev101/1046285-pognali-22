@@ -22,7 +22,7 @@
   box-sizing: border-box;
   display: block;
   padding: 0 16px;
-  background-color: $site-bg-color-light;
+  background-color: inherit;
 
   font-weight: bold;
   font-size: 16px;
@@ -71,34 +71,4 @@
   font-size: 16px;
   line-height: 18px;
   color: $tags-text-color;
-}
-
-.user-settings__preferred-transport-label {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 31.52px;
-  height: 31.52px;
-  margin: 6px 0 13px 0;
-  background-color: #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &:first-of-type {
-    padding-right: 4px;
-  }
-}
-
-.user-settings__preferred-transport-icon {
-  opacity: 0.15;
-}
-
-.user-settings__preferred-transport-input {
-  appearance: none;
-  position: absolute;
-
-  &:checked + .user-settings__preferred-transport-icon {
-    opacity: 1;
-  }
 }

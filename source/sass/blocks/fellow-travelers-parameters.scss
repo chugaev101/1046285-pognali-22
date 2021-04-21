@@ -1,0 +1,102 @@
+.fellow-travelers-parameters {
+  box-sizing: border-box;
+  padding: 26px 25px 22px 25px;
+  background-color: $button-color-basic;
+  border-radius: 20px;
+}
+
+.fellow-travelers-parameters__title {
+  margin: 0 0 22px 0;
+
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  color: $button-text-color;
+}
+
+.fellow-travelers-parameters__toggle {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 39px;
+}
+
+.fellow-travelers-parameters__toggle-icon {
+  position: absolute;
+  top: 18px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: $dark-text;
+}
+
+.fellow-travelers-parameters__dropdown-list {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  margin: 0 0 0 0;
+  padding: 0 0 6px 0;
+  border: none;
+  border-top: 1px solid $dropdown-list-border-color;
+
+  &--shown {
+    height: fit-content;
+
+    .fellow-travelers-parameters__toggle-icon {
+      transform: rotate(180deg) translateY(6px);
+    }
+  }
+}
+
+.fellow-travelers-parameters__dropdown-list-title {
+  position: absolute;
+  top: 12px;
+  left: 0;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $button-text-color;
+}
+
+.fellow-travelers-parameters__list {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  padding: 6px 0 0 28px;
+}
+
+.fellow-travelers-parameters__item {
+  position: relative;
+  margin: 0 0 10px 0;
+
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.fellow-travelers-parameters__input {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .fellow-travelers-parameters__checkbox {
+    background-image: url("../img/icons/check-mark_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.fellow-travelers-parameters__checkbox {
+  box-sizing: border-box;
+  position: absolute;
+  top: -2px;
+  left: -28px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}

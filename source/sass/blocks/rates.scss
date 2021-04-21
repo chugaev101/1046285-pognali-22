@@ -17,7 +17,7 @@
     right: 0;
     width: 100px;
     height: 100px;
-    background: url("/img/icons/rates_icon.png") no-repeat center;
+    background: url("../img/icons/rates_icon.png") no-repeat center;
     background-size: contain;
   }
 }
@@ -65,9 +65,21 @@
     right: 1px;
     width: 34px;
     height: 34px;
-    background-color: rgb(255, 117 + 24 * $i, 48);
+    background-color: rgb(255, 117, 48);
     border-radius: 50%;
     color: #ffffff;
+  }
+
+  &:nth-child(2)::after {
+    background-color: rgb(255, 141, 48);
+  }
+
+  &:nth-child(3)::after {
+    background-color: rgb(255, 165, 48);
+  }
+
+  &:nth-child(4)::after {
+    background-color: rgb(255, 189, 48);
   }
 }
 

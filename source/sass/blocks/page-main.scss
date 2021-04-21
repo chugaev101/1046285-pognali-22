@@ -18,6 +18,10 @@
     border-bottom-left-radius: 20px;
     z-index: -1;
   }
+
+  &--catalog {
+    background-color: $countries-filter-bg;
+  }
 }
 
 .page-main__title {
@@ -37,6 +41,12 @@
     height: 5px;
     background-color: $progress-bar-color;
     border-radius: 4px;
+  }
+
+  &--catalog {
+    &::after {
+      width: 172px;
+    }
   }
 }
 
