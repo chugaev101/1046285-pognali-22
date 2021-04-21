@@ -5,13 +5,18 @@
   min-height: 74px;
   padding-top: 19px;
   background-color: $site-bg-color-dark;
+
+  &--form,
+  &--catalog {
+    background-color: $site-bg-color;
+  }
 }
 
 .page-header__logo {
   display: inline-block;
   width: 96px;
   height: 15px;
-  background: url(../../img/logo/site_logo.png) no-repeat center transparent;
+  background: url("../img/logo/site_logo.png") no-repeat center transparent;
 }
 
 
@@ -66,13 +71,14 @@
   .page-header__logo {
     margin-top: 3px;
     width: 100px;
-    background: url(../../img/logo/site_logo@menu.png) no-repeat center transparent;
+    background: url("../img/logo/site_logo@menu.png") no-repeat center transparent;
   }
 
   .menu-toggle {
     &::before {
       background: $hdr-menu-close-button-color;
     }
+
     &::after {
       background: $hdr-menu-close-button-color;
     }

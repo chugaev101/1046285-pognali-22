@@ -1,0 +1,126 @@
+.fellow-travelers-search {
+  padding: 0 0 79px 0;
+}
+
+.fellow-travelers-search__form {
+  margin: 0 0 28px 0;
+}
+
+.fellow-travelers-search__countries-filter {
+  margin: 0 0 21px 0;
+}
+
+.fellow-travelers-parameters__lvl-range {
+  margin: 0 0 20px 0;
+}
+
+.fellow-travelers-search__button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 41px;
+  padding: 2px 0 0 0;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 25px;
+
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $button-authorized-text-color;
+}
+
+.fellow-travelers-search__card-user {
+  margin: 0 0 10px 0;
+}
+
+.fellow-travelers-search__show-more {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin: 0 0 9px 0;
+  padding: 0 0 0 30px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $site-bg-color;
+}
+
+.fellow-travelers-search__show-more-text {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: -33px;
+    width: 18px;
+    height: 2px;
+    background-color: $site-bg-color;
+    border-radius: 2px;
+  }
+
+  &::before {
+    top: 12px;
+  }
+
+  &::after {
+    bottom: 16px;
+    transform: rotate(90deg);
+  }
+}
+
+.fellow-travelers-search__pagination {
+  display: flex;
+}
+
+.fellow-travelers-search__pagination-button {
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  height: 51px;
+  border: none;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+  }
+
+  &:first-child {
+    margin: 0 1px 0 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &::before {
+      border-right-color: $site-bg-color;
+      left: 55px;
+    }
+  }
+
+  &:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &::before {
+      border-left-color: $site-bg-color;
+      right: 55px;
+    }
+  }
+}

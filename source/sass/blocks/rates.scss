@@ -2,18 +2,6 @@
   position: relative;
   padding: 53px 0 8px 0;
   background-color: $site-bg-color-light;
-
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   bottom: -30px;
-  //   width: 100%;
-  //   height: 31px;
-  //   background-color: inherit;
-  //   border-bottom-right-radius: 30px;
-  //   border-bottom-left-radius: 30px;
-  // }
 }
 
 .rates__title {
@@ -29,7 +17,7 @@
     right: 0;
     width: 100px;
     height: 100px;
-    background: url(../../img/icons/rates_icon.png) no-repeat center;
+    background: url("../img/icons/rates_icon.png") no-repeat center;
     background-size: contain;
   }
 }
@@ -52,38 +40,46 @@
   }
 }
 
-@for $i from 1 through 3 {
+.rates__item {
+  position: relative;
+  margin-bottom: 28px;
 
-  .rates__item:nth-child(#{$i}) {
-    position: relative;
-    margin-bottom: 28px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    width: 199.75px;
+    height: 1px;
+    background-color: #e1e3e9;
+  }
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -15px;
-      width: 199.75px;
-      height: 1px;
-      background-color: #e1e3e9;
-    }
+  &::after {
+    content: counter(list);
+    counter-increment: list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: 1px;
+    width: 34px;
+    height: 34px;
+    background-color: rgb(255, 117, 48);
+    border-radius: 50%;
+    color: #ffffff;
+  }
 
-    &::after {
-      content: counter(list);
-      counter-increment: list;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: -10px;
-      right: 1px;
-      width: 34px;
-      height: 34px;
-      background-color: rgb(255, 117 + 24 * $i, 48);
-      border-radius: 50%;
+  &:nth-child(2)::after {
+    background-color: rgb(255, 141, 48);
+  }
 
-      color: #ffffff;
-    }
+  &:nth-child(3)::after {
+    background-color: rgb(255, 165, 48);
+  }
+
+  &:nth-child(4)::after {
+    background-color: rgb(255, 189, 48);
   }
 }
 

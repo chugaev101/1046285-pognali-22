@@ -6,6 +6,7 @@
   height: 11px;
   border: none;
   background: transparent;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -55,7 +56,6 @@
     border-radius: 1.5px;
     background: $hdr-menu-close-button-color;
     transform: matrix(0.71, 0.73, -0.69, 0.71, 0, 0);
-
   }
 
   &::after {
@@ -69,7 +69,6 @@
     border: none;
     border-radius: 1.5px;
     background: $hdr-menu-close-button-color;
-
     transform: matrix(0.71, -0.73, 0.69, 0.71, 0, 0);
   }
 }
