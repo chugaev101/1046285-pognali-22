@@ -1,45 +1,134 @@
 .card-country {
   position: relative;
+  width: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+  }
 }
 
-.card-country__description {
-  box-sizing: border-box;
+.card-country__link {
   position: relative;
-  width: 270px;
-  height: 88px;
-  margin-top: -18px;
-  background-color: #ffffff;
-  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .card-country__title {
   position: absolute;
-  top: 104px;
+  top: 5px;
   left: 24px;
   z-index: 1;
 
   font-size: 21px;
   line-height: 21px;
   color: $basic-text-color;
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+    left: 30px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+   top: 0;
+  }
+}
+
+.card-country__description {
+  order: 1;
+  position: relative;
+  width: 270px;
+  height: 88px;
+  margin-top: -18px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 432px;
+    height: 140px;
+    margin-top: 0;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 374px;
+  }
+}
+
+.card-country__image-container {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 186px;
+    height: 140px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.card-country__image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+    border-radius: 10px;
+  }
 }
 
 .card-country__flag {
   position: absolute;
   bottom: 77px;
-  left: 25px;
+  left: 9.5%;
   width: 35px;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    float: right;
+    width: 71px;
+    height: 47px;
+    margin: 17px -37px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 23px -35px 0 0;
+  }
 }
 
 .card-country__text {
   position: absolute;
   top: 33px;
   left: 25px;
+  padding-right: 90px;
   opacity: 0.3;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+    margin-top: 28px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 32px;
+  }
 }
 
 .card-country__user-counter {
@@ -48,6 +137,7 @@
   position: absolute;
   top: 28px;
   right: 24px;
+  min-width: 60px;
   opacity: 0.3;
 
   font-weight: 500;
@@ -61,5 +151,19 @@
     height: 14px;
     margin: 0 5px 2px 0;
     background: url("../img/icons/user_icon.svg") no-repeat center transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 97px;
+    left: 29px;
+
+    font-size: 20px;
+
+    &::before {
+      width: 21px;
+      height: 22px;
+      margin-right: 8px;
+      background-size: contain;
+    }
   }
 }

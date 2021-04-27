@@ -7,6 +7,12 @@
   padding: 0;
 }
 
+.social-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-list__item:not(:first-child) {
-  margin-left: 26px;
+  margin-left: 27px;
 }

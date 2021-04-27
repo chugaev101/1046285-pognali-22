@@ -1,8 +1,16 @@
 .promo {
+  box-sizing: border-box;
   position: relative;
   padding: 21px 0 28px 0;
-  background: url("../img/content/promo-globe_bg.png") no-repeat 45% 13% $site-bg-color-dark;
-  background-size: 620px;
+  background: $site-bg-color;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 123px;
+  }
 
   &::before {
     content: "";
@@ -12,25 +20,61 @@
     width: 100%;
     height: 28%;
     background-color: $site-bg-color;
-  }
-}
 
-.promo__header {
-  background: url("../img/content/traveler.svg") no-repeat 70% 86.5%;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .promo__title {
   display: block;
-  margin-bottom: 243px;
+  margin-bottom: 242px;
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+    padding-top: 41px;
+
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 42px 0 101px 67px;
+
+    text-align: start;
+  }
 }
 
 .promo__controls {
   display: flex;
+  margin-left: 1px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 188px;
+    height: 50px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 49px;
+    right: 60px;
+    width: 288px;
+    z-index: 2;
+  }
 }
 
 .promo__button-phone,
@@ -39,8 +83,24 @@
   height: 40px;
   padding: 0;
   border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 50px;
+    height: 50px;
+  }
 
   .promo__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     line-height: 0;
   }
 }
@@ -55,14 +115,50 @@
 
 .promo__button-login {
   width: 190px;
-  padding-top: 2px;
+  padding-top: 3px;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__quote {
-  margin: 28px 25px;
+  margin: 28px 25px 29px 25px;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 33px 213px 33px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 300px;
+    margin: 0;
+    top: 193px;
+    right: 45px;
+  }
 }
 
 .promo__quote-author {
   margin-top: 18px;
+  padding-right: 25%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+    padding-right: 60%;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 10%;
+  }
 }
