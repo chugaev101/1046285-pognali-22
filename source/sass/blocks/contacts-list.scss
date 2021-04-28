@@ -7,6 +7,21 @@
   font-size: 16px;
   line-height: 18px;
   color: $dark-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.contacts-list__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 55px;
+  }
 }
 
 .contacts-list__item--email {
@@ -15,6 +30,15 @@
 
 .contacts-list__text {
   margin-left: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 45px;
+    margin-right: 80px;
+  }
 }
 
 .contacts-list__icon {
@@ -26,4 +50,14 @@
   height: 45px;
   background-color: $contact-icon-bg;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -1px;
+    transform: scale(1.5);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -3px;
+    transform: scale(2);
+  }
 }

@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 23px;
-  border-radius: 10px;
+  padding: 1px 23px 0 23px;
   background-color: $button-color-basic;
+  border: none;
+  border-radius: 10px;
 
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
   color: $button-text-color;
 
   &:hover {
@@ -42,8 +42,8 @@
     justify-content: center;
     border-radius: 25px;
 
-    font-size: 17px;
-    line-height: 30px;
+    // font-size: 17px;
+    // line-height: 30px;
     text-transform: uppercase;
     color: $button-authorized-text-color;
 

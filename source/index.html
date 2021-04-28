@@ -14,15 +14,13 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <div class="page-header__menu">
+      <div class="page-header__menu page-header__menu">
         <div class="wrapper">
-          <a class="page-header__menu-logo">
-            <img src="img/logo/site_logo@menu.png" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
-          </a>
+          <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»"></a>
           <button class="page-header__menu-toggle page-header__menu-toggle--closed menu-toggle menu-toggle--closed" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
-          <nav class="main-navigation">
+          <nav class="page-header__main-navigation main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__list-item"><a href="#">О сервисе</a></li>
               <li class="main-navigation__list-item"><a href="form.html">Направления</a></li>
@@ -123,7 +121,7 @@
           </header>
           <blockquote class="promo__quote">
             <p class="promo__quote-text">«Лучшее приложение,<br>что я видел в жизни!»</p>
-            <p class="promo__quote-author"><b>Мурат Эльтазин<br>главный редактор<br> газеты «гаджетлайф»</b></p>
+            <p class="promo__quote-author"><b>Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</b></p>
           </blockquote>
           <ol class="promo__instructions instructions">
             <li class="instructions__item">
@@ -146,56 +144,71 @@
           <div class="wrapper">
             <div class="about__content">
               <h2 class="about__title block-title">О сервисе</h2>
-              <p class="about__text">Любое путешествие веселее<br>с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-              <p class="about__text"><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
+              <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+              <p class="about__text"><b>А если найдете кого-то близкого по духу &horbar; скорее зовите в совместный трип!</b></p>
             </div>
+            <button class="about__more-details-button button" type="button">Подробнее</button>
           </div>
         </div>
       </section>
       <section class="directions">
-        <div class="wrapper">
+        <div class="wrapper directions__wrapper">
           <div class="directions__description">
             <h2 class="directions__title block-title">Направления</h2>
             <p class="directions__text">Мы не продаем туры<br>и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
-          <article class="directions__card-country card-country">
-            <a href="#">
-              <h3 class="card-country__title">Таиланд</h3>
-              <img class="card-country__image" src="img/content/thailand.jpg" width="270" height="auto" alt="Набережная Таиланда с высоты птичего полета">
-              <div class="card-country__description">
-                <img class="card-country__flag" src="img/flags/thailand.svg" width="70" height="47" alt="Флаг Таиланда.">
-                <p class="card-country__text">Джунгли зовут!</p>
-                <span class="card-country__user-counter">18321</span>
-              </div>
-            </a>
-          </article>
-          <article class="directions__card-country card-country">
-            <a href="#">
-              <h3 class="card-country__title">Франция</h3>
-              <img class="card-country__image" src="img/content/france.jpg" width="270" height="auto" alt="Летняя французская улочка, с деревьями и исторической застройкой.">
-              <div class="card-country__description">
-                <img class="card-country__flag" src="img/flags/france.svg" width="70" height="47" alt="Флаг Франции.">
-                <p class="card-country__text">Трэ бьен, манифик!</p>
-                <span class="card-country__user-counter">12518</span>
-              </div>
-            </a>
-          </article>
-          <article class="directions__card-country card-country">
-            <a href="#">
-              <h3 class="card-country__title">Чехия</h3>
-              <img class="card-country__image" src="img/content/czech.jpg" width="270" height="auto" alt="Панорамный вид на чешский канал, с теплоходом, старинным мостом и исторической застройкой.">
-              <div class="card-country__description">
-                <img class="card-country__flag" src="img/flags/czech.svg" width="70" height="47" alt="Флаг Чехии.">
-                <p class="card-country__text">Закоулки старой Европы</p>
-                <span class="card-country__user-counter">5326</span>
-              </div>
-            </a>
-          </article>
+          <ul class="directions__country-list">
+            <li class="directions__country-item">
+              <article class="directions__card-country card-country">
+                <a class="card-country__link" href="#">
+                  <div class="card-country__description">
+                    <h3 class="card-country__title">Таиланд</h3>
+                    <img class="card-country__flag" src="img/flags/thailand.svg" width="70" height="47" alt="Флаг Таиланда.">
+                    <p class="card-country__text">Джунгли зовут!</p>
+                    <span class="card-country__user-counter">18321</span>
+                  </div>
+                  <div class="card-country__image-container">
+                    <img class="card-country__image" src="img/content/thailand.jpg" width="270" height="auto" alt="Набережная Таиланда с высоты птичего полета">
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="directions__country-item">
+              <article class="directions__card-country card-country">
+                <a class="card-country__link" href="#">
+                  <div class="card-country__description">
+                    <h3 class="card-country__title">Франция</h3>
+                    <img class="card-country__flag" src="img/flags/france.svg" width="70" height="47" alt="Флаг Франции.">
+                    <p class="card-country__text">Трэ бьен, манифик!</p>
+                    <span class="card-country__user-counter">12518</span>
+                  </div>
+                  <div class="card-country__image-container">
+                    <img class="card-country__image" src="img/content/france.jpg" width="270" height="auto" alt="Летняя французская улочка, с деревьями и исторической застройкой.">
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="directions__country-item">
+              <article class="directions__card-country card-country">
+                <a class="card-country__link" href="#">
+                  <div class="card-country__description">
+                    <h3 class="card-country__title">Чехия</h3>
+                    <img class="card-country__flag" src="img/flags/czech.svg" width="70" height="47" alt="Флаг Чехии.">
+                    <p class="card-country__text">Закоулки старой Европы</p>
+                    <span class="card-country__user-counter">5326</span>
+                  </div>
+                  <div class="card-country__image-container">
+                    <img class="card-country__image" src="img/content/czech.jpg" width="270" height="auto" alt="Панорамный вид на чешский канал, с теплоходом, старинным мостом и исторической застройкой.">
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
           <a class="directions__button button" href="form.html">Показать все</a>
         </div>
       </section>
       <section class="fellow-travelers">
-        <div class="wrapper">
+        <div class="wrapper fellow-travelers__wrapper">
           <div class="fellow-travelers__description">
             <h2 class="fellow-travelers__title block-title">Попутчики</h2>
             <p class="fellow-travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
@@ -204,7 +217,7 @@
           <article class="fellow-travelers__card-user card-user">
             <h3 class="card-user__name"><span class="card-user__online-indicator card-user__online-indicator--off"></span>Таня Фирсова</h3>
             <div class="card-user__avatar">
-              <img src="img/avatars/tatiana_firsova.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
+              <img class="card-user__avatar-img" src="img/avatars/tatiana_firsova.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
             </div>
             <div class="card-user__hashtags">
               <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -214,13 +227,13 @@
               <span class="card-user__countries-plan-title visually-hidden">хочет посетить:</span>
               <ul class="card-user__countries-plan-list">
                 <li class="card-user__countries-plan-item">
-                  <img src="img/flags/sri-lanka.svg" width="35" height="25" alt="Флаг Шри-ланки.">
+                  <img class="card-user__countries-plan-flag" src="img/flags/sri-lanka.svg" width="35" height="25" alt="Флаг Шри-ланки.">
                 </li>
                 <li class="card-user__countries-plan-item">
-                  <img src="img/flags/thailand.svg" width="35" height="25" alt="Флаг Таиланда.">
+                  <img class="card-user__countries-plan-flag" src="img/flags/thailand.svg" width="35" height="25" alt="Флаг Таиланда.">
                 </li>
                 <li class="card-user__countries-plan-item">
-                  <img src="img/flags/seychelles.svg" width="35" height="25" alt="Флаг Сейшел.">
+                  <img class="card-user__countries-plan-flag" src="img/flags/seychelles.svg" width="35" height="25" alt="Флаг Сейшел.">
                 </li>
               </ul>
             </div>
@@ -272,7 +285,7 @@
           <article class="fellow-travelers__card-user card-user">
             <h3 class="card-user__name"><span class="card-user__online-indicator"></span>Петя Демин</h3>
             <div class="card-user__avatar">
-              <img src="img/avatars/petr_demin.jpg" alt="Парень на заснеженном фоне, в черной шапке и черной куртке.">
+              <img class="card-user__avatar-img" src="img/avatars/petr_demin.jpg" alt="Парень на заснеженном фоне, в черной шапке и черной куртке.">
             </div>
             <div class="card-user__hashtags">
               <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -282,10 +295,10 @@
               <span class="card-user__countries-plan-title visually-hidden">хочет посетить:</span>
               <ul class="card-user__countries-plan-list">
                 <li class="card-user__countries-plan-item">
-                  <img src="img/flags/belgium.svg" width="35" height="25" alt="Флаг Бельгии.">
+                  <img class="card-user__countries-plan-flag" src="img/flags/belgium.svg" width="35" height="25" alt="Флаг Бельгии.">
                 </li>
                 <li class="card-user__countries-plan-item">
-                  <img src="img/flags/czech.svg" width="35" height="25" alt="Флаг Чехии.">
+                  <img class="card-user__countries-plan-flag" src="img/flags/czech.svg" width="35" height="25" alt="Флаг Чехии.">
                 </li>
               </ul>
             </div>
@@ -340,7 +353,7 @@
       <section class="rates">
         <div class="wrapper">
           <h2 class="visually-hidden">Тарифы нашего сервиса</h2>
-          <span class="rates__title block-title">Добавьте<br>свой<br>профиль</span>
+          <span class="rates__title block-title">Добавьте свой профиль</span>
           <ol class="rates__list">
             <li class="rates__item">
               <p class="rates__description">Базовое размещение</p>
@@ -359,16 +372,16 @@
         </div>
       </section>
       <section class="feedback">
-        <div class="wrapper">
+        <div class="wrapper feedback__wrapper">
           <h2 class="visually-hidden">Регистрация и обратная связь</h2>
           <span class="feedback__title block-title">Заинтересовались?</span>
-          <p class="feedback__description">Зарегистрируйтесь,<br>это быстро и бесплатно!<br> Уже зарегистрированы? Тогда<br>скорее <a class="feedback__login-link" href="#">авторизуйтесь</a>.</p>
+          <p class="feedback__description">Зарегистрируйтесь,<br class="feedback__description-br">это быстро и бесплатно!<br>Уже зарегистрированы? Тогда скорее <a class="feedback__login-link" href="#">авторизуйтесь</a>.</p>
           <form class="feedback__registration-form" action="#" method="post">
             <label class="visually-hidden" for="registration-form">Введите ваш email:</label>
             <input class="feedback__registration-form-email" id="registration-form" type="email" name="registration-email" placeholder="E-mail">
-            <button class="feedback__registration-form-button button" type="submit" name="form-submit" value=""></button>
+            <button class="feedback__registration-form-button button" type="submit" name="form-submit" value=""><span class="feedback__registration-form-button-text">Регистрация</span></button>
           </form>
-          <p class="feedback__description">Остались вопросы?<br>Мы с радостью на них ответим!</p>
+          <p class="feedback__description">Остались вопросы? <br class="feedback__description-br">Мы с радостью на них ответим!</p>
           <ul class="feedback__contacts-list contacts-list">
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="tel:+78005558628">
@@ -406,7 +419,7 @@
             <div class="map__address">
               <span class="visually-hidden">Ваше местоположение</span>
               <div class="map__address-icon">
-                <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="map__address-svg" width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.5 0C4.15169 0 0.625 3.52669 0.625 7.875C0.625 12.9334 4.42846 15.1449 5.26923 16.1538C7.28846 18.5769 7.40257 21 8.5 21C9.59743 21 9.71154 18.5769 11.7308 16.1538C12.5715 15.1449 16.375 12.9334 16.375 7.875C16.375 3.52669 12.8483 0 8.5 0ZM8.5 13.125C5.60069 13.125 3.25 10.7743 3.25 7.875C3.25 4.97569 5.60069 2.625 8.5 2.625C11.3993 2.625 13.75 4.97569 13.75 7.875C13.75 10.7743 11.3993 13.125 8.5 13.125ZM8.5 5.25C7.051 5.25 5.875 6.426 5.875 7.875C5.875 9.324 7.051 10.5 8.5 10.5C9.949 10.5 11.125 9.324 11.125 7.875C11.125 6.426 9.949 5.25 8.5 5.25Z" fill="#FFD74B"/>
                 </svg>
               </div>
@@ -415,14 +428,14 @@
           </div>
         </header>
         <div class="map__iframe-container">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.32085871646749!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617114442398!5m2!1sru!2sru" width="100%" height="305" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.32085871646749!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617114442398!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo">
-          <img src="img/logo/site_logo@dark.png" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
+          <img class="page-footer__logo-image" src="img/logo/site_logo@dark.png" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
         </a>
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
@@ -461,9 +474,11 @@
         </ul>
         <div class="page-footer__developer">
           <p class="page-footer__developer-text">Разработано</p>
-          <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="45" viewBox="0 0 60 60"><path fill="#192144" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
-          </a>
+          <div class="page-footer__developer-logo-container">
+            <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="45" viewBox="0 0 60 60"><path fill="#192144" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -16,29 +16,165 @@
     background-color: $site-bg-color;
     z-index: -1;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 137px;
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+  }
+}
+
+.directions__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .directions__description {
-  box-sizing: border-box;
+  width: 100%;
   margin-bottom: 60px;
-  padding: 70px 38px 0 25px;
+  padding: 70px 15% 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+    margin-bottom: 95px;
+    padding: 166px 15% 0 25px;
+  }
 }
 
 .directions__title {
+  width: 100%;
   margin: 0 0 20px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 58px 0;
+    padding: 3px 0 0 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 60px 80px;
+    padding: 0 0 0 8px;
+  }
 }
 
 .directions__text {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36% 0 10px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 15% 0 90px;
+  }
+}
+
+.directions__country-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 160px 0 0 70px;
+  }
+}
+
+.directions__country-item {
+  @media (min-width: $tablet-width) {
+    &:nth-child(1) {
+      .card-country__image-container {
+        background: url("../img/content/thailand@desktop.jpg") no-repeat transparent;
+        background-position-x: right;
+      }
+    }
+
+    &:nth-child(2) {
+      .card-country__image-container {
+        background: url("../img/content/france@desktop.jpg") no-repeat transparent;
+        background-position-x: right;
+      }
+    }
+
+    &:nth-child(3) {
+      .card-country__text {
+        padding-right: 60%;
+      }
+
+      .card-country__image-container {
+        background: url("../img/content/czech@desktop.jpg") no-repeat transparent;
+        background-position-x: right;
+      }
+    }
+  }
 }
 
 .directions__card-country {
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
+
+  @media (min-width: 605px) and (max-width: $tablet-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 10px 0;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .directions__button {
+  width: 100%;
   height: 62px;
-  margin: 27px 0 0 0;
+  margin: 15px 0 0 0;
+  padding: 1px 23px 0 23px;
+
+  font-size: 18px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    height: 82px;
+    margin: 37px auto 0 auto;
+    border-radius: 20px;
+    padding: 3px 32px 0 32px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+    width: 275px;
+    margin: 0 0 0 115px;
+  }
 }

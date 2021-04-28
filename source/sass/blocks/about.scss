@@ -1,4 +1,5 @@
 .about {
+  box-sizing: border-box;
   position: relative;
   background-color: $site-bg-color;
   border-bottom-right-radius: 30px;
@@ -10,6 +11,7 @@
   &::before {
     content: "";
     display: block;
+    box-sizing: border-box;
     position: absolute;
     top: 10px;
     width: 113px;
@@ -17,6 +19,56 @@
     background-color: $bg-element-rectangle-color;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 68px;
+      left: 5%;
+      max-width: 100%;
+      width: 90%;
+      padding: 0 auto;
+      border-radius: 20px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    right: 10%;
+    bottom: 87px;
+    width: 308px;
+    height: 204px;
+    background-color: $bg-element-rectangle-color;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 89px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+    &::after {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 163px;
+
+    &::before {
+      top: 70px;
+      left: 4%;
+      width: 15%;
+      height: 212px;
+    }
+
+    &::after {
+      right: 4%;
+      bottom: 165px;
+      width: 44%;
+    }
   }
 }
 
@@ -30,20 +82,75 @@
 }
 
 .about__content {
-  padding: 51px 24px;
+  padding: 52px 24px;
   z-index: 2;
 }
 
 .about__title {
   margin: -9px 0 19px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 57px 0 41px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 81px 0 59px 45px;
+  }
 }
 
 .about__text {
   margin: 0 0 20px 0;
-  padding: 0;
+  padding: 0 10px 0 0;
 
   &:last-child {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0 0 20px 10px;
+
+    font-size: 28px;
+    line-height: 33px;
+
+    &:last-child {
+      margin-top: 30px;
+      margin-bottom: 0;
+
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-left: 45px;
+
+    &:last-child {
+      margin-top: 37px;
+      padding-right: 150px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.about__more-details-button {
+  display: none;
+  width: 276px;
+  height: 80px;
+  border-radius: 20px;
+
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 34px;
+    padding: 0 36px 0 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
   }
 }
