@@ -1,13 +1,37 @@
 .preferred-transport {
   box-sizing: border-box;
+  position: relative;
   display: flex;
   align-items: center;
   border: 0 solid transparent;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $input-border-color;
+    border-radius: 10px;
+  }
 
   &--in-search-form {
     .preferred-transport__label {
       margin: 6px 2px 13px 0;
     }
+  }
+}
+
+.preferred-transport__title {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    bottom: -23px;
+    background-color: $site-bg-color-light;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -11px;
   }
 }
 
@@ -26,10 +50,19 @@
   &:first-of-type {
     padding-right: 4px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
 }
 
 .preferred-transport__icon {
   opacity: 0.15;
+
+  @media (min-width: $tablet-width) {
+    transform: scale(1.3);
+  }
 }
 
 .preferred-transport__input {

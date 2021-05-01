@@ -8,21 +8,40 @@
   </head>
   <body class="page__body">
     <header class="page-header page-header--form">
-      <div class="wrapper">
-        <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу"></a>
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo" href="index.html" aria-label="Сервис поиска попутчиков для путешествий «Погнали»"></a>
         <button class="page-header__menu-toggle menu-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <div class="page-header__user-controls user-controls">
+          <div class="user-controls__button-phone button button--no-pointer">
+            <a class="user-controls__link" href="tel:+78005558628">
+              <span class="visually-hidden">Позвоните нам</span>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9047 8.25661C11.9047 8.44223 12.0583 8.59411 12.2461 8.59411C12.4339 8.59411 12.5875 8.44223 12.5875 8.25661C12.5875 6.36324 11.0308 4.82424 9.11565 4.82424C8.9279 4.82424 8.77427 4.97612 8.77427 5.16174C8.77427 5.35074 8.9279 5.49924 9.11565 5.49924C10.6553 5.49924 11.9047 6.73786 11.9047 8.25661ZM9.11565 0.699982C8.9279 0.699982 8.77427 0.851861 8.77427 1.03748C8.77427 1.22312 8.9279 1.37498 9.11565 1.37498C12.9562 1.37498 16.0798 4.46312 16.0798 8.25661C16.0798 8.44223 16.23 8.59411 16.4212 8.59411C16.6089 8.59411 16.7626 8.44223 16.7626 8.25661C16.7626 4.0885 13.3317 0.699982 9.11565 0.699982ZM12.4509 11.8139L12.0037 12.0535C11.2493 12.4619 10.6622 13.5812 9.73116 12.7375L7.30011 10.3L5.20004 8.25661C4.14495 6.92348 5.32635 6.60623 5.73941 5.85699L5.98179 5.41825C6.25489 4.91873 6.35388 4.35849 6.27196 3.79823C6.19345 3.23799 5.93741 2.72836 5.52775 2.32336C5.02935 1.83062 4.36707 1.56062 3.66042 1.56062C2.95376 1.56062 2.28807 1.83062 1.78964 2.32336L1.61556 2.49886C0.693831 3.41012 0.588004 4.97948 1.31514 6.92348C2.0013 8.77973 3.3839 10.7912 5.20004 12.5867C7.96862 15.3239 11.0513 16.9 13.2634 16.9C14.1373 16.9 14.8781 16.6536 15.4039 16.1339L15.5814 15.9584C16.0764 15.469 16.3529 14.8142 16.3563 14.1089C16.3529 13.4204 16.0695 12.7454 15.5814 12.2627C14.7587 11.4494 13.4717 11.2671 12.4509 11.8139Z" fill="#161C35"/>
+              </svg>
+              <span class="visually-hidden">8 800 555-86-28</span>
+            </a>
+          </div>
+          <div class="user-controls__button-email button button--no-pointer">
+            <a class="user-controls__link" href="#">
+              <span class="visually-hidden">Напишите нам</span>
+              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.0166 2.32528L7.7666 6.55572C7.9934 6.69747 8.2868 6.76467 8.582 6.76467C8.8772 6.76467 9.1706 6.69747 9.3974 6.55572L16.1474 2.32528C16.5875 2.04913 17.0033 0.974976 16.196 0.974976H0.968901C0.161601 0.974976 0.577401 2.04913 1.0166 2.32528ZM16.3517 4.63842L9.3974 8.86677C9.0914 9.05367 8.8772 9.07572 8.582 9.07572C8.2868 9.07572 8.0726 9.05367 7.7666 8.86677C7.4606 8.67987 1.3469 4.94082 0.847401 4.63737C0.496401 4.42317 0.500001 4.67412 0.500001 4.86732V12.525C0.500001 12.966 1.0094 13.575 1.4 13.575H15.8C16.1906 13.575 16.7 12.966 16.7 12.525V4.86837C16.7 4.67517 16.7036 4.42422 16.3517 4.63842Z" fill="#161C35"/>
+              </svg>
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+            </a>
+          </div>
+          <a class="user-controls__button-login button button--no-pointer button--login" href="#">Авторизация</a>
+        </div>
       </div>
-      <div class="page-header__menu">
+      <div class="page-header__menu page-header__menu">
         <div class="wrapper">
-          <a class="page-header__menu-logo" href="index.html">
-            <img src="img/logo/site_logo@menu.png" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
-          </a>
+          <a class="page-header__menu-logo" href="index.html" aria-label="Сервис поиска попутчиков для путешествий «Погнали»"></a>
           <button class="page-header__menu-toggle page-header__menu-toggle--closed menu-toggle menu-toggle--closed" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
-          <nav class="main-navigation">
+          <nav class="page-header__main-navigation main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__list-item"><a href="#">О сервисе</a></li>
               <li class="main-navigation__list-item"><a href="form.html">Направления</a></li>
@@ -100,7 +119,7 @@
       </div>
       <section class="page-main__profile-info">
         <div class="wrapper">
-          <article class="card-user card-user--in-form">
+          <article class="page-main__profile-user-card card-user card-user--in-form">
             <h3 class="card-user__name visually-hidden">Петя Демин</h3>
             <div class="card-user__avatar">
               <img src="img/avatars/petr_demin.jpg" alt="Парень на заснеженном фоне, в черной шапке и черной куртке.">
@@ -119,17 +138,17 @@
       </section>
       <form class="profile-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="profile-form__user-settings user-settings">
-          <div class="wrapper">
+          <div class="wrapper user-settings__wrapper">
             <legend class="visually-hidden">Настройки профиля</legend>
             <label class="user-settings__change-photo-button">
-              Сменить фото
+              <span>Сменить</span>фото
               <input class="visually-hidden" name="user-avatar" accept="image/*" type="file">
             </label>
-            <fieldset class="user-settings__fieldset" aria-label="Добавьте несколько тегов отражающих ваши интересы.">
-              <legend class="user-settings__title">Тэги</legend>
+            <fieldset class="user-settings__tags user-settings__fieldset" aria-label="Добавьте несколько тегов отражающих ваши интересы.">
+              <legend class="user-settings__title user-settings__tags-title">Тэги</legend>
               <textarea class="user-settings__tags-input" name="user-tags" maxlength="250" cols="30" rows="10" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
-            <fieldset class="user-settings__fieldset preferred-transport">
+            <fieldset class="user-settings__fieldset user-settings__preferred-transport preferred-transport">
               <legend class=" user-settings__title preferred-transport__title">Транспорт</legend>
               <label class="preferred-transport__label">
                 <span class="visually-hidden">Самолёт</span>
@@ -210,10 +229,10 @@
               </div>
             </div>
             <fieldset class="add-plan__step">
-              <legend class="add-plan__step-title">Шаг 1.<br>Даты пребывания</legend>
-              <p class="add-plan__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+              <legend class="add-plan__step-title">Шаг 1. <br class="add-plan__step-title-br">Даты пребывания</legend>
+              <p class="add-plan__description">Укажите предпочтительное количество попутчиков, которых<br>вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
               <label class="add-plan__fellow-travelers">
-                <span class="add-plan__fellow-travelers-description">Ищу попутчиков:<span class="add-plan__fellow-travelers-unit">чел.</span></span>
+                <span class="add-plan__fellow-travelers-description">Ищу попутчиков:</span><span class="add-plan__fellow-travelers-unit">чел.</span>
                 <div class="add-plan__fellow-travelers-controls">
                   <button class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--decrease" type="button"></button>
                   <input class="add-plan__input-number" type="number" name="number-of-fellow-travelers" min="0" max="50" value="2">
@@ -221,16 +240,18 @@
                 </div>
               </label>
               <label class="add-plan__duration-of-travel">
-                <span class="add-plan__fellow-travelers-description">Длительность:<span class="add-plan__fellow-travelers-unit">дн.</span></span>
+                <span class="add-plan__fellow-travelers-description">Длительность:</span><span class="add-plan__fellow-travelers-unit">дн.</span>
                 <div class="add-plan__fellow-travelers-controls">
                   <button class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--decrease" type="button"></button>
                   <input class="add-plan__input-number" type="number" name="number-of-fellow-travelers" min="0" max="50" value="3">
                   <button class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--increase" type="button"></button>
                 </div>
               </label>
-              <div class="add-plan__having-children">
-                <input class="add-plan__having-children-input" id="having-children" type="checkbox" name="can-with-children">
-                <label class="add-plan__having-children-label" for="having-children">Можно с детьми</label>
+              <div class="add-plan__having-children-container">
+                <div class="add-plan__having-children">
+                  <input class="add-plan__having-children-input" id="having-children" type="checkbox" name="can-with-children">
+                  <label class="add-plan__having-children-label" for="having-children">Можно с детьми</label>
+                </div>
               </div>
               <div class="add-plan__date">
                 <div class="add-plan__mounth">
@@ -240,13 +261,13 @@
                   <div class="calendar__wrapper">
                     <table class="calendar__table">
                       <tr>
-                        <th class="calendar__day-of-week">п</th>
-                        <th class="calendar__day-of-week">в</th>
-                        <th class="calendar__day-of-week">с</th>
-                        <th class="calendar__day-of-week">ч</th>
-                        <th class="calendar__day-of-week">п</th>
-                        <th class="calendar__day-of-week calendar__day-of-week--weekend">с</th>
-                        <th class="calendar__day-of-week calendar__day-of-week--weekend">в</th>
+                        <th class="calendar__day-of-week">П<span class="calendar__day-of-week-letter">н</span></th>
+                        <th class="calendar__day-of-week">В<span class="calendar__day-of-week-letter">т</span></th>
+                        <th class="calendar__day-of-week">С<span class="calendar__day-of-week-letter">р</span></th>
+                        <th class="calendar__day-of-week">Ч<span class="calendar__day-of-week-letter">т</span></th>
+                        <th class="calendar__day-of-week">П<span class="calendar__day-of-week-letter">т</span></th>
+                        <th class="calendar__day-of-week calendar__day-of-week--weekend">С<span class="calendar__day-of-week-letter">б</span></th>
+                        <th class="calendar__day-of-week calendar__day-of-week--weekend">В<span class="calendar__day-of-week-letter">с</span></th>
                       </tr>
                       <tr>
                         <td class="calendar__day calendar__day--disabled">23</td>
@@ -288,9 +309,9 @@
                         <td class="calendar__day calendar__day--disabled">23</td>
                         <td class="calendar__day calendar__day--disabled">24</td>
                         <td class="calendar__day calendar__day--disabled">25</td>
-                        <td class="calendar__day calendar__day--chosen calendar__day--hover">26</td>
+                        <td class="calendar__day calendar__day--chosen calendar__day--arrival calendar__day--hover">26</td>
                         <td class="calendar__day calendar__day--chosen">27</td>
-                        <td class="calendar__day calendar__day--chosen">28</td>
+                        <td class="calendar__day calendar__day--chosen calendar__day--departure">28</td>
                         <td class="calendar__day">29</td>
                       </tr>
                       <tr>
@@ -306,10 +327,11 @@
                   </div>
                 </div>
               </div>
-              <a class="add-plan__next-step-button button button--no-pointer" href="#">Следующий шаг</a>
+              <a class="add-plan__button-mobile button button--no-pointer" href="#">Следующий шаг</a>
+              <a class="add-plan__button button" href="#">Следующий шаг</a>
             </fieldset>
             <fieldset class="add-plan__step">
-              <legend class="add-plan__step-title">Шаг 2.<br>Маршрут</legend>
+              <legend class="add-plan__step-title">Шаг 2. <br class="add-plan__step-title-br">Маршрут</legend>
               <p class="add-plan__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
               <div class="add-plan__route route">
                 <div class="route__countrie route__countrie--chosen">
@@ -326,7 +348,7 @@
                   <p class="route__text">Выберите страну</p>
                   <div class="route__button"></div>
                   <div class="route__button-delete"></div>
-                  <div class="route__select-countrie select-countrie visually-hidden">
+                  <div class="route__select-countrie select-countrie">
                     <table class="select-countrie__alphabet">
                       <tr>
                         <td class="select-countrie__letter select-countrie__letter--chosen">а</td>
@@ -385,11 +407,12 @@
                   <div class="route__button-delete"></div>
                 </div>
               </div>
-              <a class="add-plan__next-step-button button button--no-pointer" href="#">Следующий шаг</a>
+              <a class="add-plan__button-mobile button button--no-pointer" href="#">Следующий шаг</a>
+              <a class="add-plan__button button" href="#">Следующий шаг</a>
               <a class="add-plan__previous-step-button" href="#">На шаг назад</a>
             </fieldset>
             <fieldset class="add-plan__step">
-              <legend class="add-plan__step-title">Шаг 3.<br>Развлечения</legend>
+              <legend class="add-plan__step-title">Шаг 3. <br class="add-plan__step-title-br">Развлечения</legend>
               <p class="add-plan__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <div class="add-plan__goals-to-countrie goals-to-countrie">
                 <div class="goals-to-countrie__selected-countrie goals-to-countrie__selected-countrie--if-several">
@@ -403,14 +426,15 @@
                   <textarea class="goals-to-countrie__selected-countrie-input" name="goals-to-countrie" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </div>
               </div>
-              <button class="profile-form__button-submit button button--no-pointer" type="submit">Отправить</button>
+              <button class="add-plan__button-mobile button button--no-pointer" type="submit">Отправить</button>
+              <button class="add-plan__button button" type="submit">Отправить</button>
               <a class="add-plan__previous-step-button" href="#">На шаг назад</a>
             </fieldset>
           </div>
-        <div>
+        </div>
       </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo" href="index.html">
           <img src="img/logo/site_logo@dark.png" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">

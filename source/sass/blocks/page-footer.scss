@@ -24,6 +24,10 @@
     &::after {
       display: none;
     }
+
+    &--form {
+      margin-top: -39px;
+    }
   }
 
   @media (min-width: $desktop-width) {

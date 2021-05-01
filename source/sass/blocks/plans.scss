@@ -1,13 +1,36 @@
 .plans {
   box-sizing: border-box;
-  padding-top: 29px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   background-color: $form-block-bg;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 34px 100px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 18px 70px 84px;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+  }
 }
 
 .plans__title {
   margin: 0 0 29px 0;
+  color: $button-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 48px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 49px 7px;
+  }
 }
 
 .plans__list {
@@ -18,58 +41,167 @@
 }
 
 .plans__item {
-  box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   height: 154px;
-  margin-bottom: 0;
+  margin-bottom: 11px;
   padding: 24px 25px 0 24px;
   background-color: #ffffff;
   border-radius: 10px;
 
   color: $button-text-color;
 
-  &:nth-child(n+2) {
-    margin-top: 10px;
-  }
-
-  &::before {
+  &::after {
+    order: 1;
     content: counter(list) ".";
     counter-increment: list;
     display: block;
-    position: absolute;
-    left: 23px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+      align-self: flex-start;
+      margin: 3px 7px 0 auto;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      align-self: center;
+      width: max-content;
+      margin: 0 0 0 7px;
+    }
   }
-}
 
-.plans__countries {
-  margin: 0 0 20px 0;
-  padding: 0 0 0 17px;
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $input-border-color;
+    opacity: 0.3;
+  }
 
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 16px;
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    height: 152px;
+    padding: 40px 25px 0 35px;
+
+    &::before {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 97px;
+    margin-bottom: 15px;
+    padding: 0 25px 0 35px;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .plans__fellow-travelers,
 .plans__dates {
-  margin: 0 0 5px 0;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.plans__countries {
+  order: 2;
+  margin: 0 0 20px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    position: relative;
+    width: calc(100% - 50px);
+    margin: 0 0 54px 5px;
+
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    flex-grow: 1;
+    width: max-content;
+    margin: 0 0 0 38px;
+  }
+}
+
+.plans__fellow-travelers {
+  order: 3;
+  width: 100%;
+  height: min-content;
+  margin: 0 0 5px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 181px;
+    padding: 0 0 0 4px;
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.plans__dates {
+  order: 4;
+  height: min-content;
+  margin: 0;
 }
 
 .plans-card__change-button {
+  order: 5;
   display: block;
+  width: 100%;
   margin: 20px 0 0 0;
+  opacity: 0.3;
 
   font-weight: 500;
   text-transform: uppercase;
-  opacity: 0.3;
+  letter-spacing: 0.03em;
+
+  @media (min-width: $tablet-width) {
+    width: min-content;
+    margin: 0 12px 3px auto;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 17px 0 127px;
+  }
 }
