@@ -1,9 +1,35 @@
 .profile-form__user-settings {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -97px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -97px;
+    margin-bottom: 15px;
+  }
 }
 
 .profile-form__plans {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.profile-form__add-plan {
+  margin-top: -62px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -20px;
+  }
 }
 
 .profile-form__button-submit {
