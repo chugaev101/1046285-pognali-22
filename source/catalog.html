@@ -8,21 +8,40 @@
   </head>
   <body class="page__body">
     <header class="page-header page-header--catalog">
-      <div class="wrapper">
-        <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу"></a>
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo" href="index.html" aria-label="Сервис поиска попутчиков для путешествий «Погнали»"></a>
         <button class="page-header__menu-toggle menu-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <div class="page-header__user-controls user-controls">
+          <div class="user-controls__button-phone button button--no-pointer">
+            <a class="user-controls__link" href="tel:+78005558628">
+              <span class="visually-hidden">Позвоните нам</span>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9047 8.25661C11.9047 8.44223 12.0583 8.59411 12.2461 8.59411C12.4339 8.59411 12.5875 8.44223 12.5875 8.25661C12.5875 6.36324 11.0308 4.82424 9.11565 4.82424C8.9279 4.82424 8.77427 4.97612 8.77427 5.16174C8.77427 5.35074 8.9279 5.49924 9.11565 5.49924C10.6553 5.49924 11.9047 6.73786 11.9047 8.25661ZM9.11565 0.699982C8.9279 0.699982 8.77427 0.851861 8.77427 1.03748C8.77427 1.22312 8.9279 1.37498 9.11565 1.37498C12.9562 1.37498 16.0798 4.46312 16.0798 8.25661C16.0798 8.44223 16.23 8.59411 16.4212 8.59411C16.6089 8.59411 16.7626 8.44223 16.7626 8.25661C16.7626 4.0885 13.3317 0.699982 9.11565 0.699982ZM12.4509 11.8139L12.0037 12.0535C11.2493 12.4619 10.6622 13.5812 9.73116 12.7375L7.30011 10.3L5.20004 8.25661C4.14495 6.92348 5.32635 6.60623 5.73941 5.85699L5.98179 5.41825C6.25489 4.91873 6.35388 4.35849 6.27196 3.79823C6.19345 3.23799 5.93741 2.72836 5.52775 2.32336C5.02935 1.83062 4.36707 1.56062 3.66042 1.56062C2.95376 1.56062 2.28807 1.83062 1.78964 2.32336L1.61556 2.49886C0.693831 3.41012 0.588004 4.97948 1.31514 6.92348C2.0013 8.77973 3.3839 10.7912 5.20004 12.5867C7.96862 15.3239 11.0513 16.9 13.2634 16.9C14.1373 16.9 14.8781 16.6536 15.4039 16.1339L15.5814 15.9584C16.0764 15.469 16.3529 14.8142 16.3563 14.1089C16.3529 13.4204 16.0695 12.7454 15.5814 12.2627C14.7587 11.4494 13.4717 11.2671 12.4509 11.8139Z" fill="#161C35"/>
+              </svg>
+              <span class="visually-hidden">8 800 555-86-28</span>
+            </a>
+          </div>
+          <div class="user-controls__button-email button button--no-pointer">
+            <a class="user-controls__link" href="#">
+              <span class="visually-hidden">Напишите нам</span>
+              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.0166 2.32528L7.7666 6.55572C7.9934 6.69747 8.2868 6.76467 8.582 6.76467C8.8772 6.76467 9.1706 6.69747 9.3974 6.55572L16.1474 2.32528C16.5875 2.04913 17.0033 0.974976 16.196 0.974976H0.968901C0.161601 0.974976 0.577401 2.04913 1.0166 2.32528ZM16.3517 4.63842L9.3974 8.86677C9.0914 9.05367 8.8772 9.07572 8.582 9.07572C8.2868 9.07572 8.0726 9.05367 7.7666 8.86677C7.4606 8.67987 1.3469 4.94082 0.847401 4.63737C0.496401 4.42317 0.500001 4.67412 0.500001 4.86732V12.525C0.500001 12.966 1.0094 13.575 1.4 13.575H15.8C16.1906 13.575 16.7 12.966 16.7 12.525V4.86837C16.7 4.67517 16.7036 4.42422 16.3517 4.63842Z" fill="#161C35"/>
+              </svg>
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+            </a>
+          </div>
+          <a class="user-controls__button-login button button--no-pointer button--login" href="#">Авторизация</a>
+        </div>
       </div>
-      <div class="page-header__menu">
+      <div class="page-header__menu page-header__menu">
         <div class="wrapper">
-          <a class="page-header__menu-logo" href="index.html">
-            <img src="img/logo/site_logo@menu.png" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
-          </a>
+          <a class="page-header__menu-logo" href="index.html" aria-label="Сервис поиска попутчиков для путешествий «Погнали»"></a>
           <button class="page-header__menu-toggle page-header__menu-toggle--closed menu-toggle menu-toggle--closed" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
-          <nav class="main-navigation">
+          <nav class="page-header__main-navigation main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__list-item"><a href="#">О сервисе</a></li>
               <li class="main-navigation__list-item"><a href="form.html">Направления</a></li>
@@ -31,7 +50,7 @@
             <a class="main-navigation__login-button button button--no-pointer" href="#">Авторизация</a>
           </nav>
           <ul class="page-header__contacts-list contacts-list">
-            <li class="contacts-item">
+            <li class="contacts-list__item">
               <a class="contacts-list__link" href="tel:+78005558628">
                 <span class="visually-hidden">Позвоните нам</span>
                 <div class="contacts-list__icon">
@@ -42,7 +61,7 @@
                 <span class="contacts-list__text">8 800 555-86-28</span>
               </a>
             </li>
-            <li class="contacts-item contacts-item--email">
+            <li class="contacts-list__item contacts-list__item--email">
               <a class="contacts-list__link" href="#">
                 <span class="visually-hidden">Напишите нам</span>
                 <div class="contacts-list__icon">
@@ -55,7 +74,7 @@
             </li>
           </ul>
           <ul class="page-header__social-list social-list">
-            <li class="social-item">
+            <li class="social-list__item">
               <a href="#">
                 <span class="visually-hidden">facebook</span>
                 <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +82,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social-list__item">
               <a href="#">
                 <span class="visually-hidden">ВКонтакте</span>
                 <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +90,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social-list__item">
               <a href="#">
                 <span class="visually-hidden">instagram</span>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,105 +115,365 @@
       <div class="page-main__title-container page-main__title-container--catalog">
         <div class="wrapper">
           <h1 class="page-main__title page-main__title--catalog">Попутчики</h1>
+          <a class="page-main__back-to-site-main" href="index.html">На главную</a>
         </div>
       </div>
       <section class="fellow-travelers-search">
         <h2 class="visually-hidden">Форма подбора попутчиков по параметрам</h2>
         <form class="fellow-travelers-search__form" action="https://echo.htmlacademy.ru" method="get">
-          <section class="fellow-travelers-search__countries-filter countries-filter countries-filter">
+          <section class="fellow-travelers-search__countries-filter countries-filter">
+            <div class="wrapper">
             <header class="countries-filter__header">
-              <div class="wrapper">
                 <h3 class="countries-filter__title">Фильтрация по странам:</h3>
-                <button class="countries-filter__button countries-filter__button" type="button"><span class="countries-filter__button-icon"></span></button>
+                <button class="countries-filter__button countries-filter__button" type="button"><span class="countries-filter__button-icon countries-filter__button-icon"></span></button>
+              </header>
+            </div>
+            <div class="countries-filter__select countries-filter__select">
+              <div class="countries-filter__continents-wrapper wrapper">
+                <fieldset class="countries-filter__continents">
+                  <legend class="visually-hidden">Выберите континент</legend>
+                  <ul class="countries-filter__continents-list">
+                    <li class="countries-filter__continents-item">
+                      <label>
+                        <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
+                        <span class="countries-filter__continents-name">Европа</span>
+                      </label>
+                    </li>
+                    <li class="countries-filter__continents-item">
+                      <label>
+                        <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
+                        <span class="countries-filter__continents-name">Азия</span>
+                      </label>
+                    </li>
+                    <li class="countries-filter__continents-item">
+                      <label>
+                        <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
+                        <span class="countries-filter__continents-name">Америка</span>
+                      </label>
+                    </li>
+                    <li class="countries-filter__continents-item">
+                      <label>
+                        <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
+                        <span class="countries-filter__continents-name">Острова</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
-            </header>
-            <div class="countries-filter__select">
-              <fieldset class="countries-filter__continents">
-              <div class="wrapper">
-                <legend class="visually-hidden">Выберите континент</legend>
-                <ul class="countries-filter__continents-list">
-                  <li class="countries-filter__continents-item">
-                    <label>
-                      <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
-                      <span class="countries-filter__continents-name">Европа</span>
-                    </label>
-                  </li>
-                  <li class="countries-filter__continents-item">
-                    <label>
-                      <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
-                      <span class="countries-filter__continents-name">Азия</span>
-                    </label>
-                  </li>
-                  <li class="countries-filter__continents-item">
-                    <label>
-                      <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
-                      <span class="countries-filter__continents-name">Америка</span>
-                    </label>
-                  </li>
-                  <li class="countries-filter__continents-item">
-                    <label>
-                      <input class="countries-filter__continents-input" type="radio" name="continent" value="europe" checked>
-                      <span class="countries-filter__continents-name">Острова</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              </fieldset>
-              <div class="countries-filter__select-countrie select-countrie">
+              <div class="countries-filter__select-countrie select-countrie--catalog">
                 <div class="wrapper">
-                  <div class="select-countrie__alphabet">
-                    <div class="select-countrie__alphabet-wrapper">
-                      <table class="select-countrie__alphabet-table">
-                      <tr>
-                        <td class="select-countrie__letter select-countrie__letter--chosen"><div class="select-countrie__letter-wrapper">а</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">б</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">в</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">г</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">д</div></td>
-                      </tr>
-                      <tr>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">е</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">з</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">и</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">к</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">л</div></td>
-                      </tr>
-                      <tr>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">м</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">н</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">о</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">п</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">р</div></td>
-                      </tr>
-                      <tr>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">с</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">т</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">у</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">ф</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">х</div></td>
-                      </tr>
-                      <tr>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">ч</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">ш</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">э</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">ю</div></td>
-                        <td class="select-countrie__letter"><div class="select-countrie__letter-wrapper">я</div></td>
-                      </tr>
-                      </table>
-                    </div>
-                  </div>
+                  <table class="select-countrie__alphabet">
+                    <tr class="select-countrie__alphabet-row">
+                      <td class="select-countrie__letter select-countrie__letter--chosen">
+                      <span class="select-countrie__title">а</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Австралия</li>
+                        <li class="select-countrie__item">Австрия</li>
+                        <li class="select-countrie__item">Азербайджан</li>
+                        <li class="select-countrie__item">Албания</li>
+                        <li class="select-countrie__item">Алжир</li>
+                        <li class="select-countrie__item">Ангола</li>
+                        <li class="select-countrie__item">Андорра</li>
+                        <li class="select-countrie__item">Антигуа и Барбуда</li>
+                        <li class="select-countrie__item">Аргентина</li>
+                        <li class="select-countrie__item">Армения</li>
+                        <li class="select-countrie__item">Афганистан</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">б</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Багамские Острова</li>
+                        <li class="select-countrie__item">Бангладеш</li>
+                        <li class="select-countrie__item">Барбадос</li>
+                        <li class="select-countrie__item">Бахрейн</li>
+                        <li class="select-countrie__item">Белоруссия</li>
+                        <li class="select-countrie__item">Белиз</li>
+                        <li class="select-countrie__item">Бельгия</li>
+                        <li class="select-countrie__item">Бенин</li>
+                        <li class="select-countrie__item">Болгария</li>
+                        <li class="select-countrie__item">Боливия</li>
+                        <li class="select-countrie__item">Босния и Герцеговина</li>
+                        <li class="select-countrie__item">Ботсвана</li>
+                        <li class="select-countrie__item">Бразилия</li>
+                        <li class="select-countrie__item">Бруней</li>
+                        <li class="select-countrie__item">Буркина-Фасо</li>
+                        <li class="select-countrie__item">Бурунди</li>
+                        <li class="select-countrie__item">Бутан</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">в</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Вануату</li>
+                        <li class="select-countrie__item">Великобритания</li>
+                        <li class="select-countrie__item">Венгерия</li>
+                        <li class="select-countrie__item">Венесуэла</li>
+                        <li class="select-countrie__item">Восточный Тимор</li>
+                        <li class="select-countrie__item">Вьетнам</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">г</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Габон</li>
+                        <li class="select-countrie__item">Гаити</li>
+                        <li class="select-countrie__item">Гайана</li>
+                        <li class="select-countrie__item">Гамбия</li>
+                        <li class="select-countrie__item">Гана</li>
+                        <li class="select-countrie__item">Гватемала</li>
+                        <li class="select-countrie__item">Гвинея</li>
+                        <li class="select-countrie__item">Гвинея-Бисау</li>
+                        <li class="select-countrie__item">Германия</li>
+                        <li class="select-countrie__item">Гондурас</li>
+                        <li class="select-countrie__item">Гренада</li>
+                        <li class="select-countrie__item">Греция</li>
+                        <li class="select-countrie__item">Грузия</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">д</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Дания</li>
+                        <li class="select-countrie__item">Джибути</li>
+                        <li class="select-countrie__item">Доминика</li>
+                        <li class="select-countrie__item">Доминикана</li>
+                      </ul>
+                      </td>
+                    </tr>
+                    <tr class="select-countrie__alphabet-row">
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">е</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Египет</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">з</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Замбия</li>
+                        <li class="select-countrie__item">Зимбабве</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">и</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Израиль</li>
+                        <li class="select-countrie__item">Индия</li>
+                        <li class="select-countrie__item">Индонезия</li>
+                        <li class="select-countrie__item">Иордания</li>
+                        <li class="select-countrie__item">Ирак</li>
+                        <li class="select-countrie__item">Иран</li>
+                        <li class="select-countrie__item">Ирландия</li>
+                        <li class="select-countrie__item">Исландия</li>
+                        <li class="select-countrie__item">Испания</li>
+                        <li class="select-countrie__item">Италия</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">к</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Кабо-Верде</li>
+                        <li class="select-countrie__item">Казахстан</li>
+                        <li class="select-countrie__item">Камбоджа</li>
+                        <li class="select-countrie__item">Камерун</li>
+                        <li class="select-countrie__item">Канада</li>
+                        <li class="select-countrie__item">Катар</li>
+                        <li class="select-countrie__item">Кения</li>
+                        <li class="select-countrie__item">Кипр</li>
+                        <li class="select-countrie__item">Киргизия</li>
+                        <li class="select-countrie__item">Кирибати</li>
+                        <li class="select-countrie__item">Китай</li>
+                        <li class="select-countrie__item">Колуибия</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">л</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Лаос</li>
+                        <li class="select-countrie__item">Латвия</li>
+                        <li class="select-countrie__item">Лесото</li>
+                        <li class="select-countrie__item">Либерия</li>
+                        <li class="select-countrie__item">Ливан</li>
+                        <li class="select-countrie__item">Ливия</li>
+                        <li class="select-countrie__item">Литва</li>
+                        <li class="select-countrie__item">Лихтенштейн</li>
+                        <li class="select-countrie__item">Люксембург</li>
+                      </ul>
+                      </td>
+                    </tr>
+                    <tr class="select-countrie__alphabet-row">
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">м</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Маврикий</li>
+                        <li class="select-countrie__item">Мавритания</li>
+                        <li class="select-countrie__item">Мадагаскар</li>
+                        <li class="select-countrie__item">Малави</li>
+                        <li class="select-countrie__item">Малайзия</li>
+                        <li class="select-countrie__item">Мали</li>
+                        <li class="select-countrie__item">Мальдивы</li>
+                        <li class="select-countrie__item">Мальта</li>
+                        <li class="select-countrie__item">Марокко</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">н</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Намибия</li>
+                        <li class="select-countrie__item">Науру</li>
+                        <li class="select-countrie__item">Непал</li>
+                        <li class="select-countrie__item">Нигер</li>
+                        <li class="select-countrie__item">Нигерия</li>
+                        <li class="select-countrie__item">Нидерланды</li>
+                        <li class="select-countrie__item">Никарагуа</li>
+                        <li class="select-countrie__item">Новая Зеландия</li>
+                        <li class="select-countrie__item">Норвегия</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">о</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">ОАЭ</li>
+                        <li class="select-countrie__item">Оман</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">п</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Пакистан</li>
+                        <li class="select-countrie__item">Палау</li>
+                        <li class="select-countrie__item">Панама</li>
+                        <li class="select-countrie__item">Папуа-Новая Гвинея</li>
+                        <li class="select-countrie__item">Парагвай</li>
+                        <li class="select-countrie__item">Перу</li>
+                        <li class="select-countrie__item">Польша</li>
+                        <li class="select-countrie__item">Португалия</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">р</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Руанда</li>
+                        <li class="select-countrie__item">Румыния</li>
+                        <li class="select-countrie__item">Россия</li>
+                      </ul>
+                      </td>
+                    </tr>
+                    <tr class="select-countrie__alphabet-row">
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">с</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Сальвадор</li>
+                        <li class="select-countrie__item">Самоа</li>
+                        <li class="select-countrie__item">Сан-Марино</li>
+                        <li class="select-countrie__item">Саудовская Аравия</li>
+                        <li class="select-countrie__item">Сейшелы</li>
+                        <li class="select-countrie__item">Сенегал</li>
+                        <li class="select-countrie__item">Сербия</li>
+                        <li class="select-countrie__item">Сингапур</li>
+                        <li class="select-countrie__item">Сирия</li>
+                        <li class="select-countrie__item">Словакия</li>
+                        <li class="select-countrie__item">Словения</li>
+                        <li class="select-countrie__item">США</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">т</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Таджикистан</li>
+                        <li class="select-countrie__item">Таиланд</li>
+                        <li class="select-countrie__item">Танзания</li>
+                        <li class="select-countrie__item">Того</li>
+                        <li class="select-countrie__item">Тонга</li>
+                        <li class="select-countrie__item">Тринидад и Тобаго</li>
+                        <li class="select-countrie__item">Тувалу</li>
+                        <li class="select-countrie__item">Тунис</li>
+                        <li class="select-countrie__item">Туркмения</li>
+                        <li class="select-countrie__item">Турция</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">у</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Уганда</li>
+                        <li class="select-countrie__item">Узбекистан</li>
+                        <li class="select-countrie__item">Украина</li>
+                        <li class="select-countrie__item">Уругвай</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">ф</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Фиджи</li>
+                        <li class="select-countrie__item">Филиппины</li>
+                        <li class="select-countrie__item">Финляндия</li>
+                        <li class="select-countrie__item">Франция</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">х</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Хорватия</li>
+                      </ul>
+                      </td>
+                    </tr>
+                    <tr class="select-countrie__alphabet-row">
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">ч</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Чад</li>
+                        <li class="select-countrie__item">Черногория</li>
+                        <li class="select-countrie__item">Чехия</li>
+                        <li class="select-countrie__item">Чили</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">ш</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Швейцария</li>
+                        <li class="select-countrie__item">Швеция</li>
+                        <li class="select-countrie__item">Шри-Ланка</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">э</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Эквадор</li>
+                        <li class="select-countrie__item">Эритрея</li>
+                        <li class="select-countrie__item">Эсватини</li>
+                        <li class="select-countrie__item">Эстония</li>
+                        <li class="select-countrie__item">Эфиопия</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">ю</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">ЮАР</li>
+                        <li class="select-countrie__item">Южный Судан</li>
+                      </ul>
+                      </td>
+                      <td class="select-countrie__letter">
+                      <span class="select-countrie__title">я</span>
+                      <ul class="select-countrie__list">
+                        <li class="select-countrie__item">Ямайка</li>
+                        <li class="select-countrie__item">Япония</li>
+                      </ul>
+                      </td>
+                    </tr>
+                  </table>
                   <ul class="select-countrie__results-list">
-                    <li class="select-countrie__results-item">Австралия</li>
-                    <li class="select-countrie__results-item">Австрия</li>
-                    <li class="select-countrie__results-item">Азербайджан</li>
-                    <li class="select-countrie__results-item">Албания</li>
-                    <li class="select-countrie__results-item">Алжир</li>
-                    <li class="select-countrie__results-item">Ангола</li>
-                    <li class="select-countrie__results-item">Андорра</li>
-                    <li class="select-countrie__results-item">Антигуа и Барбуда</li>
-                    <li class="select-countrie__results-item">Аргентина</li>
-                    <li class="select-countrie__results-item">Армения</li>
-                    <li class="select-countrie__results-item">Афганистан</li>
+                  <li class="select-countrie__results-item">Австралия</li>
+                  <li class="select-countrie__results-item">Австрия</li>
+                  <li class="select-countrie__results-item">Азербайджан</li>
+                  <li class="select-countrie__results-item">Албания</li>
+                  <li class="select-countrie__results-item">Алжир</li>
+                  <li class="select-countrie__results-item">Ангола</li>
+                  <li class="select-countrie__results-item">Андорра</li>
+                  <li class="select-countrie__results-item">Антигуа и Барбуда</li>
+                  <li class="select-countrie__results-item">Аргентина</li>
+                  <li class="select-countrie__results-item">Армения</li>
+                  <li class="select-countrie__results-item">Афганистан</li>
                   </ul>
                 </div>
               </div>
@@ -216,21 +495,21 @@
                   <ul class="fellow-travelers-parameters__list">
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Хобби-1
+                        <span class="fellow-travelers-parameters__label-text">Спортзал</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="hobby" value="hobby-1">
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
                     </li>
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Хобби-2
+                        <span class="fellow-travelers-parameters__label-text">Кальян</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="hobby" value="hobby-2">
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
                     </li>
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Хобби-3
+                        <span class="fellow-travelers-parameters__label-text">Диван</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="hobby" value="hobby-3">
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
@@ -245,21 +524,21 @@
                   <ul class="fellow-travelers-parameters__list">
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Тяжелый рок
+                        <span class="fellow-travelers-parameters__label-text">Тяжелый рок</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="musical-preferences" value="hard-rock" checked>
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
                     </li>
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Русский рэп
+                        <span class="fellow-travelers-parameters__label-text">Русский рэп</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="musical-preferences" value="russian-rap" checked>
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
                     </li>
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Евроденс
+                        <span class="fellow-travelers-parameters__label-text">Евроденс</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="musical-preferences" value="eurodance">
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
@@ -274,32 +553,33 @@
                   <ul class="fellow-travelers-parameters__list">
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Еда-1
+                        <span class="fellow-travelers-parameters__label-text">Мясоед</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="food-preferences" value="food-1">
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
                     </li>
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Еда-2
+                        <span class="fellow-travelers-parameters__label-text">Сидит на ПП</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="food-preferences" value="food-2">
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
                     </li>
                     <li class="fellow-travelers-parameters__item">
                       <label class="fellow-travelers-parameters__label">
-                        Еда-3
+                        <span class="fellow-travelers-parameters__label-text">Веган-сыроед</span>
                         <input class="fellow-travelers-parameters__input" type="checkbox" name="food-preferences" value="food-3">
                         <div class="fellow-travelers-parameters__checkbox"></div>
                       </label>
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="fellow-travelers-parameters__dropdown-list fellow-travelers-parameters__dropdown-list--shown preferred-transport preferred-transport--in-search-form">
-                  <legend class="preferred-transport__title fellow-travelers-parameters__dropdown-list-title">Транспорт</legend>
-                  <div class="fellow-travelers-parameters__toggle">
-                    <div class="fellow-travelers-parameters__toggle-icon"></div>
-                  </div>
+              <fieldset class="fellow-travelers-parameters__dropdown-list fellow-travelers-parameters__dropdown-list--shown">
+                <legend class="fellow-travelers-parameters__dropdown-list-title">Транспорт</legend>
+                <div class="fellow-travelers-parameters__toggle">
+                  <div class="fellow-travelers-parameters__toggle-icon"></div>
+                </div>
+                <div class=" preferred-transport preferred-transport--in-search-form">
                   <label class="preferred-transport__label">
                     <span class="visually-hidden">Самолёт</span>
                     <input class="preferred-transport__input" value="airplane" type="checkbox" name="transport" checked>
@@ -332,6 +612,7 @@
                       <path d="M11.4116 7.43228C11.5728 7.66211 11.8041 7.83891 12.074 7.93868C12.3439 8.03844 12.6394 8.05634 12.9203 7.98993L15.2495 7.43295L14.9103 6.12951L12.5811 6.68649L11.6124 5.29773C11.4055 5.00114 11.0843 4.79488 10.719 4.72395L8.01748 4.2066C7.71526 4.14859 7.40148 4.18736 7.1246 4.31693C6.84771 4.4465 6.62312 4.65966 6.48552 4.92349L5.32091 7.15143L6.57753 7.75276L7.74214 5.52415L9.12379 5.78887L5.55131 11.4844H2.4368V12.8281H5.55131C6.04159 12.8281 6.50308 12.5782 6.75595 12.1757L8.10318 10.0284L11.734 10.7231L13.0095 14.3842L14.3413 13.9589L13.0664 10.2985C12.9878 10.0738 12.8486 9.87284 12.6628 9.71596C12.4771 9.55909 12.2515 9.45179 12.0086 9.4049L9.87397 8.99707L11.1186 7.01235L11.4116 7.43228V7.43228Z" fill="#1D2E5B"/>
                     </svg>
                   </label>
+                </div>
               </fieldset>
               <div class="fellow-travelers-parameters__dropdown-list fellow-travelers-parameters__dropdown-list--shown">
                 <span class="fellow-travelers-parameters__dropdown-list-title">Левел</span>
@@ -339,38 +620,33 @@
                   <div class="fellow-travelers-parameters__toggle-icon"></div>
                 </div>
                 <div class="fellow-travelers-parameters__lvl-range lvl-range">
-                    <div class="lvl-range__output">
-                      <div class="lvl-range__value lvl-range__value--lower">30</div>
-                      <div class="lvl-range__value lvl-range__value--upper">100</div>
-                    </div>
+                  <div class="lvl-range__output">
+                    <div class="lvl-range__value lvl-range__value--lower">30</div>
+                    <div class="lvl-range__value lvl-range__value--upper">100</div>
+                  </div>
+                  <div class="lvl-range__controls-container">
                     <div class="lvl-range__controls">
                       <div class="lvl-range__controls-scale">
-                        <div class="lvl-range__controls-bar"  style="width: 100%; margin-left: 31%;"></div>
+                        <div class="lvl-range__controls-bar"></div>
                       </div>
                       <div class="lvl-range__toggle lvl-range__toggle--value-lower">
                       </div>
                       <div class="lvl-range__toggle lvl-range__toggle--value-upper"></div>
                     </div>
+                  </div>
                 </div>
               </div>
-              <button class="fellow-travelers-search__button" type="submit">Показать</button>
+              <button class="fellow-travelers-search__button button button--no-pointer" type="submit">Показать</button>
             </section>
           </div>
         </form>
         <section class="fellow-travelers-search__searching-results">
           <div class="wrapper">
-            <h2 class="visually-hidden">Результаты поиска попутчиков</h2>
-            <article class="fellow-travelers-search__card-user card-user card-user--search-result">
-              <h3 class="card-user__name"><span class="card-user__online-indicator card-user__online-indicator--off"></span>Таня Фирсова</h3>
+            <div class="fellow-travelers-search__searching-results-wrapper">
+              <h2 class="visually-hidden">Результаты поиска попутчиков</h2>
+              <article class="fellow-travelers-search__card-user card-user card-user--search-result">
+              <h3 class="card-user__title"><span class="card-user__online-indicator card-user__online-indicator--off"></span><span class="card-user__name">Таня Фирсова</span></h3>
               <img class="card-user__avatar" src="img/avatars/tatiana_firsova.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
-              <div class="card-user__likes">
-                <div class="card-user__likes-icon card-user__likes-icon--liked">
-                  <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
-                  </svg>
-                </div>
-                <span class="card-user__likes-counter">1,5 М</span>
-              </div>
               <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
                 <p class="card-user__hashtags-items">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -439,19 +715,21 @@
                   </div>
                 </div>
               </div>
-              <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
-            </article>
-            <article class="fellow-travelers-search__card-user card-user card-user--search-result">
-              <h3 class="card-user__name"><span class="card-user__online-indicator"></span>Петя Демин</h3>
-              <img class="card-user__avatar" src="img/avatars/petr_demin.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
-              <div class="card-user__likes">
-                <div class="card-user__likes-icon">
-                  <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
-                  </svg>
+              <div class="card-user__controls">
+                <div class="card-user__likes">
+                  <div class="card-user__likes-icon card-user__likes-icon--liked">
+                    <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
+                    </svg>
+                  </div>
+                  <span class="card-user__likes-counter">1,5 М</span>
                 </div>
-                <span class="card-user__likes-counter">1500</span>
+                <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
               </div>
+              </article>
+              <article class="fellow-travelers-search__card-user card-user card-user--search-result">
+              <h3 class="card-user__title"><span class="card-user__online-indicator"></span><span class="card-user__name">Петя Демин</span></h3>
+              <img class="card-user__avatar" src="img/avatars/petr_demin.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
               <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
                 <p class="card-user__hashtags-items">#бургер #бар #футбол #концерт #крафт</p>
@@ -516,19 +794,21 @@
                   </div>
                 </div>
               </div>
-              <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
-            </article>
-            <article class="fellow-travelers-search__card-user card-user card-user--search-result">
-              <h3 class="card-user__name"><span class="card-user__online-indicator--off"></span>Марк Смолов</h3>
-              <img class="card-user__avatar" src="img/avatars/mark_smolov.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
-              <div class="card-user__likes">
-                <div class="card-user__likes-icon">
-                  <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
-                  </svg>
+              <div class="card-user__controls">
+                <div class="card-user__likes">
+                  <div class="card-user__likes-icon">
+                    <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
+                    </svg>
+                  </div>
+                  <span class="card-user__likes-counter">1500</span>
                 </div>
-                <span class="card-user__likes-counter">170</span>
+                <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
               </div>
+              </article>
+              <article class="fellow-travelers-search__card-user card-user card-user--search-result">
+              <h3 class="card-user__title"><span class="card-user__online-indicator--off"></span><span class="card-user__name">Марк Смолов</span></h3>
+              <img class="card-user__avatar" src="img/avatars/mark_smolov.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
               <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
                 <p class="card-user__hashtags-items">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -546,7 +826,7 @@
                   </li>
                   <li class="card-user__countries-plan-item">
                     <img class="card-user__countries-plan-flag" src="img/flags/dominica.svg" width="35" height="25" alt="Флаг Доминиканы.">
-                    <p class="card-user__countries-plan-name">Доминикана</p>
+                    <p class="card-user__countries-plan-name">Доминика</p>
                   </li>
                 </ul>
               </div>
@@ -597,19 +877,21 @@
                   </div>
                 </div>
               </div>
-              <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
-            </article>
-            <article class="fellow-travelers-search__card-user card-user card-user--search-result">
-              <h3 class="card-user__name"><span class="card-user__online-indicator"></span>Лариса Роговая</h3>
-              <img class="card-user__avatar" src="img/avatars/larisa_logovaya.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
-              <div class="card-user__likes">
-                <div class="card-user__likes-icon">
-                  <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
-                  </svg>
+              <div class="card-user__controls">
+                <div class="card-user__likes">
+                  <div class="card-user__likes-icon">
+                    <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
+                    </svg>
+                  </div>
+                  <span class="card-user__likes-counter">170</span>
                 </div>
-                <span class="card-user__likes-counter">23</span>
+                <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
               </div>
+              </article>
+              <article class="fellow-travelers-search__card-user card-user card-user--search-result">
+              <h3 class="card-user__title"><span class="card-user__online-indicator"></span><span class="card-user__name">Лариса Роговая</span></h3>
+              <img class="card-user__avatar" src="img/avatars/larisa_logovaya.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
               <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
                 <p class="card-user__hashtags-items">#образование #карьера #учеба #линкедин</p>
@@ -674,19 +956,36 @@
                   </div>
                 </div>
               </div>
-              <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
-            </article>
+              <div class="card-user__controls">
+                <div class="card-user__likes">
+                  <div class="card-user__likes-icon">
+                    <svg class="card-user__likes-icon-color" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="card-user__likes-icon-color" fill-rule="evenodd" clip-rule="evenodd" d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" fill="#192144"/>
+                    </svg>
+                  </div>
+                  <span class="card-user__likes-counter">23</span>
+                </div>
+                <a class="card-user__call-button button button--no-pointer" href="#">Позвать!</a>
+              </div>
+              </article>
+              <a class="fellow-travelers-search__show-more" href="#">
+                <span class="fellow-travelers-search__show-more-text">Показать еще</span>
+              </a>
+              <div class="fellow-travelers-search__pagination-wrapper wrapper">
+                <div class="fellow-travelers-search__pagination">
+                  <ol class="fellow-travelers-search__pagination-list">
+                    <li class="fellow-travelers-search__pagination-item fellow-travelers-search__pagination-item--current"><a class="fellow-travelers-search__pagination-link" href="#"></a></li>
+                    <li class="fellow-travelers-search__pagination-item"><a class="fellow-travelers-search__pagination-link" href="#"></a></li>
+                    <li class="fellow-travelers-search__pagination-item"><a class="fellow-travelers-search__pagination-link" href="#"></a></li>
+                    <li class="fellow-travelers-search__pagination-item"><a class="fellow-travelers-search__pagination-link" href="#"></a></li>
+                  </ol>
+                  <button class="fellow-travelers-search__pagination-button fellow-travelers-search__pagination-button--previous"></button>
+                  <button class="fellow-travelers-search__pagination-button fellow-travelers-search__pagination-button--next"></button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <a class="fellow-travelers-search__show-more" href="#">
-          <span class="fellow-travelers-search__show-more-text">Показать еще</span>
-        </a>
-        <div class="wrapper">
-          <div class="fellow-travelers-search__pagination">
-            <button class="fellow-travelers-search__pagination-button fellow-travelers-search__pagination-button--previous"></button>
-            <button class="fellow-travelers-search__pagination-button fellow-travelers-search__pagination-button--next"></button>
-          </div>
-        </div>
       </section>
     </main>
     <footer class="page-footer">

@@ -11,6 +11,12 @@
   }
 
   &--in-search-form {
+    border: 0;
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 0 5px 3px;
+    }
+
     .preferred-transport__label {
       margin: 6px 2px 13px 0;
     }
@@ -22,7 +28,8 @@
     position: absolute;
     display: block;
     bottom: -23px;
-    background-color: $site-bg-color-light;
+    // background-color: $site-bg-color-light;
+    background-color: inherit;
 
     font-weight: 500;
     font-size: 20px;
