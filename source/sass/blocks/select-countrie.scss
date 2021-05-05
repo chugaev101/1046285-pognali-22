@@ -3,22 +3,118 @@
   background-color: #ffffff;
   border: 1px solid $input-border-color;
   border-top: none;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
 
   @media (min-width: $tablet-width) {
     display: flex;
     border-radius: 0;
   }
-}
 
-.select-countrie__alphabet-wrapper {
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  display: flex;
-  justify-content: center;
+  &--catalog {
+    padding: 12px 50px 0 50px;
+    border: none;
+    background-color: $countries-filter-bg;
+    box-shadow: none;
+
+    .select-countrie__letter {
+      &--chosen {
+        background-color: $button-text-color;
+        border: 0;
+        color: #ffffff;
+      }
+    }
+
+    .select-countrie__results-list {
+      padding: 12px 0 0 0;
+      background-color: inherit;
+      border: 0;
+    }
+
+    .select-countrie__results-item {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 129px 0 0 51px;
+
+      .select-countrie__alphabet {
+        width: 54%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .select-countrie__letter {
+        border: none;
+        background-color: transparent;
+        padding: 0 0 23px 0;
+
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 60px;
+        color: $dark-text;
+        opacity: 0.3;
+
+        &--chosen {
+          opacity: 1;
+        }
+
+        @media (min-width: $desktop-width) {
+          opacity: 1;
+        }
+      }
+
+      .select-countrie__results-list {
+        justify-content: start;
+        width: fit-content;
+        margin-right: 95px;
+        padding: 0 0 0 0;
+        background-color: inherit;
+        border: none;
+      }
+
+      .select-countrie__results-item {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 65px;
+      padding: 10px 0 0 0;
+      background-color: $site-bg-color-light;
+
+      .select-countrie__alphabet {
+        margin-left: 56px;
+        width: 92.3%;
+      }
+
+      .select-countrie__alphabet-row:nth-child(3) {
+        .select-countrie__letter {
+          padding: 0 0 90px 0;
+        }
+      }
+
+      .select-countrie__alphabet-row:nth-child(4) {
+        .select-countrie__letter {
+          padding: 0 0 49px 0;
+        }
+      }
+
+      .select-countrie__letter {
+        padding: 0 0 48px 0;
+
+        text-align: start;
+        vertical-align: top;
+      }
+
+      .select-countrie__results-list {
+        display: none;
+      }
+    }
+  }
 }
 
 .select-countrie__alphabet {
@@ -34,16 +130,6 @@
     height: 346px;
     margin: 35px 80px 33px 27px;
   }
-}
-
-
-.select-countrie__alphabet-table {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 94%;
-  padding: 0 0 40px 0;
 }
 
 .select-countrie__letter {
@@ -80,11 +166,32 @@
   }
 }
 
-.select-countrie__letter-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.select-countrie__list {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  list-style-type: none;
+  margin: 0;
+  padding: 30px 0 0 0;
+
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: start;
+  text-transform: none;
+  color: $tags-text-color;
 }
+
+.select-countrie__item {
+  width: max-content;
+}
+
+// .select-countrie__letter-wrapper {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .select-countrie__results-list {
   list-style-type: none;

@@ -29,7 +29,7 @@
       border-radius: 0;
     }
 
-    .card-user__name {
+    .card-user__title {
       position: absolute;
     }
 
@@ -154,7 +154,23 @@
     padding: 15px 0 23px 0;
     border-radius: 20px;
 
-    .card-user__name {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 2fr 3fr 1fr;
+      width: 688px;
+      height: auto;
+      padding: 35px 0 26px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 285px 1fr 1fr;
+      width: 688px;
+      min-height: 285px;
+      padding: 0;
+    }
+
+    .card-user__title {
       order: 2;
       display: block;
       width: 100px;
@@ -164,11 +180,45 @@
       font-size: 20px;
       line-height: 20px;
       white-space: pre-wrap;
+
+      @media (min-width: $tablet-width) {
+        position: relative;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: start;
+        width: max-content;
+        margin: 0 0 0 29px;
+
+        font-size: 30px;
+        line-height: 30px;
+      }
+
+      @media (min-width: $desktop-width) {
+        position: static;
+        display: flex;
+        margin: 46px 0 0 38px;
+      }
     }
 
     .card-user__online-indicator {
       top: 7px;
       left: 138px;
+
+      @media (min-width: $tablet-width) {
+        left: auto;
+        top: 10px;
+        right: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        position: static;
+        order: 1;
+        margin-right: 18px;
+      }
+    }
+
+    .card-user__name {
+      order: 2;
     }
 
     .card-user__avatar {
@@ -176,6 +226,23 @@
       height: 70px;
       margin: 0 17px 0 17px;
       border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        align-self: flex-start;
+        width: 190px;
+        height: 190px;
+        margin: 0 0 0 35px;
+        border-radius: 20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        width: 100%;
+        height: 100%;
+        margin: 0 0 0 0;
+        border-radius: 0;
+      }
     }
 
     .card-user__likes {
@@ -190,6 +257,11 @@
       line-height: 16px;
       text-transform: uppercase;
       color: $site-bg-color-dark;
+
+      @media (min-width: $tablet-width) {
+        order: 2;
+        position: static;
+      }
     }
 
     .card-user__likes-icon {
@@ -204,6 +276,10 @@
       background-color: $countries-filter-bg;
       border-radius: 50%;
 
+      @media (min-width: $tablet-width) {
+        transform: scale(1.6);
+      }
+
       &--liked {
         background-color: $like-pressed-bg-color;
 
@@ -214,10 +290,30 @@
       }
     }
 
+    .card-user__likes-counter {
+      @media (min-width: $tablet-width) {
+        padding: 3px 0 0 9px;
+
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+
     .card-user__hashtags {
       order: 3;
       margin: 0 21px 21px 21px;
       padding: 0 20px 0 0;
+
+      @media (min-width: $tablet-width) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: flex-start;
+        margin: 25px 0 0 26px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin: 73px 0 0 58px;
+      }
     }
 
     .card-user__hashtags-items {
@@ -231,7 +327,27 @@
       width: 100%;
       min-height: 98px;
       padding: 0 0 0 25px;
-      border-top: 1.5px solid $site-bg-color-light;
+      border-top: 1px solid $site-bg-color-light;
+
+      @media (min-width: $tablet-width) {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-height: fit-content;
+        margin: 28px 0 0 0;
+        padding: 0 0 0 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        height: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        border: 0;
+      }
     }
 
     .card-user__countries-plan-title {
@@ -241,27 +357,89 @@
       background-color: #ffffff;
 
       text-align: center;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        width: fit-content;
+        margin: -8px 0 22px 72px;
+        padding: 0 12px 0 12px;
+        background-color: #ffffff;
+
+        text-align: start;
+      }
+
+      @media (min-width: $desktop-width) {
+        overflow: hidden;
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+      }
     }
 
     .card-user__countries-plan-list {
       flex-direction: column;
       margin-bottom: 7px;
+
+      @media (min-width: $tablet-width) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+        margin: 0 0 0 37px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 53px 0 0 58px;
+      }
     }
 
     .card-user__countries-plan-item {
       display: flex;
       align-items: center;
       margin: 0 0 12px 0;
+
+      @media (min-width: $tablet-width) {
+        margin: 0;
+
+        &:not(:last-of-type) {
+          margin: 0 27px 0 0;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        &:not(:last-of-type) {
+          margin: 0 0 17px 0;
+        }
+      }
     }
 
     .card-user__countries-plan-flag {
       width: 26px;
       height: 18px;
       margin: -5px 14px 0 0;
+
+      @media (min-width: $tablet-width) {
+        width: 35px;
+        height: 24px;
+        margin: -5px 10px 0 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin: -5px 17px 0 0;
+      }
     }
 
     .card-user__countries-plan-name {
       margin: 0 0 0 0;
+
+      @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+      }
     }
 
     .card-user__container {
@@ -280,10 +458,37 @@
       line-height: 16px;
       color: $tags-text-color;
       text-transform: lowercase;
+
+      @media (min-width: $tablet-width) {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        border: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: start;
+        height: fit-content;
+        margin: 25px 0 0 53px;
+        padding: 0 0 0 0;
+        border: 0;
+      }
     }
 
     .card-user__ways-of-travel {
       margin: 0 0 0 0;
+
+      @media (min-width: $tablet-width) {
+        margin: 0 0 30px 0;
+      }
     }
 
     .card-user__ways-of-travel-title {
@@ -294,6 +499,22 @@
       background-color: #ffffff;
 
       text-align: center;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    .card-user__ways-of-travel-list {
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: $desktop-width) {
+        flex-direction: row;
+        margin-right: 46px;
+      }
     }
 
     .card-user__ways-of-travel-item {
@@ -306,6 +527,11 @@
       margin: 0 1px 0 0;
       background-color: $site-bg-color-light;
       border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        background-color: transparent;
+        transform: scale(1.3);
+      }
     }
 
     .card-user__ways-of-travel-icon {
@@ -318,11 +544,21 @@
       width: 45px;
       height: 45px;
       margin: -25px 0 0 0;
+
+      @media (min-width: $tablet-width) {
+        width: fit-content;
+        height: fit-content;
+        margin: -25px 0 0 0;
+      }
     }
 
     .card-user__lvl {
       transform: scale(0.75);
       background-color: transparent;
+
+      @media (min-width: $tablet-width) {
+        transform: none;
+      }
     }
 
     .card-user__lvl-title {
@@ -332,6 +568,10 @@
       background-color: #ffffff;
 
       text-align: center;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
 
     .card-user__lvl-number {
@@ -340,26 +580,85 @@
       font-size: 31px;
       line-height: 25px;
 
+      @media (min-width: $tablet-width) {
+        font-size: 24px;
+        line-height: 10px;
+      }
+
       &::after {
         display: none;
+
+        @media (min-width: $tablet-width) {
+          display: block;
+          background-color: #000000;
+          opacity: 0.1;
+        }
       }
     }
 
     .card-user__lvl-text {
       display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        color: #000000;
+        opacity: 0.4;
+      }
+    }
+
+    .card-user__lvl-progress {
+      @media (min-width: $tablet-width) {
+        top: -5px;
+        left: -6px;
+        transform: rotate(-90deg) scale(1.05);
+      }
+    }
+
+    .card-user__lvl-progress-bar {
+      @media (min-width: $tablet-width) {
+        stroke-width: 2px;
+      }
+    }
+
+    .card-user__controls {
+      order: 7;
+      width: 100%;
+
+      @media (min-width: $tablet-width) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        margin: 136px 0 0 25px;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        align-self: start;
+        margin: 16px 0 0 55px;
+      }
     }
 
     .card-user__call-button {
-      order: 7;
-      width: 100%;
       height: 40px;
       margin: 0 20px;
       padding-top: 5px;
+
+      @media (min-width: $tablet-width) {
+        order: 1;
+        width: 150.22px;
+        height: 50px;
+        margin: 0 10px 0 0;
+
+        font-size: 20px;
+        line-height: 20px;
+      }
     }
   }
 }
 
-.card-user__name {
+.card-user__title {
   position: relative;
   order: 3;
   display: flex;
