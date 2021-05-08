@@ -24,6 +24,12 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &:active {
+    .user-controls__icon {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -46,10 +52,18 @@
 
 .user-controls__button-email {
   background: $button-color-dark;
+
+  &:hover {
+    background: $button-color-extra-dark;
+  }
 }
 
 .user-controls__button-phone {
   background: $button-color-extra-dark;
+
+  &:hover {
+    background: $button-color-extra-dark-hover;
+  }
 }
 
 .user-controls__button-login {

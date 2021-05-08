@@ -11,11 +11,11 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 65px;
+    height: 30px;
     background-color: inherit;
-    border-bottom-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    z-index: 10;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    z-index: 1;
   }
 
   @media (min-width: $tablet-width) {
@@ -201,8 +201,8 @@
 }
 
 .feedback__contacts-list {
+  position: relative;
   margin: 15px 0 0 0;
-  z-index: 20;
 
   color: $button-color-basic;
 

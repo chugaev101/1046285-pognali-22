@@ -50,23 +50,23 @@
   margin: 3px 0 32px 0;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    margin: 14px 0 0 0;
-    width: 164px;
-    height: 42px;
-    background: url("../img/logo/site_logo@tablet-menu.png") no-repeat center transparent;
+    margin: 16px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 200px;
-    height: 55px;
-    background-size: contain;
+    margin: 10px 0 0 18px;
   }
 }
 
 .page-footer__logo-image {
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 55px;
   }
 }
 
@@ -76,6 +76,10 @@
   @media (min-width: $tablet-width) {
     margin: 15px 0 0 0;
     transform: scale(1.4);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 5px 0 0 0;
   }
 
   .social-list__item {
@@ -104,6 +108,10 @@
     margin: 11px 0 0 0;
     border: none;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 2px 0 0 0;
+  }
 }
 
 .page-footer__developer-text {
@@ -116,6 +124,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 72px 0 0;
+  }
 }
 
 .page-footer__developer-logo {
@@ -125,5 +138,11 @@
 
   @media (min-width: $tablet-width) {
     top: -9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 41px;
+    top: -10px;
+    right: 14px;
   }
 }

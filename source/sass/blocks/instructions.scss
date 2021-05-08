@@ -13,6 +13,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 2;
+    padding: 0 0 0 20px;
   }
 }
 
@@ -59,10 +67,20 @@
   }
 
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
     width: 50%;
     height: 140px;
+    padding: 7px 32px;
     border-radius: 20px;
+
+    &::after {
+      top: auto;
+      right: auto;
+      bottom: 22px;
+      left: 33px;
+
+      font-size: 30px;
+      line-height: 30px;
+    }
 
     &:last-child {
       height: 140px;
@@ -94,20 +112,40 @@
     width: 25%;
     height: 107px;
 
+    &::after {
+      top: 29px;
+      right: 68px;
+      bottom: auto;
+      left: auto;
+
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &:first-child {
+      &::after {
+        right: 101px;
+      }
+    }
+
     &:nth-child(n) {
-      width: 29%;
+      width: 28.5%;
       border-radius: 20px;
     }
 
     &:nth-child(3) {
       margin: none;
-      margin-left: -40px;
+      margin-left: -37px;
     }
 
     &:last-child {
-      width: 315px;
+      width: 317px;
       margin-left: 28px;
       height: 107px;
+
+      &::after {
+        right: 33px;
+      }
     }
   }
 }

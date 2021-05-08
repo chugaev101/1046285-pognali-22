@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     width: 618px;
+    height: 140px;
   }
 }
 
@@ -53,6 +54,8 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
     min-width: 432px;
     height: 140px;
     margin-top: 0;
@@ -66,23 +69,20 @@
   }
 }
 
-.card-country__image-container {
-  @media (min-width: $tablet-width) {
-    order: 2;
-    width: 186px;
-    height: 140px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-}
-
 .card-country__image {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    display: none;
-    border-radius: 10px;
+    width: 559px;
+    height: 140px;
+    margin-left: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 559px;
+    height: 140px;
+    margin-left: 0;
   }
 }
 
@@ -126,7 +126,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 32px;
+    top: 25px;
   }
 }
 
