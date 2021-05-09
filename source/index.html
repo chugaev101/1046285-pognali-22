@@ -4,12 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Погнали?</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="wrapper page-header__wrapper">
-        <a class="page-header__logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»"></a>
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/site-desktop_logo.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo.svg">
+            <img class="page-header__logo-image" src="img/logo/site-mobile_logo.svg" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
+          </picture>
+        </a>
         <button class="page-header__menu-toggle menu-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -17,7 +29,7 @@
           <div class="user-controls__button-phone button button--no-pointer">
             <a class="user-controls__link" href="tel:+78005558628">
               <span class="visually-hidden">Позвоните нам</span>
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user-controls__icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.9047 8.25661C11.9047 8.44223 12.0583 8.59411 12.2461 8.59411C12.4339 8.59411 12.5875 8.44223 12.5875 8.25661C12.5875 6.36324 11.0308 4.82424 9.11565 4.82424C8.9279 4.82424 8.77427 4.97612 8.77427 5.16174C8.77427 5.35074 8.9279 5.49924 9.11565 5.49924C10.6553 5.49924 11.9047 6.73786 11.9047 8.25661ZM9.11565 0.699982C8.9279 0.699982 8.77427 0.851861 8.77427 1.03748C8.77427 1.22312 8.9279 1.37498 9.11565 1.37498C12.9562 1.37498 16.0798 4.46312 16.0798 8.25661C16.0798 8.44223 16.23 8.59411 16.4212 8.59411C16.6089 8.59411 16.7626 8.44223 16.7626 8.25661C16.7626 4.0885 13.3317 0.699982 9.11565 0.699982ZM12.4509 11.8139L12.0037 12.0535C11.2493 12.4619 10.6622 13.5812 9.73116 12.7375L7.30011 10.3L5.20004 8.25661C4.14495 6.92348 5.32635 6.60623 5.73941 5.85699L5.98179 5.41825C6.25489 4.91873 6.35388 4.35849 6.27196 3.79823C6.19345 3.23799 5.93741 2.72836 5.52775 2.32336C5.02935 1.83062 4.36707 1.56062 3.66042 1.56062C2.95376 1.56062 2.28807 1.83062 1.78964 2.32336L1.61556 2.49886C0.693831 3.41012 0.588004 4.97948 1.31514 6.92348C2.0013 8.77973 3.3839 10.7912 5.20004 12.5867C7.96862 15.3239 11.0513 16.9 13.2634 16.9C14.1373 16.9 14.8781 16.6536 15.4039 16.1339L15.5814 15.9584C16.0764 15.469 16.3529 14.8142 16.3563 14.1089C16.3529 13.4204 16.0695 12.7454 15.5814 12.2627C14.7587 11.4494 13.4717 11.2671 12.4509 11.8139Z" fill="#161C35"/>
               </svg>
               <span class="visually-hidden">8 800 555-86-28</span>
@@ -26,7 +38,7 @@
           <div class="user-controls__button-email button button--no-pointer">
             <a class="user-controls__link" href="#">
               <span class="visually-hidden">Напишите нам</span>
-              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user-controls__icon" width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.0166 2.32528L7.7666 6.55572C7.9934 6.69747 8.2868 6.76467 8.582 6.76467C8.8772 6.76467 9.1706 6.69747 9.3974 6.55572L16.1474 2.32528C16.5875 2.04913 17.0033 0.974976 16.196 0.974976H0.968901C0.161601 0.974976 0.577401 2.04913 1.0166 2.32528ZM16.3517 4.63842L9.3974 8.86677C9.0914 9.05367 8.8772 9.07572 8.582 9.07572C8.2868 9.07572 8.0726 9.05367 7.7666 8.86677C7.4606 8.67987 1.3469 4.94082 0.847401 4.63737C0.496401 4.42317 0.500001 4.67412 0.500001 4.86732V12.525C0.500001 12.966 1.0094 13.575 1.4 13.575H15.8C16.1906 13.575 16.7 12.966 16.7 12.525V4.86837C16.7 4.67517 16.7036 4.42422 16.3517 4.63842Z" fill="#161C35"/>
               </svg>
               <span class="visually-hidden">mail@htmlacademy.ru</span>
@@ -35,9 +47,14 @@
           <a class="user-controls__button-login button button--no-pointer button--login" href="#">Авторизация</a>
         </div>
       </div>
-      <div class="page-header__menu">
+      <div class="page-header__menu page-header__menu">
         <div class="wrapper">
-          <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»"></a>
+          <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo@dark.svg">
+              <img class="page-footer__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
+            </picture>
+          </a>
           <button class="page-header__menu-toggle page-header__menu-toggle--closed menu-toggle menu-toggle--closed" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
@@ -114,7 +131,8 @@
     <main class="page-main">
       <h1 class="visually-hidden">Сервис поиска попутчиков для путешествий «Погнали»</h1>
       <section class="promo">
-        <div class="wrapper">
+        <div class="promo__bg">
+          <div class="promo__wrapper wrapper">
           <header class="promo__header">
             <h2 class="visually-hidden">Промо-блок</h2>
             <span class="promo__title">В путешествие<br>с крутыми попутчиками!</span>
@@ -137,6 +155,7 @@
               <p class="instructions__text">Путешествуйте<br>вместе!</p>
             </li>
           </ol>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -168,7 +187,10 @@
                     <span class="card-country__user-counter">18321</span>
                   </div>
                   <div class="card-country__image-container">
-                    <img class="card-country__image" src="img/content/thailand.jpg" width="270" height="auto" alt="Набережная Таиланда с высоты птичего полета">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/thailand-large.png 1x, img/content/thailand-large@2x.png 2x">
+                      <img class="card-country__image" src="img/content/thailand.jpg" srcset="img/content/thailand@2x.jpg 2x" width="270" height="auto" alt="Набережная Таиланда с высоты птичего полета">
+                    </picture>
                   </div>
                 </a>
               </article>
@@ -183,7 +205,10 @@
                     <span class="card-country__user-counter">12518</span>
                   </div>
                   <div class="card-country__image-container">
-                    <img class="card-country__image" src="img/content/france.jpg" width="270" height="auto" alt="Летняя французская улочка, с деревьями и исторической застройкой.">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/france-large.png 1x, img/content/france-large@2x.png 2x">
+                      <img class="card-country__image" src="img/content/france.jpg" srcset="img/content/france@2x.jpg 2x" width="270" height="auto" alt="Летняя французская улочка, с деревьями и исторической застройкой.">
+                    </picture>
                   </div>
                 </a>
               </article>
@@ -198,7 +223,10 @@
                     <span class="card-country__user-counter">5326</span>
                   </div>
                   <div class="card-country__image-container">
-                    <img class="card-country__image" src="img/content/czech.jpg" width="270" height="auto" alt="Панорамный вид на чешский канал, с теплоходом, старинным мостом и исторической застройкой.">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/czech-large.png 1x, img/content/czech-large@2x.png 2x">
+                      <img class="card-country__image" src="img/content/czech.jpg" srcset="img/content/czech@2x.jpg 2x" width="270" height="auto" alt="Панорамный вид на чешский канал, с теплоходом, старинным мостом и исторической застройкой.">
+                    </picture>
                   </div>
                 </a>
               </article>
@@ -211,13 +239,18 @@
         <div class="wrapper fellow-travelers__wrapper">
           <div class="fellow-travelers__description">
             <h2 class="fellow-travelers__title block-title">Попутчики</h2>
-            <p class="fellow-travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="fellow-travelers__text"><b>Теперь можно легко найти единомышленников!</b></p>
+            <p class="fellow-travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br class="fellow-travelers__br"> а другому маршрут для хайкинга.</p>
+            <p class="fellow-travelers__text"><b>Теперь можно легко<br class="fellow-travelers__br"> найти единомышленников!</b></p>
           </div>
           <article class="fellow-travelers__card-user card-user">
-            <h3 class="card-user__name"><span class="card-user__online-indicator card-user__online-indicator--off"></span>Таня Фирсова</h3>
+            <h3 class="card-user__title">
+              <span class="card-user__online-indicator card-user__online-indicator--off"></span>
+              <span class="card-user__name">Таня Фирсова</span>
+            </h3>
             <div class="card-user__avatar">
-              <img class="card-user__avatar-img" src="img/avatars/tatiana_firsova.jpg" width="270" height="270" alt="Девушка плавает в басейне.">
+              <picture>
+                <img class="card-user__avatar-img" src="img/avatars/tatiana-firsova.jpg" srcset="img/avatars/tatiana-firsova@2x.jpg" width="270" height="270" alt="Татьяна Фирсова">
+              </picture>
             </div>
             <div class="card-user__hashtags">
               <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -283,9 +316,14 @@
             </div>
           </article>
           <article class="fellow-travelers__card-user card-user">
-            <h3 class="card-user__name"><span class="card-user__online-indicator"></span>Петя Демин</h3>
+            <h3 class="card-user__title">
+              <span class="card-user__online-indicator"></span>
+              <span class="card-user__name">Петя Демин</span>
+            </h3>
             <div class="card-user__avatar">
-              <img class="card-user__avatar-img" src="img/avatars/petr_demin.jpg" alt="Парень на заснеженном фоне, в черной шапке и черной куртке.">
+              <picture>
+                <img class="card-user__avatar-img" src="img/avatars/petr-demin.jpg" srcset="img/avatars/petr-demin@2x.jpg" width="270" height="270" alt="Петя Демин">
+              </picture>
             </div>
             <div class="card-user__hashtags">
               <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -370,6 +408,32 @@
           </ol>
           <a class="rates__button" href="#">Показать тарифы для бизнеса</a>
         </div>
+        <div class="rates__modal">
+          <div class="rates__modal-container">
+            <h3 class="rates__modal-title block-title">Бизнес-тарифы</h3>
+            <ol class="rates__list rates__list--modal">
+              <li class="rates__item rates__item--modal">
+                <p class="rates__description">Реклама у блоггера</p>
+                <p class="rates__description">300 000 руб./пост</p>
+              </li>
+              <li class="rates__item rates__item--modal">
+                <p class="rates__description">Накрутка подписчиков</p>
+                <p class="rates__description">от 1 руб./шт.</p>
+              </li>
+              <li class="rates__item rates__item--modal">
+                <p class="rates__description">Лайки от ботов</p>
+                <p class="rates__description">от 20 коп./лайк</p>
+              </li>
+              <li class="rates__item rates__item--modal">
+                <p class="rates__description">Ваш продакт-плейсмент</p>
+                <p class="rates__description">Индивидуально</p>
+              </li>
+            </ol>
+            <footer class="rates__modal-footer">
+              <button class="rates__modal-button" type="button">Закрыть окно</button>
+            </footer>
+          </div>
+        </div>
       </section>
       <section class="feedback">
         <div class="wrapper feedback__wrapper">
@@ -435,7 +499,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo/site_logo@dark.png" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/site-desktop_logo@dark.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo@dark.svg">
+            <img class="page-footer__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
+          </picture>
         </a>
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
@@ -475,8 +543,8 @@
         <div class="page-footer__developer">
           <p class="page-footer__developer-text">Разработано</p>
           <div class="page-footer__developer-logo-container">
-            <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="45" viewBox="0 0 60 60"><path fill="#192144" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg  class="page-footer__developer-logo" xmlns="http://www.w3.org/2000/svg" width="38" height="45" viewBox="0 0 60 60"><path fill="#192144" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
             </a>
           </div>
         </div>
