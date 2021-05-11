@@ -6,6 +6,16 @@
   padding-top: 19px;
   background-color: $site-bg-color-dark;
 
+  @media (min-width: $tablet-width) {
+    min-height: 100px;
+    padding-top: 38px;
+    background-color: $site-bg-color-dark-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $site-bg-color-dark;
+  }
+
   &--form,
   &--catalog {
     background-color: $site-bg-color;
@@ -19,16 +29,6 @@
     @media (min-width: $tablet-width) {
       min-height: 52px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 100px;
-    padding-top: 38px;
-    background-color: $site-bg-color-dark-tablet;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $site-bg-color-dark;
   }
 }
 

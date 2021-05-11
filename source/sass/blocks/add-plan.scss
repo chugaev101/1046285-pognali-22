@@ -90,6 +90,7 @@
         width: 500px;
         margin-top: 66px;
         margin-bottom: 78px;
+        padding-right: 20px;
         margin-left: 0;
         padding-bottom: 55px;
       }
@@ -330,6 +331,10 @@
     font-size: 20px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .add-plan__fellow-travelers-controls {
@@ -339,6 +344,14 @@
   margin: 8px 0 0 0;
   border: 1px solid $input-border-color;
   border-radius: 4px;
+
+  &:hover {
+    border-color: $controls-border-hover-color;
+  }
+
+  &:active {
+    border-color: $site-bg-color-dark;
+  }
 
   @media (min-width: $tablet-width) {
     height: 70px;
@@ -359,33 +372,22 @@
   border: none;
   cursor: pointer;
 
-  &--decrease::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 15px;
-    width: 14px;
-    border: 1px solid $hdr-menu-close-button-color;
-
-    @media (min-width: $tablet-width) {
-      left: 24px;
-      width: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 19px;
-      width: 20px;
-    }
-  }
-
   &--increase {
+    &:hover {
+      &::before,
+      &::after {
+        background-color: red;
+      }
+    }
+
     &::before {
       content: "";
       display: block;
       position: absolute;
       left: 15px;
       width: 14px;
-      border: 1px solid $hdr-menu-close-button-color;
+      height: 2px;
+      background-color: $hdr-menu-close-button-color;
 
       @media (min-width: $tablet-width) {
         left: 0;
@@ -404,7 +406,8 @@
       position: absolute;
       left: 14px;
       width: 14px;
-      border: 1px solid $hdr-menu-close-button-color;
+      height: 2px;
+      background-color: $hdr-menu-close-button-color;
       transform: rotate(90deg);
 
       @media (min-width: $tablet-width) {
@@ -414,6 +417,34 @@
 
       @media (min-width: $desktop-width) {
         left: 4px;
+        width: 20px;
+      }
+    }
+  }
+
+  &--decrease {
+    &:hover {
+      &::before {
+        background-color: red;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 15px;
+      width: 14px;
+      height: 2px;
+      background-color: $hdr-menu-close-button-color;
+
+      @media (min-width: $tablet-width) {
+        left: 24px;
+        width: 20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 19px;
         width: 20px;
       }
     }
@@ -478,6 +509,21 @@
 }
 
 .add-plan__having-children-label {
+  cursor: pointer;
+
+  &:hover {
+    &::after {
+      border-color: $controls-border-hover-color;
+    }
+  }
+
+  &:active {
+    &::after {
+      border-color: $input-border-color;
+      background-color: $input-border-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 19px;
   }
@@ -506,7 +552,13 @@
   position: absolute;
 
   &:checked + .add-plan__having-children-label::after {
-    background: url("../img/icons/check-mark_icon.svg") no-repeat center;
+    background: url("../img/icons/check-mark_icon.svg") no-repeat center transparent;
+  }
+
+  &:checked + .add-plan__having-children-label:active::after {
+    background-color: $controls-border-hover-color;
+    border-color: $controls-border-hover-color;
+    opacity: 0.5;
   }
 }
 
@@ -525,64 +577,43 @@
 .add-plan__mounth {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 44px;
   margin: 0 0 11px 0;
   border-top: 1px solid $add-plan-mounth-border;
   border-bottom: 1px solid $add-plan-mounth-border;
 
-  &::before {
-    content: "";
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: -2px;
-    width: 18px;
-    height: 100%;
-    background: url("../img/icons/next-mounth-button_icon.svg") no-repeat center;
-    transform: rotate(180deg);
-    opacity: 0.3;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      left: 20px;
-      transform: rotate(180deg) scale(1.9);
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 3px;
-      transform: rotate(180deg) scale(1.6);
-    }
-  }
-
-  &::after {
-    content: "";
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    right: -2px;
-    width: 18px;
-    height: 100%;
-    background: url("../img/icons/next-mounth-button_icon.svg") no-repeat center;
-    opacity: 0.3;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      right: 20px;
-      transform: scale(1.9);
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 0;
-      transform: scale(1.6);
-    }
-  }
-
   @media (min-width: $tablet-width) {
     height: 87px;
     margin: 0 0 30px 0;
+  }
+}
+
+.add-plan__mounth-button {
+  width: 40px;
+  height: 100%;
+  border: 0;
+  background-image: url("../img/icons/next-mounth-button_icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 94%;
+  background-position-y: 50%;
+  background-color: transparent;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--previous {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: 20px 35px;
+    background-position-x: 10%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 20px 30px;
+    background-position-x: 100%;
   }
 }
 
@@ -628,6 +659,7 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
+    max-width: 100%;
     margin-bottom: 11px;
   }
 }
@@ -669,6 +701,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $button-text-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;

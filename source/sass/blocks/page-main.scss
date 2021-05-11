@@ -37,6 +37,10 @@
       display: none;
     }
 
+    &--form {
+      padding: 135px 0 65px 36px;
+    }
+
     &--catalog {
       border-radius: 0;
       background-color: $countries-filter-bg;
@@ -147,8 +151,8 @@
 }
 
 .page-main__profile-user-card {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: max-content max-content;
   justify-content: space-between;
   width: 100%;
   padding: 20px 18px 0 16px;
@@ -163,5 +167,10 @@
     right: 121px;
     width: fit-content;
     z-index: 10;
+
+    .card-user__avatar {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
   }
 }

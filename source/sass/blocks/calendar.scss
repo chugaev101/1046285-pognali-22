@@ -84,6 +84,11 @@
   vertical-align: middle;
   color: $button-text-color;
 
+  &:hover {
+    outline: 2px solid $calendar-red;
+    outline-offset: -1px;
+  }
+
   &--disabled {
     background-color: transparent;
     pointer-events: none;
@@ -136,10 +141,6 @@
         color: #ffffff;
       }
     }
-  }
-
-  &--hover {
-    border: 2px solid $calendar-red;
   }
 
   @media (min-width: $tablet-width) {

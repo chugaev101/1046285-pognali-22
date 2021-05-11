@@ -123,29 +123,22 @@
 .fellow-travelers__card-user {
   margin-bottom: 8px;
 
-  @media (min-width: 605px) {
+  @media (min-width: 605px) and (max-width: $desktop-width) {
     &:not(:last-of-type) {
-      margin-right: 2%;
+      margin-right: 7%;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
-
-    &:not(:last-of-type) {
-      margin-right: 50px;
-
-      @media (min-width: $desktop-width) {
-        margin-right: 15px;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / 3;
-    // justify-self: end;
+    justify-self: end;
     margin-top: 4px;
-    margin-left: 29px;
+    margin-right: 20px;
+    // margin-left: 29px;
   }
 }
 
@@ -158,7 +151,8 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 616px;
+    width: 89%;
+    max-width: 800px;
     height: 80px;
     margin: 81px 0 0 0;
     padding: 1px 32px 0 32px;
