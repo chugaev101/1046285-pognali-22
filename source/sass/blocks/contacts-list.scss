@@ -8,6 +8,24 @@
   line-height: 18px;
   color: $dark-text;
 
+  &--in-feedback {
+    color: $button-color-basic;
+
+    .contacts-list__item {
+      &:hover {
+        color: $button-color-dark;
+
+        .contacts-list__icon-color {
+          fill: $button-color-dark;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 28px;
@@ -22,10 +40,10 @@
   @media (min-width: $desktop-width) {
     margin-right: 55px;
   }
-}
 
-.contacts-list__item--email {
-  text-transform: uppercase;
+  &--email {
+    text-transform: uppercase;
+  }
 }
 
 .contacts-list__text {

@@ -138,6 +138,38 @@
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  outline: none;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  &--error {
+    &::placeholder {
+      color: #ff0000;
+    }
+  }
+
+  &:hover {
+    background-color: $site-bg-color-light;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  &:focus {
+    appearance: none;
+    display: block;
+    background-color: $site-bg-color;
+    border: 4px solid #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    color: #ffffff;
+  }
 
   &::placeholder {
     font-weight: bold;
@@ -203,8 +235,6 @@
 .feedback__contacts-list {
   position: relative;
   margin: 15px 0 0 0;
-
-  color: $button-color-basic;
 
   @media (min-width: $tablet-width) {
     width: 100%;

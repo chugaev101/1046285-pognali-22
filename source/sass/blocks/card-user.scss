@@ -1,5 +1,4 @@
 .card-user {
-  overflow: hidden;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -10,6 +9,11 @@
   border-radius: 10px;
   background-color: #ffffff;
 
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+    transform: scale(1.01);
+  }
+
   @media (min-width: $tablet-width) {
     width: 285px;
     height: 483px;
@@ -17,7 +21,6 @@
   }
 
   &--in-form {
-    display: block;
     overflow: visible;
     padding: 0;
     border-radius: 0;
@@ -38,6 +41,8 @@
     }
 
     .card-user__avatar {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -57,6 +62,8 @@
     }
 
     .card-user__lvl {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
       width: 100px;
       height: 100px;
       background-color: transparent;
@@ -665,10 +672,7 @@
 }
 
 .card-user__title {
-  position: relative;
   order: 3;
-  display: flex;
-  align-items: center;
   margin: 6px 0 0 0;
 
   font-size: 21px;
@@ -678,6 +682,20 @@
     margin: 12px 0 0 0;
 
     font-size: 24px;
+  }
+}
+
+.card-user__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -707,9 +725,13 @@
   overflow: hidden;
   width: 100%;
   height: 270px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 
   @media (min-width: $tablet-width) {
     height: 285px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
 }
 
@@ -765,15 +787,72 @@
   color: $site-bg-color;
 
   @media (min-width: $tablet-width) {
-    margin: -13px 0 2px 0;
+    margin: -13px 0 7px 0;
   }
 }
 
 .card-user__countries-plan-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+
   &:not(:last-of-type) {
     margin-right: 20px;
   }
+
+  &:hover {
+    .card-user__countries-plan-tooltip {
+      overflow: visible;
+      width: max-content;
+      height: 56px;
+      padding: 18px 25px;
+      opacity: 1;
+    }
+  }
 }
+
+.card-user__countries-plan-tooltip {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 35px;
+  height: 0;
+  padding: 0;
+  background-color: $chosen-ways-of-transport-color;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.card-user__countries-plan-tooltip-text {
+  position: relative;
+  width: max-content;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: initial;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -31px;
+    left: 44%;
+
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-color: $chosen-ways-of-transport-color;
+  }
+}
+
 
 .card-user__countries-plan-flag {
   width: 35px;
@@ -799,6 +878,7 @@
 }
 
 .card-user__ways-of-travel-item {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -807,6 +887,57 @@
 
   &:first-child {
     padding-right: 3px;
+  }
+
+  &:hover {
+    .card-user__ways-of-travel-tooltip {
+      overflow: visible;
+      height: 56px;
+      padding: 18px 25px;
+      opacity: 1;
+    }
+  }
+
+  &--chosen {
+    .card-user__ways-of-travel-icon {
+      opacity: 1;
+    }
+  }
+}
+
+.card-user__ways-of-travel-icon {
+  opacity: 0.15;
+}
+
+.card-user__ways-of-travel-tooltip {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 35px;
+  height: 0;
+  padding: 0;
+  background-color: $chosen-ways-of-transport-color;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.card-user__ways-of-travel-tooltip-text {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -31px;
+    left: 44%;
+
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-color: $chosen-ways-of-transport-color;
   }
 }
 

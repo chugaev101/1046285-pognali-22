@@ -31,6 +31,15 @@
   border: 1px solid $input-border-color;
   border-radius: 10px;
 
+  &:hover:not(.user-settings__preferred-transport) {
+    border-color: $input-border-hover-color;
+  }
+
+  &:focus:not(.user-settings__preferred-transport),
+  &:focus-within:not(.user-settings__preferred-transport) {
+    border-color: $site-bg-color-dark;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 0 50px 0;
   }
@@ -40,7 +49,7 @@
   box-sizing: border-box;
   display: block;
   padding: 0 16px;
-  background-color: inherit;
+  background-color: $site-bg-color-light;
 
   font-weight: bold;
   font-size: 16px;
@@ -48,6 +57,12 @@
   text-align: center;
   text-transform: uppercase;
   color: $button-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .user-settings__change-photo-button {
@@ -68,7 +83,16 @@
   text-transform: uppercase;
   color: $site-bg-color;
 
-  span {
+  &:hover {
+    background-color: $button-form-color-hover;
+  }
+
+  &:active {
+    background-color: $form-block-bg;
+    color: rgba($site-bg-color, 0.3);
+  }
+
+  &--hidden-word {
     margin-right: 6px;
   }
 
@@ -95,7 +119,7 @@
 
     letter-spacing: initial;
 
-    span {
+    &--hidden-word {
       display: none;
     }
   }
@@ -147,6 +171,7 @@
   padding: 17px 24px 0 24px;
   background-color: transparent;
   border: none;
+  outline: none;
 
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;

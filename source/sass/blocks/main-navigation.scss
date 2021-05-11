@@ -22,6 +22,15 @@
   text-transform: uppercase;
   color: $dark-text;
 
+  &:hover {
+    color: $button-color-basic;
+  }
+
+  &:active {
+    // color: $button-color-basic;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 71px;

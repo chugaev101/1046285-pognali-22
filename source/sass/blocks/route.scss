@@ -15,6 +15,10 @@
   border: 1px solid $input-border-color;
   border-radius: 4px;
 
+  &:hover {
+    border-color: $controls-border-hover-color;
+  }
+
   &:not(:last-child)::before {
     content: "";
     box-sizing: border-box;
@@ -76,10 +80,22 @@
     .route__button {
       background: transparent;
 
+      &:hover {
+        &::after {
+          opacity: 0.3;
+        }
+      }
+
+      &:active {
+        &::after {
+          opacity: 0.1;
+        }
+      }
+
       &::after {
         background-image: url("../img/icons/add-countrie_icon.svg");
         background-position: 60%;
-        opacity: 1;
+        opacity: 0.2;
 
         @media (min-width: $tablet-width) {
           top: 0;
@@ -191,10 +207,6 @@
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
 
-      &::before {
-        display: none;
-      }
-
       &::after {
         background-image: url("../img/icons/delete-countrie_icon.svg");
         background-position: 23px 16px;
@@ -207,11 +219,19 @@
           background-size: 1em;
           opacity: 0.5;
         }
-      }
-    }
 
-    .route__button-delete {
-      display: none;
+        &:hover {
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        &:active {
+          &::after {
+            opacity: 0.1;
+          }
+        }
+      }
     }
   }
 
@@ -259,8 +279,15 @@
 
   @media (min-width: $tablet-width) {
     top: 67px;
-    right: -205px;
+    right: -204px;
     width: 575px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 67px;
+    right: auto;
+    left: 0;
+    width: 728px;
   }
 
   &--opened {
@@ -278,6 +305,12 @@
   background: linear-gradient(to right, transparent, #ffffff 17%);
   cursor: pointer;
 
+  &:hover {
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
   &::before {
     content: "";
     box-sizing: border-box;
@@ -289,6 +322,7 @@
     height: 8px;
     border: 1px solid $input-border-color;
     border-radius: 50%;
+    pointer-events: none;
     z-index: 2;
   }
 
@@ -345,6 +379,14 @@
     background-color: transparent;
     transform: scale(2.3);
     opacity: 0.4;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {

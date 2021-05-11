@@ -128,7 +128,16 @@
   @media (min-width: $tablet-width) {
     width: 262px;
     height: 346px;
-    margin: 35px 80px 33px 27px;
+    margin: 35px 81.5px 33px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-collapse: separate;
+    border-spacing: 14px;
+    width: 389px;
+    height: 439px;
+    margin: 21px 88px 20px 12px;
+    padding: 0;
   }
 }
 
@@ -138,6 +147,7 @@
   padding: 0;
   background-color: #ffffff;
   border: 1px solid $input-border-color;
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 14px;
@@ -145,6 +155,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $button-text-color;
+
+  &:hover {
+    border-color: $controls-border-hover-color;
+  }
 
   &--chosen {
     background-color: $site-bg-color-light;
@@ -163,6 +177,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 4px;
   }
 }
 
@@ -187,16 +205,12 @@
   width: max-content;
 }
 
-// .select-countrie__letter-wrapper {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 .select-countrie__results-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
   margin: 0 0 0 0;
-  padding: 20px 0 20px 20px;
+  padding: 20px 0 10px 20px;
   background-color: #ffffff;
   border: 1px solid $input-border-color;
   border-top: none;
@@ -214,17 +228,34 @@
     border-right: none;
     border-bottom: none;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .select-countrie__results-item {
-  margin-bottom: 5px;
+  width: 100%;
+  margin-bottom: 4px;
 
   font-size: 16px;
   line-height: 22px;
+  cursor: pointer;
+
+  &:hover {
+    color: $button-text-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
-
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
