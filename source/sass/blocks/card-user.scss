@@ -162,7 +162,7 @@
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px 0 23px 0;
+    padding: 0 0 23px 0;
     border-radius: 20px;
 
     @media (min-width: $tablet-width) {
@@ -185,7 +185,7 @@
       order: 2;
       display: block;
       width: 100px;
-      margin: -27px 0 0 0;
+      margin: -25px 0 0 0;
       padding: 0 30px 0 0;
 
       font-size: 20px;
@@ -197,6 +197,8 @@
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         align-self: start;
+        display: flex;
+        align-items: flex-start;
         width: max-content;
         margin: 0 0 0 29px;
 
@@ -217,13 +219,13 @@
     }
 
     .card-user__online-indicator {
-      top: 7px;
+      top: 8px;
       left: 138px;
 
       @media (min-width: $tablet-width) {
         left: auto;
         top: 10px;
-        right: 0;
+        right: -16%;
       }
 
       @media (min-width: $desktop-width) {
@@ -233,11 +235,10 @@
       }
     }
 
-
     .card-user__avatar {
       width: 70px;
       height: 70px;
-      margin: 0 17px 0 17px;
+      margin: 5px 17px 0 18px;
       border-radius: 50%;
 
       @media (min-width: $tablet-width) {
@@ -288,6 +289,21 @@
       padding: 0 0 0 2px;
       background-color: $countries-filter-bg;
       border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        .card-user__likes-icon-color {
+          opacity: 0.3;
+        }
+      }
+
+      &:active {
+        background-color: transparent;
+
+        .card-user__likes-icon-color {
+          opacity: 0.6;
+        }
+      }
 
       @media (min-width: $tablet-width) {
         transform: scale(1.6);
@@ -295,6 +311,22 @@
 
       &--liked {
         background-color: $like-pressed-bg-color;
+
+        &:hover {
+          background-color: $like-pressed-bg-color-hover;
+
+          .card-user__likes-icon-color {
+            opacity: 1;
+          }
+        }
+
+        &:active {
+          background-color: $like-pressed-bg-color-hover;
+
+          .card-user__likes-icon-color {
+            opacity: 0.6;
+          }
+        }
 
         .card-user__likes-icon-color {
           fill-rule: nonzero;
@@ -314,7 +346,7 @@
 
     .card-user__hashtags {
       order: 3;
-      margin: 0 21px 21px 21px;
+      margin: -10px 21px 21px 21px;
       padding: 0 20px 0 0;
 
       @media (min-width: $tablet-width) {
@@ -393,6 +425,7 @@
 
     .card-user__countries-plan-list {
       flex-direction: column;
+      align-content: flex-start;
       margin-bottom: 7px;
 
       @media (min-width: $tablet-width) {
@@ -412,7 +445,9 @@
 
     .card-user__countries-plan-item {
       display: flex;
+      flex-direction: row;
       align-items: center;
+      justify-content: flex-start;
       margin: 0 0 12px 0;
 
       @media (min-width: $tablet-width) {
@@ -462,7 +497,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      margin: 0 0 21px 0;
+      margin: 0 0 22px 0;
       padding: 0 28px 0 21px;
       border-top: 1.5px solid $site-bg-color-light;
 
@@ -798,9 +833,6 @@
   justify-content: center;
   align-items: center;
 
-  outline: 1px solid red;
-  outline-offset: -1px;
-
   &:not(:last-of-type) {
     margin-right: 20px;
   }
@@ -826,6 +858,7 @@
   background-color: $chosen-ways-of-transport-color;
   border-radius: 4px;
   opacity: 0;
+  z-index: 50;
 }
 
 .card-user__countries-plan-tooltip-text {
@@ -852,7 +885,6 @@
     border-bottom-color: $chosen-ways-of-transport-color;
   }
 }
-
 
 .card-user__countries-plan-flag {
   width: 35px;
