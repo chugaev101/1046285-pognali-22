@@ -10,10 +10,6 @@
   background-color: $button-color-basic;
   z-index: 1;
 
-  &--catalog {
-    background-color: $countries-filter-bg;
-  }
-
   &::before {
     content: "";
     display: block;
@@ -27,9 +23,12 @@
     z-index: -1;
   }
 
+  &--catalog {
+    background-color: $countries-filter-bg;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 125px 0 65px 36px;
-    background-color: $site-bg-color;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
 
@@ -42,8 +41,8 @@
     }
 
     &--catalog {
+      padding: 135px 0 65px 36px;
       border-radius: 0;
-      background-color: $countries-filter-bg;
 
       &::before {
         display: block;
@@ -120,7 +119,7 @@
 
 .page-main__back-to-site-main {
   position: absolute;
-  top: 144px;
+  top: 154px;
   right: 74px;
 
   font-weight: bold;
@@ -128,6 +127,14 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     content: url("../img/icons/back-to-site-main_icon.svg");
