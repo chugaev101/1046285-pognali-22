@@ -1,13 +1,17 @@
 .card-user {
-  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 270px;
-  padding: 0 0 16px 0;
+  padding: 0 0 17px 0;
   border-radius: 10px;
   background-color: #ffffff;
+  z-index: 2;
+
+  &:hover + .card-user {
+    z-index: 1;
+  }
 
   &:hover {
     filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
@@ -708,7 +712,7 @@
 
 .card-user__title {
   order: 3;
-  margin: 6px 0 0 0;
+  margin: 10px 0 0 0;
 
   font-size: 21px;
   color: $button-text-color;
@@ -938,6 +942,7 @@
 }
 
 .card-user__ways-of-travel-icon {
+  fill: $site-bg-color-dark;
   opacity: 0.15;
 }
 
@@ -951,6 +956,7 @@
   background-color: $chosen-ways-of-transport-color;
   border-radius: 4px;
   opacity: 0;
+  z-index: 200;
 }
 
 .card-user__ways-of-travel-tooltip-text {
@@ -993,6 +999,7 @@
   height: 60px;
   background-color: $lvl-bg-color;
   border-radius: 50%;
+  z-index: 100;
 
   font-size: 14px;
   line-height: 0px;

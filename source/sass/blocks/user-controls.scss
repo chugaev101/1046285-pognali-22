@@ -1,6 +1,5 @@
 .user-controls {
   display: flex;
-  margin-left: 1px;
 
   @media (min-width: $tablet-width) {
     width: 188px;
@@ -14,6 +13,10 @@
     width: 288px;
     z-index: 2;
   }
+}
+
+.user-controls__icon {
+  fill: $site-bg-color-dark;
 }
 
 .user-controls__button-phone,
@@ -59,6 +62,7 @@
 }
 
 .user-controls__button-phone {
+  margin-left: 1px;
   background: $button-color-extra-dark;
 
   &:hover {
