@@ -18,6 +18,14 @@
         opacity: 0.3;
       }
     }
+
+    .contacts-list__svg {
+      fill: $button-color-basic;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 
   &--in-feedback {
@@ -35,6 +43,10 @@
       &:active {
         opacity: 0.3;
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
     }
   }
 
@@ -90,4 +102,8 @@
     margin-top: -3px;
     transform: scale(2);
   }
+}
+
+.contacts-list__svg {
+  fill: currentColor;
 }

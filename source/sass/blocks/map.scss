@@ -124,6 +124,8 @@
 }
 
 .map__address-svg {
+  fill: $button-color-basic;
+
   @media (min-width: $tablet-width) {
     transform: scale(1.4);
   }
