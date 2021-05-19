@@ -1,5 +1,4 @@
 .fellow-travelers-parameters {
-  box-sizing: border-box;
   padding: 26px 25px 22px 25px;
   background-color: $button-color-basic;
   border-radius: 20px;
@@ -93,6 +92,12 @@
     }
   }
 
+  &--transport {
+    &:hover {
+      overflow: visible;
+    }
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: flex;
     height: fit-content;
@@ -110,14 +115,6 @@
       margin: -10px 0 0 0;
       padding: 0 0 0 125px;
     }
-
-    // &:last-of-type {
-
-    //   .fellow-travelers-parameters__dropdown-list-title {
-    //     top: 21px;
-    //     letter-spacing: initial;
-    //   }
-    // }
   }
 }
 
