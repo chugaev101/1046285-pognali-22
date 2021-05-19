@@ -1,18 +1,21 @@
 .page-header {
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   min-height: 74px;
   padding-top: 19px;
   background-color: $site-bg-color-dark;
+  z-index: 500;
 
   @media (min-width: $tablet-width) {
-    min-height: 100px;
+    min-height: 132px;
     padding-top: 38px;
     background-color: $site-bg-color-dark-tablet;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 90px;
     background-color: $site-bg-color-dark;
   }
 
@@ -27,7 +30,8 @@
     }
 
     @media (min-width: $tablet-width) {
-      min-height: 52px;
+      // min-height: 52px;
+      min-height: 90px;
     }
   }
 }
@@ -41,6 +45,20 @@
 }
 
 .page-header__logo {
+  &--dark {
+    display: none;
+  }
+
+  &--after-scroll {
+    .page-header__logo--light {
+      display: none;
+    }
+
+    .page-header__logo--dark {
+      display: inline-block;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
@@ -76,11 +94,10 @@
 }
 
 .page-header__user-controls {
-  position: absolute;
-  top: 457px;
-  z-index: 1;
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     position: static;
     margin: 2px 0 0 0;
   }
@@ -93,6 +110,7 @@
 .page-header__menu-toggle {
   float: right;
   margin-top: 4px;
+  z-index: 300;
 
   @media (min-width: $tablet-width) {
     float: none;
@@ -123,7 +141,7 @@
   padding-top: 25px;
   padding-bottom: 28px;
   background-color: #ffffff;
-  z-index: 20;
+  z-index: 200;
 
   @media (min-width: $tablet-width) {
     min-height: 910px;
@@ -214,26 +232,70 @@
   .page-header__logo {
     display: none;
   }
+
+  .page-header__user-controls {
+    display: none;
+  }
 }
 
 .page-header--after-scroll {
-  padding-top: 24px;
+  isolation: isolate;
+  position: fixed;
+  top: 0;
+  padding-top: 19px;
   background-color: #ffffff;
 
-  .page-header__logo {
-    margin-top: 3px;
-    width: 95px;
-    background: url("../img/logo/site_logo@menu.png") no-repeat center transparent;
-    background-size: contain;
-  }
-
   .menu-toggle {
+    margin-top: 10px;
+
     &::before {
       background: $hdr-menu-close-button-color;
     }
 
     &::after {
       background: $hdr-menu-close-button-color;
+    }
+  }
+
+  .page-header__logo {
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  .page-header__menu {
+    position: fixed;
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+
+    .page-header__logo {
+      margin-top: 4px;
+    }
+
+    .page-header__user-controls {
+      margin-top: 5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+
+    .page-header__logo {
+      margin-top: 0;
+
+      &::after {
+        background-color: $site-bg-color;
+      }
+    }
+
+    .page-header__main-navigation {
+      position: absolute;
+      top: 13px;
+      left: 405px;
+
+      color: $site-bg-color;
     }
   }
 }

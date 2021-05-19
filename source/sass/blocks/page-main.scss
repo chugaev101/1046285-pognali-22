@@ -24,7 +24,9 @@
   }
 
   &--form {
-    background-color: $site-bg-color;
+    @media (min-width: $tablet-width) {
+      background-color: $site-bg-color;
+    }
   }
 
   &--catalog {
