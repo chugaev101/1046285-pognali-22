@@ -110,6 +110,7 @@
 }
 
 .preferred-transport__icon {
+  fill: $button-text-color;
   opacity: 0.15;
 
   @media (min-width: $tablet-width) {

@@ -126,6 +126,8 @@
 .goals-to-countrie__selected-countrie-input-container {
   overflow: hidden;
   position: relative;
+  width: 100%;
+  height: 220px;
   margin: 14px 0 25px 0;
   border: 1px solid $input-border-color;
   border-radius: 5px;
@@ -146,12 +148,17 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 93%;
     height: 142px;
     margin: 38px 0 49px 0;
 
     &:last-child {
       margin: 38px 0 48px 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 73.5%;
   }
 
   &--error {
