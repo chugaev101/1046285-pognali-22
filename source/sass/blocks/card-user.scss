@@ -588,7 +588,27 @@
     }
 
     .card-user__ways-of-travel-icon {
+      fill: $site-bg-color;
       transform: scale(0.8);
+    }
+
+    .card-user__ways-of-travel-tooltip {
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        top: auto;
+        right: 35px;
+      }
+    }
+
+    .card-user__ways-of-travel-tooltip-text {
+      &::before {
+        @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+          top: auto;
+          right: -38px;
+          bottom: 0;
+          left: auto;
+          transform: rotate(90deg);
+        }
+      }
     }
 
     .card-user__lvl-container {
