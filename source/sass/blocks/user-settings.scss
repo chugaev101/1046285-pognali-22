@@ -189,6 +189,8 @@
 }
 
 .user-settings__preferred-transport {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     order: 1;
     width: 308px;
