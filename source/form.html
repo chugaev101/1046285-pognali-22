@@ -13,13 +13,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--form">
+    <header class="page-header page-header--form page-header--no-script">
       <div class="wrapper page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <picture>
+          <picture  class="page-header__logo--light">
             <source media="(min-width: 1440px)" srcset="img/logo/site-desktop_logo.svg">
             <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo.svg">
             <img class="page-header__logo-image" src="img/logo/site-mobile_logo.svg" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
+          </picture>
+          <picture  class="page-header__logo--dark">
+            <source media="(min-width: 1440px)" srcset="img/logo/site-desktop_logo@dark.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo@dark.svg">
+            <img class="page-header__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
           </picture>
         </a>
         <button class="page-header__menu-toggle menu-toggle" type="button">
@@ -55,9 +60,6 @@
               <img class="page-footer__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
             </picture>
           </a>
-          <button class="page-header__menu-toggle page-header__menu-toggle--closed menu-toggle menu-toggle--closed" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
           <nav class="page-header__main-navigation main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__list-item"><a href="#">О сервисе</a></li>
@@ -508,5 +510,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

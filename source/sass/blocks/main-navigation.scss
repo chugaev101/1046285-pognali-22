@@ -1,3 +1,16 @@
+.main-navigation {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark-text;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-text-invert-color;
+  }
+}
+
 .main-navigation__list {
   list-style-type: none;
   margin: 0;
@@ -15,19 +28,11 @@
 }
 
 .main-navigation__list-item {
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 35px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $dark-text;
-
   &:hover {
     color: $button-color-basic;
   }
 
   &:active {
-    // color: $button-color-basic;
     opacity: 0.3;
   }
 
@@ -42,7 +47,6 @@
 
     font-size: 20px;
     line-height: 20px;
-    color: $basic-text-invert-color;
   }
 }
 

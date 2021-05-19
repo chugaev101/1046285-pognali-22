@@ -152,8 +152,19 @@
   font-size: 24px;
   line-height: 24px;
 
+  &::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    opacity: 0.3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: error;
+  }
+
   &--error {
     &::placeholder {
+      opacity: 1;
       color: #ff0000;
     }
   }
@@ -175,13 +186,6 @@
     border-bottom-left-radius: 20px;
 
     color: #ffffff;
-  }
-
-  &::placeholder {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
