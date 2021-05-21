@@ -157,7 +157,9 @@
   color: $button-text-color;
 
   &:hover {
+    position: relative;
     border-color: $controls-border-hover-color;
+    z-index: 20;
   }
 
   &--chosen {

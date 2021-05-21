@@ -28,29 +28,11 @@
   @media (min-width: $desktop-width) {
     min-height: 650px;
     padding: 100px 0 0 0;
+
+    &--no-script {
+      padding: 0;
+    }
   }
-
-  // &--after-scroll {
-  //   padding-top: 90px;
-
-  //   .promo__bg {
-  //     &::before {
-  //       top: 472px;
-  //     }
-  //   }
-
-  //   .promo__user-controls {
-  //     top: 452px;
-  //   }
-
-  //   @media (min-width: $tablet-width) {
-  //     padding-top: 121px;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     padding-top: 100px;
-  //   }
-  // }
 }
 
 .promo__bg {

@@ -28,11 +28,6 @@
         display: none;
       }
     }
-
-    @media (min-width: $tablet-width) {
-      // min-height: 52px;
-      min-height: 90px;
-    }
   }
 }
 
@@ -218,23 +213,27 @@
 }
 
 .page-header--no-script {
-  padding-top: 0;
+  position: static;
 
-  .page-header__menu-toggle {
-    display: none;
-  }
+  @media (max-width: $desktop-width) {
+    padding-top: 0;
 
-  .page-header__menu {
-    display: block;
-    position: static;
-  }
+    .page-header__menu-toggle {
+      display: none;
+    }
 
-  .page-header__logo {
-    display: none;
-  }
+    .page-header__menu {
+      display: block;
+      position: static;
+    }
 
-  .page-header__user-controls {
-    display: none;
+    .page-header__logo {
+      display: none;
+    }
+
+    .page-header__user-controls {
+      display: none;
+    }
   }
 }
 

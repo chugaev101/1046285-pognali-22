@@ -54,7 +54,7 @@
       </div>
       <div class="page-header__menu page-header__menu">
         <div class="wrapper">
-          <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»">
+          <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»" href="index.html">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo@dark.svg">
               <img class="page-footer__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
@@ -122,7 +122,7 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__title-container page-main__title-container--form">
+      <div class="page-main__title-container page-main__title-container--no-script page-main__title-container--form">
         <div class="wrapper">
           <h1 class="page-main__title">Направления</h1>
         </div>
@@ -225,19 +225,19 @@
             </ol>
           </div>
         </section>
-        <div class="profile-form__add-plan add-plan">
+        <div class="profile-form__add-plan add-plan add-plan--no-script">
           <div class="wrapper">
             <div class="add-plan__header">
               <h2 class="add-plan__title">Добавить план:</h2>
               <div class="add-plan__pagination">
                 <ol class="add-plan__pagination-list">
-                  <li class="add-plan__pagination-item--current add-plan__pagination-item"></li>
+                  <li class="add-plan__pagination-item add-plan__pagination-item--current"></li>
                   <li class="add-plan__pagination-item"></li>
                   <li class="add-plan__pagination-item"></li>
                 </ol>
               </div>
             </div>
-            <fieldset class="add-plan__step">
+            <fieldset class="add-plan__step add-plan__step--current" id="step-1">
               <legend class="add-plan__step-title">Шаг 1. <br class="add-plan__step-title-br">Даты пребывания</legend>
               <p class="add-plan__description">Укажите предпочтительное количество попутчиков, которых<br>вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
               <label class="add-plan__fellow-travelers">
@@ -338,10 +338,9 @@
                   </div>
                 </div>
               </div>
-              <a class="add-plan__button-mobile button button--no-pointer" href="#">Следующий шаг</a>
-              <a class="add-plan__button button" href="#">Следующий шаг</a>
+              <a class="add-plan__button button" href="#step-2">Следующий шаг</a>
             </fieldset>
-            <fieldset class="add-plan__step">
+            <fieldset class="add-plan__step" id="step-2">
               <legend class="add-plan__step-title">Шаг 2. <br class="add-plan__step-title-br">Маршрут</legend>
               <p class="add-plan__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
               <div class="add-plan__route route">
@@ -363,7 +362,7 @@
                     </svg>
                   </button>
                 </div>
-                <div class="route__countrie route__countrie--select">
+                <div class="route__countrie route__countrie--pressed route__countrie--select">
                   <p class="route__text">Выберите страну</p>
                   <div class="route__button"></div>
                   <button class="route__button-delete" type="button" aria-label="удалить">
@@ -371,7 +370,7 @@
                       <use xlink:href="img/icons/sprite.svg#delete"></use>
                     </svg>
                   </button>
-                  <div class="route__select-countrie select-countrie">
+                  <div class="route__select-countrie route__select-countrie--opened select-countrie">
                     <table class="select-countrie__alphabet">
                       <tr>
                         <td class="select-countrie__letter select-countrie__letter--chosen">а</td>
@@ -434,11 +433,10 @@
                   </button>
                 </div>
               </div>
-              <a class="add-plan__button-mobile button button--no-pointer" href="#">Следующий шаг</a>
-              <a class="add-plan__button button" href="#">Следующий шаг</a>
-              <a class="add-plan__previous-step-button" href="#">На шаг назад</a>
+              <a class="add-plan__button button" href="#step-3">Следующий шаг</a>
+              <a class="add-plan__previous-step-button" href="#step-1">На шаг назад</a>
             </fieldset>
-            <fieldset class="add-plan__step">
+            <fieldset class="add-plan__step" id="step-3">
               <legend class="add-plan__step-title">Шаг 3. <br class="add-plan__step-title-br">Развлечения</legend>
               <p class="add-plan__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <div class="add-plan__goals-to-countrie goals-to-countrie">
@@ -457,9 +455,8 @@
                   </div>
                 </div>
               </div>
-              <button class="add-plan__button-mobile button button--no-pointer" type="submit">Отправить</button>
               <button class="add-plan__button button" type="submit">Отправить</button>
-              <a class="add-plan__previous-step-button" href="#">На шаг назад</a>
+              <a class="add-plan__previous-step-button" href="#step-2">На шаг назад</a>
             </fieldset>
           </div>
         </div>
