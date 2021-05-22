@@ -383,6 +383,9 @@
 
 .add-plan__fellow-travelers-button {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 43px;
   height: 100%;
   background-color: transparent;

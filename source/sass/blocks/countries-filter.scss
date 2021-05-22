@@ -416,3 +416,18 @@
     }
   }
 }
+
+.countries-filter--no-script {
+  .countries-filter__select {
+    position: static;
+    height: fit-content;
+  }
+
+  .countries-filter__button {
+    display: none;
+  }
+
+  .countries-filter__button-roll-up {
+    display: none;
+  }
+}

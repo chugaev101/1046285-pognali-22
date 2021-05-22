@@ -10,12 +10,12 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header page-header--catalog page-header--no-script">
       <div class="wrapper page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture  class="page-header__logo--light">
             <source media="(min-width: 1440px)" srcset="img/logo/site-desktop_logo.svg">
             <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo.svg">
@@ -54,7 +54,7 @@
       </div>
       <div class="page-header__menu page-header__menu">
         <div class="wrapper">
-          <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»">
+          <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»" href="index.html">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo@dark.svg">
               <img class="page-footer__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
@@ -131,13 +131,14 @@
       <section class="fellow-travelers-search">
         <h2 class="visually-hidden">Форма подбора попутчиков по параметрам</h2>
         <form class="fellow-travelers-search__form" action="https://echo.htmlacademy.ru" method="get">
-          <section class="fellow-travelers-search__countries-filter countries-filter">
+          <section class="fellow-travelers-search__countries-filter countries-filter countries-filter--no-script">
             <div class="wrapper">
             <header class="countries-filter__header">
                 <h3 class="countries-filter__title">Фильтрация по странам:</h3>
                 <button class="countries-filter__button countries-filter__button" type="button"><span class="countries-filter__button-icon countries-filter__button-icon"></span></button>
               </header>
             </div>
+            <!-- ФИЛЬТРАЦИЯ ПО СТРАНАМ -->
             <div class="countries-filter__select countries-filter__select">
               <div class="countries-filter__continents-wrapper wrapper">
                 <fieldset class="countries-filter__continents">
@@ -176,77 +177,77 @@
                     <td class="select-countrie__letter select-countrie__letter--chosen">
                       <span class="select-countrie__title">а</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Австралия</li>
-                        <li class="select-countrie__item">Австрия</li>
-                        <li class="select-countrie__item">Азербайджан</li>
-                        <li class="select-countrie__item">Албания</li>
-                        <li class="select-countrie__item">Алжир</li>
-                        <li class="select-countrie__item">Ангола</li>
-                        <li class="select-countrie__item">Андорра</li>
-                        <li class="select-countrie__item">Антигуа и Барбуда</li>
-                        <li class="select-countrie__item">Аргентина</li>
-                        <li class="select-countrie__item">Армения</li>
-                        <li class="select-countrie__item">Афганистан</li>
+                        <li class="select-countrie__item"><a href="#">Австралия</a></li>
+                        <li class="select-countrie__item"><a href="#">Австрия</a></li>
+                        <li class="select-countrie__item"><a href="#">Азербайджан</a></li>
+                        <li class="select-countrie__item"><a href="#">Албания</a></li>
+                        <li class="select-countrie__item"><a href="#">Алжир</a></li>
+                        <li class="select-countrie__item"><a href="#">Ангола</a></li>
+                        <li class="select-countrie__item"><a href="#">Андорра</a></li>
+                        <li class="select-countrie__item"><a href="#">Антигуа</a> и Барбуда</li>
+                        <li class="select-countrie__item"><a href="#">Аргентина</a></li>
+                        <li class="select-countrie__item"><a href="#">Армения</a></li>
+                        <li class="select-countrie__item"><a href="#">Афганистан</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">б</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Багамские Острова</li>
-                        <li class="select-countrie__item">Бангладеш</li>
-                        <li class="select-countrie__item">Барбадос</li>
-                        <li class="select-countrie__item">Бахрейн</li>
-                        <li class="select-countrie__item">Белоруссия</li>
-                        <li class="select-countrie__item">Белиз</li>
-                        <li class="select-countrie__item">Бельгия</li>
-                        <li class="select-countrie__item">Бенин</li>
-                        <li class="select-countrie__item">Болгария</li>
-                        <li class="select-countrie__item">Боливия</li>
-                        <li class="select-countrie__item">Босния и Герцеговина</li>
-                        <li class="select-countrie__item">Ботсвана</li>
-                        <li class="select-countrie__item">Бразилия</li>
-                        <li class="select-countrie__item">Бруней</li>
-                        <li class="select-countrie__item">Буркина-Фасо</li>
-                        <li class="select-countrie__item">Бурунди</li>
-                        <li class="select-countrie__item">Бутан</li>
+                        <li class="select-countrie__item"><a href="#">Багамские Острова</a></li>
+                        <li class="select-countrie__item"><a href="#">Бангладеш</a></li>
+                        <li class="select-countrie__item"><a href="#">Барбадос</a></li>
+                        <li class="select-countrie__item"><a href="#">Бахрейн</a></li>
+                        <li class="select-countrie__item"><a href="#">Белоруссия</a></li>
+                        <li class="select-countrie__item"><a href="#">Белиз</a></li>
+                        <li class="select-countrie__item"><a href="#">Бельгия</a></li>
+                        <li class="select-countrie__item"><a href="#">Бенин</a></li>
+                        <li class="select-countrie__item"><a href="#">Болгария</a></li>
+                        <li class="select-countrie__item"><a href="#">Боливия</a></li>
+                        <li class="select-countrie__item"><a href="#">Босния и Герцеговина</a></li>
+                        <li class="select-countrie__item"><a href="#">Ботсвана</a></li>
+                        <li class="select-countrie__item"><a href="#">Бразилия</a></li>
+                        <li class="select-countrie__item"><a href="#">Бруней</a></li>
+                        <li class="select-countrie__item"><a href="#">Буркина-Фасо</a></li>
+                        <li class="select-countrie__item"><a href="#">Бурунди</a></li>
+                        <li class="select-countrie__item"><a href="#">Бутан</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">в</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Вануату</li>
-                        <li class="select-countrie__item">Великобритания</li>
-                        <li class="select-countrie__item">Венгерия</li>
-                        <li class="select-countrie__item">Венесуэла</li>
-                        <li class="select-countrie__item">Восточный Тимор</li>
-                        <li class="select-countrie__item">Вьетнам</li>
+                        <li class="select-countrie__item"><a href="#">Вануату</a></li>
+                        <li class="select-countrie__item"><a href="#">Великобритания</a></li>
+                        <li class="select-countrie__item"><a href="#">Венгерия</a></li>
+                        <li class="select-countrie__item"><a href="#">Венесуэла</a></li>
+                        <li class="select-countrie__item"><a href="#">Восточный</a> Тимор</li>
+                        <li class="select-countrie__item"><a href="#">Вьетнам</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">г</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Габон</li>
-                        <li class="select-countrie__item">Гаити</li>
-                        <li class="select-countrie__item">Гайана</li>
-                        <li class="select-countrie__item">Гамбия</li>
-                        <li class="select-countrie__item">Гана</li>
-                        <li class="select-countrie__item">Гватемала</li>
-                        <li class="select-countrie__item">Гвинея</li>
-                        <li class="select-countrie__item">Гвинея-Бисау</li>
-                        <li class="select-countrie__item">Германия</li>
-                        <li class="select-countrie__item">Гондурас</li>
-                        <li class="select-countrie__item">Гренада</li>
-                        <li class="select-countrie__item">Греция</li>
-                        <li class="select-countrie__item">Грузия</li>
+                        <li class="select-countrie__item"><a href="#">Габон</a></li>
+                        <li class="select-countrie__item"><a href="#">Гаити</a></li>
+                        <li class="select-countrie__item"><a href="#">Гайана</a></li>
+                        <li class="select-countrie__item"><a href="#">Гамбия</a></li>
+                        <li class="select-countrie__item"><a href="#">Гана</a></li>
+                        <li class="select-countrie__item"><a href="#">Гватемала</a></li>
+                        <li class="select-countrie__item"><a href="#">Гвинея</a></li>
+                        <li class="select-countrie__item"><a href="#">Гвинея-Бисау</a></li>
+                        <li class="select-countrie__item"><a href="#">Германия</a></li>
+                        <li class="select-countrie__item"><a href="#">Гондурас</a></li>
+                        <li class="select-countrie__item"><a href="#">Гренада</a></li>
+                        <li class="select-countrie__item"><a href="#">Греция</a></li>
+                        <li class="select-countrie__item"><a href="#">Грузия</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">д</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Дания</li>
-                        <li class="select-countrie__item">Джибути</li>
-                        <li class="select-countrie__item">Доминика</li>
-                        <li class="select-countrie__item">Доминикана</li>
+                        <li class="select-countrie__item"><a href="#">Дания</a></li>
+                        <li class="select-countrie__item"><a href="#">Джибути</a></li>
+                        <li class="select-countrie__item"><a href="#">Доминика</a></li>
+                        <li class="select-countrie__item"><a href="#">Доминикана</a></li>
                       </ul>
                     </td>
                   </tr>
@@ -254,60 +255,60 @@
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">е</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Египет</li>
+                        <li class="select-countrie__item"><a href="#">Египет</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">з</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Замбия</li>
-                        <li class="select-countrie__item">Зимбабве</li>
+                        <li class="select-countrie__item"><a href="#">Замбия</a></li>
+                        <li class="select-countrie__item"><a href="#">Зимбабве</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">и</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Израиль</li>
-                        <li class="select-countrie__item">Индия</li>
-                        <li class="select-countrie__item">Индонезия</li>
-                        <li class="select-countrie__item">Иордания</li>
-                        <li class="select-countrie__item">Ирак</li>
-                        <li class="select-countrie__item">Иран</li>
-                        <li class="select-countrie__item">Ирландия</li>
-                        <li class="select-countrie__item">Исландия</li>
-                        <li class="select-countrie__item">Испания</li>
-                        <li class="select-countrie__item">Италия</li>
+                        <li class="select-countrie__item"><a href="#">Израиль</a></li>
+                        <li class="select-countrie__item"><a href="#">Индия</a></li>
+                        <li class="select-countrie__item"><a href="#">Индонезия</a></li>
+                        <li class="select-countrie__item"><a href="#">Иордания</a></li>
+                        <li class="select-countrie__item"><a href="#">Ирак</a></li>
+                        <li class="select-countrie__item"><a href="#">Иран</a></li>
+                        <li class="select-countrie__item"><a href="#">Ирландия</a></li>
+                        <li class="select-countrie__item"><a href="#">Исландия</a></li>
+                        <li class="select-countrie__item"><a href="#">Испания</a></li>
+                        <li class="select-countrie__item"><a href="#">Италия</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">к</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Кабо-Верде</li>
-                        <li class="select-countrie__item">Казахстан</li>
-                        <li class="select-countrie__item">Камбоджа</li>
-                        <li class="select-countrie__item">Камерун</li>
-                        <li class="select-countrie__item">Канада</li>
-                        <li class="select-countrie__item">Катар</li>
-                        <li class="select-countrie__item">Кения</li>
-                        <li class="select-countrie__item">Кипр</li>
-                        <li class="select-countrie__item">Киргизия</li>
-                        <li class="select-countrie__item">Кирибати</li>
-                        <li class="select-countrie__item">Китай</li>
-                        <li class="select-countrie__item">Колуибия</li>
+                        <li class="select-countrie__item"><a href="#">Кабо-Верде</a></li>
+                        <li class="select-countrie__item"><a href="#">Казахстан</a> </li>
+                        <li class="select-countrie__item"><a href="#">Камбоджа</a> </li>
+                        <li class="select-countrie__item"><a href="#">Камерун</a> </li>
+                        <li class="select-countrie__item"><a href="#">Канада</a> </li>
+                        <li class="select-countrie__item"><a href="#">Катар</a> </li>
+                        <li class="select-countrie__item"><a href="#">Кения</a> </li>
+                        <li class="select-countrie__item"><a href="#">Кипр</a> </li>
+                        <li class="select-countrie__item"><a href="#">Киргизия</a> </li>
+                        <li class="select-countrie__item"><a href="#">Кирибати</a> </li>
+                        <li class="select-countrie__item"><a href="#">Китай</a> </li>
+                        <li class="select-countrie__item"><a href="#">Колуибия</a> </li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">л</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Лаос</li>
-                        <li class="select-countrie__item">Латвия</li>
-                        <li class="select-countrie__item">Лесото</li>
-                        <li class="select-countrie__item">Либерия</li>
-                        <li class="select-countrie__item">Ливан</li>
-                        <li class="select-countrie__item">Ливия</li>
-                        <li class="select-countrie__item">Литва</li>
-                        <li class="select-countrie__item">Лихтенштейн</li>
-                        <li class="select-countrie__item">Люксембург</li>
+                        <li class="select-countrie__item"><a href="#">Лаос</a></li>
+                        <li class="select-countrie__item"><a href="#">Латвия</a></li>
+                        <li class="select-countrie__item"><a href="#">Лесото</a></li>
+                        <li class="select-countrie__item"><a href="#">Либерия</a></li>
+                        <li class="select-countrie__item"><a href="#">Ливан</a></li>
+                        <li class="select-countrie__item"><a href="#">Ливия</a></li>
+                        <li class="select-countrie__item"><a href="#">Литва</a></li>
+                        <li class="select-countrie__item"><a href="#">Лихтенштейн</a></li>
+                        <li class="select-countrie__item"><a href="#">Люксембург</a></li>
                       </ul>
                     </td>
                   </tr>
@@ -315,57 +316,57 @@
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">м</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Маврикий</li>
-                        <li class="select-countrie__item">Мавритания</li>
-                        <li class="select-countrie__item">Мадагаскар</li>
-                        <li class="select-countrie__item">Малави</li>
-                        <li class="select-countrie__item">Малайзия</li>
-                        <li class="select-countrie__item">Мали</li>
-                        <li class="select-countrie__item">Мальдивы</li>
-                        <li class="select-countrie__item">Мальта</li>
-                        <li class="select-countrie__item">Марокко</li>
+                        <li class="select-countrie__item"><a href="#">Маврикий</a></li>
+                        <li class="select-countrie__item"><a href="#">Мавритания</a></li>
+                        <li class="select-countrie__item"><a href="#">Мадагаскар</a></li>
+                        <li class="select-countrie__item"><a href="#">Малави</a></li>
+                        <li class="select-countrie__item"><a href="#">Малайзия</a></li>
+                        <li class="select-countrie__item"><a href="#">Мали</a></li>
+                        <li class="select-countrie__item"><a href="#">Мальдивы</a></li>
+                        <li class="select-countrie__item"><a href="#">Мальта</a></li>
+                        <li class="select-countrie__item"><a href="#">Марокко</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">н</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Намибия</li>
-                        <li class="select-countrie__item">Науру</li>
-                        <li class="select-countrie__item">Непал</li>
-                        <li class="select-countrie__item">Нигер</li>
-                        <li class="select-countrie__item">Нигерия</li>
-                        <li class="select-countrie__item">Нидерланды</li>
-                        <li class="select-countrie__item">Никарагуа</li>
-                        <li class="select-countrie__item">Новая Зеландия</li>
-                        <li class="select-countrie__item">Норвегия</li>
+                        <li class="select-countrie__item"><a href="#">Намибия</a></li>
+                        <li class="select-countrie__item"><a href="#">Науру</a></li>
+                        <li class="select-countrie__item"><a href="#">Непал</a></li>
+                        <li class="select-countrie__item"><a href="#">Нигер</a></li>
+                        <li class="select-countrie__item"><a href="#">Нигерия</a></li>
+                        <li class="select-countrie__item"><a href="#">Нидерланды</a></li>
+                        <li class="select-countrie__item"><a href="#">Никарагуа</a></li>
+                        <li class="select-countrie__item"><a href="#">Новая Зеландия</a></li>
+                        <li class="select-countrie__item"><a href="#">Норвегия</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">о</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">ОАЭ</li>
-                        <li class="select-countrie__item">Оман</li>
+                        <li class="select-countrie__item"><a href="#">ОАЭ</a></li>
+                        <li class="select-countrie__item"><a href="#">Оман</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">п</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Пакистан</li>
-                        <li class="select-countrie__item">Палау</li>
-                        <li class="select-countrie__item">Панама</li>
-                        <li class="select-countrie__item">Папуа-Новая Гвинея</li>
-                        <li class="select-countrie__item">Парагвай</li>
-                        <li class="select-countrie__item">Перу</li>
-                        <li class="select-countrie__item">Польша</li>
-                        <li class="select-countrie__item">Португалия</li>
+                        <li class="select-countrie__item"><a href="#">Пакистан</a> </li>
+                        <li class="select-countrie__item"><a href="#">Палау</a> </li>
+                        <li class="select-countrie__item"><a href="#">Панама</a> </li>
+                        <li class="select-countrie__item"><a href="#">Папуа-Новая Гвинея</a></li>
+                        <li class="select-countrie__item"><a href="#">Парагвай</a> </li>
+                        <li class="select-countrie__item"><a href="#">Перу</a> </li>
+                        <li class="select-countrie__item"><a href="#">Польша</a> </li>
+                        <li class="select-countrie__item"><a href="#">Португалия</a> </li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">р</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Руанда</li>
-                        <li class="select-countrie__item">Румыния</li>
-                        <li class="select-countrie__item">Россия</li>
+                        <li class="select-countrie__item"><a href="#">Руанда</a></li>
+                        <li class="select-countrie__item"><a href="#">Румыния</a></li>
+                        <li class="select-countrie__item"><a href="#">Россия</a></li>
                       </ul>
                     </td>
                   </tr>
@@ -373,57 +374,57 @@
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">с</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Сальвадор</li>
-                        <li class="select-countrie__item">Самоа</li>
-                        <li class="select-countrie__item">Сан-Марино</li>
-                        <li class="select-countrie__item">Саудовская Аравия</li>
-                        <li class="select-countrie__item">Сейшелы</li>
-                        <li class="select-countrie__item">Сенегал</li>
-                        <li class="select-countrie__item">Сербия</li>
-                        <li class="select-countrie__item">Сингапур</li>
-                        <li class="select-countrie__item">Сирия</li>
-                        <li class="select-countrie__item">Словакия</li>
-                        <li class="select-countrie__item">Словения</li>
-                        <li class="select-countrie__item">США</li>
+                        <li class="select-countrie__item"><a href="#">Сальвадор</a> </li>
+                        <li class="select-countrie__item"><a href="#">Самоа</a> </li>
+                        <li class="select-countrie__item"><a href="#">Сан-Марино</a></li>
+                        <li class="select-countrie__item"><a href="#">Саудовская Аравия</a></li>
+                        <li class="select-countrie__item"><a href="#">Сейшелы</a> </li>
+                        <li class="select-countrie__item"><a href="#">Сенегал</a> </li>
+                        <li class="select-countrie__item"><a href="#">Сербия</a> </li>
+                        <li class="select-countrie__item"><a href="#">Сингапур</a> </li>
+                        <li class="select-countrie__item"><a href="#">Сирия</a> </li>
+                        <li class="select-countrie__item"><a href="#">Словакия</a> </li>
+                        <li class="select-countrie__item"><a href="#">Словения</a> </li>
+                        <li class="select-countrie__item"><a href="#">США</a> </li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">т</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Таджикистан</li>
-                        <li class="select-countrie__item">Таиланд</li>
-                        <li class="select-countrie__item">Танзания</li>
-                        <li class="select-countrie__item">Того</li>
-                        <li class="select-countrie__item">Тонга</li>
-                        <li class="select-countrie__item">Тринидад и Тобаго</li>
-                        <li class="select-countrie__item">Тувалу</li>
-                        <li class="select-countrie__item">Тунис</li>
-                        <li class="select-countrie__item">Туркмения</li>
-                        <li class="select-countrie__item">Турция</li>
+                        <li class="select-countrie__item"><a href="#">Таджикистан</a></li>
+                        <li class="select-countrie__item"><a href="#">Таиланд</a></li>
+                        <li class="select-countrie__item"><a href="#">Танзания</a></li>
+                        <li class="select-countrie__item"><a href="#">Того</a></li>
+                        <li class="select-countrie__item"><a href="#">Тонга</a></li>
+                        <li class="select-countrie__item"><a href="#">Тринидад и Тобаго</a></li>
+                        <li class="select-countrie__item"><a href="#">Тувалу</a></li>
+                        <li class="select-countrie__item"><a href="#">Тунис</a></li>
+                        <li class="select-countrie__item"><a href="#">Туркмения</a></li>
+                        <li class="select-countrie__item"><a href="#">Турция</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">у</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Уганда</li>
-                        <li class="select-countrie__item">Узбекистан</li>
-                        <li class="select-countrie__item">Украина</li>
-                        <li class="select-countrie__item">Уругвай</li>
+                        <li class="select-countrie__item"><a href="#">Уганда</a></li>
+                        <li class="select-countrie__item"><a href="#">Узбекистан</a></li>
+                        <li class="select-countrie__item"><a href="#">Украина</a></li>
+                        <li class="select-countrie__item"><a href="#">Уругвай</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">ф</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Фиджи</li>
-                        <li class="select-countrie__item">Филиппины</li>
-                        <li class="select-countrie__item">Финляндия</li>
-                        <li class="select-countrie__item">Франция</li>
+                        <li class="select-countrie__item"><a href="#">Фиджи</a></li>
+                        <li class="select-countrie__item"><a href="#">Филиппины</a></li>
+                        <li class="select-countrie__item"><a href="#">Финляндия</a></li>
+                        <li class="select-countrie__item"><a href="#">Франция</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">х</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Хорватия</li>
+                        <li class="select-countrie__item"><a href="#">Хорватия</a></li>
                       </ul>
                     </td>
                   </tr>
@@ -431,58 +432,58 @@
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">ч</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Чад</li>
-                        <li class="select-countrie__item">Черногория</li>
-                        <li class="select-countrie__item">Чехия</li>
-                        <li class="select-countrie__item">Чили</li>
+                        <li class="select-countrie__item"><a href="#">Чад</a></li>
+                        <li class="select-countrie__item"><a href="#">Черногория</a></li>
+                        <li class="select-countrie__item"><a href="#">Чехия</a></li>
+                        <li class="select-countrie__item"><a href="#">Чили</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">ш</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Швейцария</li>
-                        <li class="select-countrie__item">Швеция</li>
-                        <li class="select-countrie__item">Шри-Ланка</li>
+                        <li class="select-countrie__item"><a href="#">Швейцария</a> </li>
+                        <li class="select-countrie__item"><a href="#">Швеция</a> </li>
+                        <li class="select-countrie__item"><a href="#">Шри-Ланка</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">э</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Эквадор</li>
-                        <li class="select-countrie__item">Эритрея</li>
-                        <li class="select-countrie__item">Эсватини</li>
-                        <li class="select-countrie__item">Эстония</li>
-                        <li class="select-countrie__item">Эфиопия</li>
+                        <li class="select-countrie__item"><a href="#">Эквадор</a></li>
+                        <li class="select-countrie__item"><a href="#">Эритрея</a></li>
+                        <li class="select-countrie__item"><a href="#">Эсватини</a></li>
+                        <li class="select-countrie__item"><a href="#">Эстония</a></li>
+                        <li class="select-countrie__item"><a href="#">Эфиопия</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">ю</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">ЮАР</li>
-                        <li class="select-countrie__item">Южный Судан</li>
+                        <li class="select-countrie__item"><a href="#">ЮАР</a></li>
+                        <li class="select-countrie__item"><a href="#">Южный Судан</a></li>
                       </ul>
                     </td>
                     <td class="select-countrie__letter">
                       <span class="select-countrie__title">я</span>
                       <ul class="select-countrie__list">
-                        <li class="select-countrie__item">Ямайка</li>
-                        <li class="select-countrie__item">Япония</li>
+                        <li class="select-countrie__item"><a href="#">Ямайка</a></li>
+                        <li class="select-countrie__item"><a href="#">Япония</a></li>
                       </ul>
                     </td>
                   </tr>
                 </table>
                 <ul class="select-countrie__results-list">
-                  <li class="select-countrie__results-item">Австралия</li>
-                  <li class="select-countrie__results-item">Австрия</li>
-                  <li class="select-countrie__results-item">Азербайджан</li>
-                  <li class="select-countrie__results-item">Албания</li>
-                  <li class="select-countrie__results-item">Алжир</li>
-                  <li class="select-countrie__results-item">Ангола</li>
-                  <li class="select-countrie__results-item">Андорра</li>
-                  <li class="select-countrie__results-item">Антигуа и Барбуда</li>
-                  <li class="select-countrie__results-item">Аргентина</li>
-                  <li class="select-countrie__results-item">Армения</li>
-                  <li class="select-countrie__results-item">Афганистан</li>
+                  <li class="select-countrie__results-item"><a href="#">Австралия</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Австрия</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Азербайджан</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Албания</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Алжир</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Ангола</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Андорра</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Антигуа и Барбуда</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Аргентина</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Армения</a></li>
+                  <li class="select-countrie__results-item"><a href="#">Афганистан</a></li>
                 </ul>
               </div>
               <footer class="countries-filter__footer">
@@ -498,28 +499,28 @@
               <fieldset class="fellow-travelers-parameters__dropdown-list">
                 <legend class="fellow-travelers-parameters__toggle">
                   <span class="fellow-travelers-parameters__dropdown-list-title">Хобби</span>
-                  <div class="fellow-travelers-parameters__toggle-icon"></div>
+                  <span class="fellow-travelers-parameters__toggle-icon"></span>
                 </legend>
                 <ul class="fellow-travelers-parameters__list">
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Спортзал</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="hobby" value="hobby-1">
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Кальян</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="hobby" value="hobby-2">
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Диван</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="hobby" value="hobby-3">
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                 </ul>
@@ -527,28 +528,28 @@
               <fieldset class="fellow-travelers-parameters__dropdown-list fellow-travelers-parameters__dropdown-list--shown">
                 <legend class="fellow-travelers-parameters__toggle">
                   <span class="fellow-travelers-parameters__dropdown-list-title">Музыка</span>
-                  <div class="fellow-travelers-parameters__toggle-icon"></div>
+                  <span class="fellow-travelers-parameters__toggle-icon"></span>
                 </legend>
                 <ul class="fellow-travelers-parameters__list">
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Тяжелый рок</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="musical-preferences" value="hard-rock" checked>
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Русский рэп</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="musical-preferences" value="russian-rap" checked>
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Евроденс</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="musical-preferences" value="eurodance">
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                 </ul>
@@ -556,28 +557,28 @@
               <fieldset class="fellow-travelers-parameters__dropdown-list">
                 <legend class="fellow-travelers-parameters__toggle">
                   <span class="fellow-travelers-parameters__dropdown-list-title">Еда</span>
-                  <div class="fellow-travelers-parameters__toggle-icon"></div>
+                  <span class="fellow-travelers-parameters__toggle-icon"></span>
                 </legend>
                 <ul class="fellow-travelers-parameters__list">
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Мясоед</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="food-preferences" value="food-1">
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Сидит на ПП</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="food-preferences" value="food-2">
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                   <li class="fellow-travelers-parameters__item">
                     <label class="fellow-travelers-parameters__label">
                       <span class="fellow-travelers-parameters__label-text">Веган-сыроед</span>
                       <input class="fellow-travelers-parameters__input" type="checkbox" name="food-preferences" value="food-3">
-                      <div class="fellow-travelers-parameters__checkbox"></div>
+                      <span class="fellow-travelers-parameters__checkbox"></span>
                     </label>
                   </li>
                 </ul>
@@ -585,32 +586,32 @@
               <fieldset class="fellow-travelers-parameters__dropdown-list fellow-travelers-parameters__dropdown-list--transport fellow-travelers-parameters__dropdown-list--shown">
                 <legend class="fellow-travelers-parameters__toggle">
                   <span class="fellow-travelers-parameters__dropdown-list-title">Транспорт</span>
-                  <div class="fellow-travelers-parameters__toggle-icon"></div>
+                  <span class="fellow-travelers-parameters__toggle-icon"></span>
                 </legend>
                 <div class=" preferred-transport preferred-transport--in-search-form">
                   <label class="preferred-transport__label">
-                    <div class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Авиаперелет</span></div>
+                    <span class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Авиаперелет</span></span>
                     <input class="preferred-transport__input" value="airplane" type="checkbox" name="transport" checked>
                     <svg class="preferred-transport__icon" width="14" height="16">
                       <use xlink:href="img/icons/sprite.svg#airplane"></use>
                     </svg>
                   </label>
                   <label class="preferred-transport__label">
-                    <div class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Автотранспорт</span></div>
-                    <input class="preferred-transport__input" value="autostop" type="checkbox" name="transport" che>
+                    <span class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Автотранспорт</span></span>
+                    <input class="preferred-transport__input" value="autostop" type="checkbox" name="transport" checked>
                     <svg class="preferred-transport__icon" width="18" height="17">
                       <use xlink:href="img/icons/sprite.svg#buss"></use>
                     </svg>
                   </label>
                   <label class="preferred-transport__label">
-                    <div class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Велосипед</span></div>
+                    <span class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Велосипед</span></span>
                     <input class="preferred-transport__input" value="bicycle" type="checkbox" name="transport">
                     <svg class="preferred-transport__icon" width="18" height="17">
                       <use xlink:href="img/icons/sprite.svg#bicycle"></use>
                     </svg>
                   </label>
                   <label class="preferred-transport__label">
-                    <div class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Пешком</span></div>
+                    <span class="preferred-transport__tooltip"><span class="preferred-transport__tooltip-text">Пешком</span></span>
                     <input class="preferred-transport__input" value="hiking" type="checkbox" name="transport" checked>
                     <svg class="preferred-transport__icon" width="18" height="17">
                       <use xlink:href="img/icons/sprite.svg#hike-man"></use>
@@ -621,7 +622,7 @@
               <div class="fellow-travelers-parameters__dropdown-list fellow-travelers-parameters__dropdown-list--lvl fellow-travelers-parameters__dropdown-list--shown">
                 <div class="fellow-travelers-parameters__toggle">
                   <span class="fellow-travelers-parameters__dropdown-list-title">Левел</span>
-                  <div class="fellow-travelers-parameters__toggle-icon"></div>
+                  <span class="fellow-travelers-parameters__toggle-icon"></span>
                 </div>
                 <div class="fellow-travelers-parameters__lvl-range lvl-range">
                   <div class="lvl-range__output">
@@ -660,10 +661,12 @@
                   </a>
                 </h3>
                 <div class="card-user__avatar">
-                  <picture>
-                    <source type="image/webp" srcset="img/avatars/tatiana-firsova.webp 1x, img/avatars/tatiana-firsova@2x.webp 2x">
-                    <img class="card-user__avatar-img" src="img/avatars/tatiana-firsova.jpg" srcset="img/avatars/tatiana-firsova@2x.jpg 2x" width="270" height="270" alt="Татьяна Фирсова">
-                  </picture>
+                  <a href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/avatars/tatiana-firsova.webp 1x, img/avatars/tatiana-firsova@2x.webp 2x">
+                      <img class="card-user__avatar-img" src="img/avatars/tatiana-firsova.jpg" srcset="img/avatars/tatiana-firsova@2x.jpg 2x" width="270" height="270" alt="Татьяна Фирсова">
+                    </picture>
+                  </a>
                 </div>
                 <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -749,10 +752,12 @@
                   </a>
                 </h3>
                 <div class="card-user__avatar">
-                  <picture>
-                    <source type="image/webp" srcset="img/avatars/petr-demin.webp 1x, img/avatars/petr-demin@2x.webp 2x">
-                    <img class="card-user__avatar-img" src="img/avatars/petr-demin.jpg" srcset="img/avatars/petr-demin@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
-                  </picture>
+                  <a href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/avatars/petr-demin.webp 1x, img/avatars/petr-demin@2x.webp 2x">
+                      <img class="card-user__avatar-img" src="img/avatars/petr-demin.jpg" srcset="img/avatars/petr-demin@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
+                    </picture>
+                  </a>
                 </div>
                 <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -834,10 +839,12 @@
                   </a>
                 </h3>
                 <div class="card-user__avatar">
-                  <picture>
-                    <source type="image/webp" srcset="img/avatars/mark-smolov.webp 1x, img/avatars/mark-smolov@2x.webp 2x">
-                    <img class="card-user__avatar-img" src="img/avatars/mark-smolov.jpg" srcset="img/avatars/mark-smolov@2x.jpg 2x" width="270" height="270" alt="Марк Смолов">
-                  </picture>
+                  <a href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/avatars/mark-smolov.webp 1x, img/avatars/mark-smolov@2x.webp 2x">
+                      <img class="card-user__avatar-img" src="img/avatars/mark-smolov.jpg" srcset="img/avatars/mark-smolov@2x.jpg 2x" width="270" height="270" alt="Марк Смолов">
+                    </picture>
+                  </a>
                 </div>
                 <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -923,10 +930,12 @@
                   </a>
                 </h3>
                 <div class="card-user__avatar">
-                  <picture>
-                    <source type="image/webp" srcset="img/avatars/larisa-rogovaya.webp 1x, img/avatars/larisa-rogovaya2x.webp 2x">
-                    <img class="card-user__avatar-img" src="img/avatars/larisa-rogovaya.jpg" srcset="img/avatars/larisa-rogovaya@2x.jpg 2x" width="270" height="270" alt="Лариса Роговая">
-                  </picture>
+                  <a href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/avatars/larisa-rogovaya.webp 1x, img/avatars/larisa-rogovaya2x.webp 2x">
+                      <img class="card-user__avatar-img" src="img/avatars/larisa-rogovaya.jpg" srcset="img/avatars/larisa-rogovaya@2x.jpg 2x" width="270" height="270" alt="Лариса Роговая">
+                    </picture>
+                  </a>
                 </div>
                 <div class="card-user__hashtags">
                 <span class="card-user__hashtags-title visually-hidden">Тэги</span>
@@ -1065,6 +1074,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
