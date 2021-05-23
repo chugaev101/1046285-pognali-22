@@ -134,13 +134,12 @@
     }
 
     &:nth-child(3) {
-      margin: none;
-      margin-left: -37px;
+      margin: 0 0 0 -37px;
     }
 
     &:last-child {
       width: 317px;
-      margin-left: 28px;
+      margin-left: -39px;
       height: 107px;
 
       &::after {

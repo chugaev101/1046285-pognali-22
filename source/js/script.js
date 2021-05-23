@@ -14,6 +14,94 @@ let addPlanPaginationPoints = document.querySelectorAll(".add-plan__pagination-i
 let addPlanSteps = document.querySelectorAll(".add-plan__step");
 let addPlanButtonsForward = document.querySelectorAll(".add-plan__button");
 let addPlanButtonsBack = document.querySelectorAll(".add-plan__previous-step-button");
+let countriesFilter = document.querySelector(".countries-filter");
+let countriesFilterSelect = document.querySelector(".countries-filter__select");
+let countriesFilterButtonOpen = document.querySelector(".countries-filter__button");
+let countriesFilterButtonClose = document.querySelector(".countries-filter__button-roll-up");
+
+// no script deleted
+
+window.onload = function() {
+  header.classList.remove("page-header--no-script");
+
+  if (promoBlock) {
+    promoBlock.classList.remove("promo--no-script");
+  }
+
+  if (headerContainer) {
+    headerContainer.classList.remove("page-main__title-container--no-script");
+  }
+
+  if (addPlan) {
+    addPlan.classList.remove("add-plan--no-script");
+  }
+
+  if (countriesFilter) {
+    countriesFilter.classList.remove("countries-filter--no-script");
+  }
+}
+
+// after scroll
+
+const afterScroll = function(block, modifier) {
+  window.addEventListener("scroll", function() {
+
+    if (pageYOffset > 1) {
+      block.classList.add(modifier);
+    } else {
+      block.classList.remove(modifier);
+    }
+  });
+}
+
+afterScroll(header, "page-header--after-scroll")
+afterScroll(headerLogo, "page-header__logo--after-scroll")
+
+if (promoBlock) {
+  afterScroll(promoBlock, "promo--after-scroll")
+}
+
+// header menu toggle
+
+headerMenuButton.addEventListener("click", function() {
+  headerMenu.classList.toggle("page-header__menu--open");
+  headerMenuButton.classList.toggle("menu-toggle--closed");
+});
+
+// rates modal toggle
+
+if (ratesModal) {
+  ratesButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    ratesModal.classList.add("rates__modal--opened");
+  });
+
+  ratesModalButton.addEventListener("click", function() {
+    ratesModal.classList.remove("rates__modal--opened");
+  });
+}
+
+// input email validation
+
+if (feedbackForm) {
+  feedbackForm.addEventListener("submit", function(evt) {
+    if (!feedbackFormInput.value) {
+      evt.preventDefault();
+
+      let i = 0;
+
+      let error = setInterval(function() {
+        i++;
+
+        feedbackFormInput.classList.toggle("feedback__registration-form-email--error");
+
+        if (i === 6) {
+          clearInterval(error);
+        }
+      }, 200);
+    }
+  });
+}
 
 // plan step toggle
 
@@ -65,79 +153,17 @@ function clickPreviousStep(evt) {
   currentIndex = "";
 }
 
-// no script deleted
+// countries filter dropdown menu
 
-window.onload = function() {
-  header.classList.remove("page-header--no-script");
-  addPlan.classList.remove("add-plan--no-script");
+if (countriesFilter) {
+  countriesFilterButtonOpen.addEventListener("click", function() {
+    console.log("click");
 
-  if (promoBlock) {
-    promoBlock.classList.remove("promo--no-script");
-  }
-
-  if (headerContainer) {
-    headerContainer.classList.remove("page-main__title-container--no-script");
-  }
-}
-
-// after scroll
-
-const afterScroll = function(block, modifier) {
-  window.addEventListener("scroll", function() {
-
-    if (pageYOffset > 0) {
-      block.classList.add(modifier);
-    } else {
-      block.classList.remove(modifierr);
-    }
-  });
-}
-
-afterScroll(header, "page-header--after-scroll")
-afterScroll(headerLogo, "page-header__logo--after-scroll")
-
-if (promoBlock) {
-  afterScroll(promoBlock, "promo--after-scroll")
-}
-
-// header menu toggle
-
-headerMenuButton.addEventListener("click", function() {
-  headerMenu.classList.toggle("page-header__menu--open");
-  headerMenuButton.classList.toggle("menu-toggle--closed");
-});
-
-// rates modal toggle
-
-if (ratesModal) {
-  ratesButton.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    ratesModal.classList.add("rates__modal--opened");
+    countriesFilterButtonOpen.classList.toggle("countries-filter__button--pressed");
+    countriesFilterSelect.classList.toggle("countries-filter__select--opened");
   });
 
-  ratesModalButton.addEventListener("click", function() {
-    ratesModal.classList.remove("rates__modal--opened");
-  });
-}
-
-// input email validation
-
-if (feedbackForm) {
-  feedbackForm.addEventListener("submit", function(evt) {
-    if (!feedbackFormInput.value) {
-      evt.preventDefault();
-
-      let i = 0;
-
-      let error = setInterval(function() {
-        i++;
-
-        feedbackFormInput.classList.toggle("feedback__registration-form-email--error");
-
-        if (i === 6) {
-          clearInterval(error);
-        }
-      }, 200);
-    }
+  countriesFilterButtonClose.addEventListener("click", function() {
+    countriesFilterSelect.classList.remove("countries-filter__select--opened");
   });
 }

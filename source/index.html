@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Погнали?</title>
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header page-header--no-script">
@@ -203,7 +205,7 @@
                   <div class="card-country__image-container">
                     <picture>
                       <source media="(min-width: 768px)" srcset="img/content/thailand-large.png 1x, img/content/thailand-large@2x.png 2x">
-                      <img class="card-country__image" src="img/content/thailand.jpg" srcset="img/content/thailand@2x.jpg 2x" width="270" height="auto" alt="Набережная Таиланда с высоты птичего полета">
+                      <img class="card-country__image" src="img/content/thailand.jpg" srcset="img/content/thailand@2x.jpg 2x" width="270" height="110" alt="Набережная Таиланда с высоты птичего полета">
                     </picture>
                   </div>
                 </a>
@@ -221,7 +223,7 @@
                   <div class="card-country__image-container">
                     <picture>
                       <source media="(min-width: 768px)" srcset="img/content/france-large.png 1x, img/content/france-large@2x.png 2x">
-                      <img class="card-country__image" src="img/content/france.jpg" srcset="img/content/france@2x.jpg 2x" width="270" height="auto" alt="Летняя французская улочка, с деревьями и исторической застройкой.">
+                      <img class="card-country__image" src="img/content/france.jpg" srcset="img/content/france@2x.jpg 2x" width="270" height="110" alt="Летняя французская улочка, с деревьями и исторической застройкой.">
                     </picture>
                   </div>
                 </a>
@@ -239,7 +241,7 @@
                   <div class="card-country__image-container">
                     <picture>
                       <source media="(min-width: 768px)" srcset="img/content/czech-large.png 1x, img/content/czech-large@2x.png 2x">
-                      <img class="card-country__image" src="img/content/czech.jpg" srcset="img/content/czech@2x.jpg 2x" width="270" height="auto" alt="Панорамный вид на чешский канал, с теплоходом, старинным мостом и исторической застройкой.">
+                      <img class="card-country__image" src="img/content/czech.jpg" srcset="img/content/czech@2x.jpg 2x" width="270" height="110" alt="Панорамный вид на чешский канал, с теплоходом, старинным мостом и исторической застройкой.">
                     </picture>
                   </div>
                 </a>
@@ -277,15 +279,15 @@
               <span class="card-user__countries-plan-title visually-hidden">хочет посетить:</span>
               <ul class="card-user__countries-plan-list">
                 <li class="card-user__countries-plan-item">
-                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Шри-ланка</div></span>
+                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Шри-ланка</span></div>
                   <img class="card-user__countries-plan-flag" src="img/flags/sri-lanka.svg" width="35" height="25" alt="Флаг Шри-ланки.">
                 </li>
                 <li class="card-user__countries-plan-item">
-                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Таиланд</div></span>
+                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Таиланд</span></div>
                   <img class="card-user__countries-plan-flag" src="img/flags/thailand.svg" width="35" height="25" alt="Флаг Таиланда.">
                 </li>
                 <li class="card-user__countries-plan-item">
-                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Сейшелы</div></span>
+                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Сейшелы</span></div>
                   <img class="card-user__countries-plan-flag" src="img/flags/seychelles.svg" width="35" height="25" alt="Флаг Сейшел.">
                 </li>
               </ul>
@@ -352,11 +354,11 @@
               <span class="card-user__countries-plan-title visually-hidden">хочет посетить:</span>
               <ul class="card-user__countries-plan-list">
                 <li class="card-user__countries-plan-item">
-                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Бельгия</div></span>
+                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Бельгия</span></div>
                   <img class="card-user__countries-plan-flag" src="img/flags/belgium.svg" width="35" height="25" alt="Флаг Бельгии.">
                 </li>
                 <li class="card-user__countries-plan-item">
-                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Чехия</div></span>
+                  <div class="card-user__countries-plan-tooltip"><span class="card-user__countries-plan-tooltip-text">Чехия</span></div>
                   <img class="card-user__countries-plan-flag" src="img/flags/czech.svg" width="35" height="25" alt="Флаг Чехии.">
                 </li>
               </ul>
@@ -516,7 +518,7 @@
           </div>
         </header>
         <div class="map__iframe-container">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.32085871646749!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617114442398!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.32085871646749!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617114442398!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
@@ -565,6 +567,6 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="js/app.js"></script> -->
+    <script src="js/script.min.js"></script>
   </body>
 </html>
