@@ -4,7 +4,7 @@
   width: 100%;
   padding: 2px 0 0 0;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
   background-color: #ffffff;
   border-radius: 4px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     order: 2;
     width: 148px;
     height: 46px;
@@ -122,7 +122,7 @@
 }
 
 .lvl-range__controls-container {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     width: 57%;
   }
 
@@ -136,7 +136,7 @@
   position: relative;
   width: 100%;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     order: 1;
     margin: 0 0 0 0;
   }
@@ -159,7 +159,7 @@
   margin-left: 31%;
   background: $button-text-color;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     margin: 0 0 0 40%;
   }
 }
@@ -202,7 +202,7 @@
   &--value-lower {
     left: 30.5%;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: 1399px) {
       left: 36.5%;
     }
   }

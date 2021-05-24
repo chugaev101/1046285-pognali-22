@@ -1,5 +1,7 @@
 let header = document.querySelector(".page-header");
 let headerContainer = document.querySelector(".page-main__title-container");
+let headerContainerForm = document.querySelector(".page-main__title-container-form");
+let headerContainerCatalog = document.querySelector(".page-main__title-container-catalog");
 let headerLogo = document.querySelector(".page-header__logo");
 let headerMenu = document.querySelector(".page-header__menu");
 let headerMenuButton = document.querySelector(".page-header__menu-toggle");
@@ -18,6 +20,7 @@ let countriesFilter = document.querySelector(".countries-filter");
 let countriesFilterSelect = document.querySelector(".countries-filter__select");
 let countriesFilterButtonOpen = document.querySelector(".countries-filter__button");
 let countriesFilterButtonClose = document.querySelector(".countries-filter__button-roll-up");
+let fellowTravelersParameters = document.querySelector(".fellow-travelers-parameters");
 
 // no script deleted
 
@@ -28,8 +31,12 @@ window.onload = function() {
     promoBlock.classList.remove("promo--no-script");
   }
 
-  if (headerContainer) {
-    headerContainer.classList.remove("page-main__title-container--no-script");
+  if (headerContainerForm) {
+    headerContainerForm.classList.remove("page-main__title-container-form--no-script");
+  }
+
+  if (headerContainerCatalog) {
+    headerContainerCatalog.classList.remove("page-main__title-container-catalog--no-script");
   }
 
   if (addPlan) {
@@ -38,6 +45,10 @@ window.onload = function() {
 
   if (countriesFilter) {
     countriesFilter.classList.remove("countries-filter--no-script");
+  }
+
+  if (fellowTravelersParameters) {
+    fellowTravelersParameters.classList.remove("fellow-travelers-parameters--no-script");
   }
 }
 
@@ -165,5 +176,6 @@ if (countriesFilter) {
 
   countriesFilterButtonClose.addEventListener("click", function() {
     countriesFilterSelect.classList.remove("countries-filter__select--opened");
+    countriesFilterButtonOpen.classList.remove("countries-filter__button--pressed");
   });
 }

@@ -39,17 +39,17 @@
   }
 }
 
-.page-header__logo {
-  &--dark {
-    display: none;
-  }
+.page-header__logo-dark {
+  display: none;
+}
 
+.page-header__logo {
   &--after-scroll {
-    .page-header__logo--light {
+    .page-header__logo-light {
       display: none;
     }
 
-    .page-header__logo--dark {
+    .page-header__logo-dark {
       display: inline-block;
     }
   }
@@ -215,7 +215,7 @@
 .page-header--no-script {
   position: static;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: 1399px) {
     padding-top: 0;
 
     .page-header__menu-toggle {

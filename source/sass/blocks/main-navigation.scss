@@ -43,10 +43,40 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 1em;
     margin-right: 34px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.main-navigation__link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.main-navigation__link-text {
+  display: inline-block;
+  width: max-content;
+  transition: transform 0.3s;
+  letter-spacing: 0.1rem;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0, 0, 0);
+
+    font-weight: 700;
+    word-spacing: 0.5px;
+    letter-spacing: 0.07rem;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-100%);
   }
 }
 

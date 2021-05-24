@@ -26,7 +26,7 @@
     letter-spacing: initial;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     margin: 0 0 33px 0;
     padding-bottom: 37px;
     border-bottom: 1px solid $dropdown-list-border-color;
@@ -50,7 +50,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     position: absolute;
     left: 0;
     width: fit-content;
@@ -69,7 +69,7 @@
   border: 5px solid transparent;
   border-top-color: $dark-text;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     display: none;
   }
 }
@@ -98,7 +98,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     display: flex;
     height: fit-content;
     align-items: center;
@@ -139,7 +139,7 @@
     line-height: 20px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     // top: 6px;
 
     &::after {
@@ -154,7 +154,7 @@
   margin: 0 0 0 0;
   padding: 6px 0 0 28px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     display: flex;
     width: 100%;
     margin: 0 0 0 126px;
@@ -174,7 +174,7 @@
   font-size: 15px;
   line-height: 20px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     width: 31%;
 
     &:not(:last-child) {
@@ -207,13 +207,13 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     display: flex;
   }
 }
 
 .fellow-travelers-parameters__label-text {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     order: 2;
   }
 }
@@ -239,7 +239,7 @@
   background-color: #ffffff;
   border-radius: 4px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
     order: 1;
     position: static;
     margin-right: 15px;
@@ -257,4 +257,15 @@
 
 .fellow-travelers-parameters__lvl-range {
   margin: 3px 0 20px 0;
+}
+
+.fellow-travelers-parameters--no-script {
+  .fellow-travelers-parameters__dropdown-list {
+    height: fit-content;
+    padding: 0 0 6px 0;
+  }
+
+  .fellow-travelers-parameters__toggle-icon {
+    display: none;
+  }
 }

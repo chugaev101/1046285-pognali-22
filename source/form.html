@@ -19,12 +19,12 @@
     <header class="page-header page-header--form page-header--no-script">
       <div class="wrapper page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <picture  class="page-header__logo--light">
+          <picture  class="page-header__logo-light">
             <source media="(min-width: 1440px)" srcset="img/logo/site-desktop_logo.svg">
             <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo.svg">
             <img class="page-header__logo-image" src="img/logo/site-mobile_logo.svg" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
           </picture>
-          <picture  class="page-header__logo--dark">
+          <picture  class="page-header__logo-dark">
             <source media="(min-width: 1440px)" srcset="img/logo/site-desktop_logo@dark.svg">
             <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo@dark.svg">
             <img class="page-header__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="96" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
@@ -60,18 +60,24 @@
           <a class="page-header__menu-logo" aria-label="Сервис поиска попутчиков для путешествий «Погнали»" href="index.html">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo/site-tablet_logo@dark.svg">
-              <img class="page-footer__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
+              <img class="page-header__logo-image" src="img/logo/site-mobile_logo@dark.svg" width="100" height="15" alt="Сервис поиска попутчиков для путешествий «Погнали»">
             </picture>
           </a>
           <nav class="page-header__main-navigation main-navigation">
             <ul class="main-navigation__list">
-              <li class="main-navigation__list-item"><a href="#">О сервисе</a></li>
-              <li class="main-navigation__list-item"><a href="form.html">Направления</a></li>
-              <li class="main-navigation__list-item"><a href="catalog.html">Попутчики</a></li>
+              <li class="main-navigation__list-item">
+                <a class="main-navigation__link" href="#"><span class="main-navigation__link-text" data-hover="О сервисе">О сервисе</span></a>
+              </li>
+              <li class="main-navigation__list-item">
+                <a class="main-navigation__link" href="form.html"><span class="main-navigation__link-text" data-hover="Направления">Направления</span></a>
+              </li>
+              <li class="main-navigation__list-item">
+                <a class="main-navigation__link" href="catalog.html"><span class="main-navigation__link-text" data-hover="Попутчики">Попутчики</span></a>
+              </li>
             </ul>
             <a class="main-navigation__login-button button button--no-pointer" href="#">Авторизация</a>
           </nav>
-          <ul class="feedback__contacts-list contacts-list contacts-list--in-menu">
+          <ul class="page-header__contacts-list contacts-list contacts-list--in-menu">
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="tel:+78005558628">
                 <span class="visually-hidden">Позвоните нам</span>
@@ -125,7 +131,7 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__title-container page-main__title-container--no-script page-main__title-container--form">
+      <div class="page-main__title-container page-main__title-container-form page-main__title-container-form--no-script">
         <div class="wrapper">
           <h1 class="page-main__title">Направления</h1>
         </div>
@@ -158,7 +164,7 @@
           <legend class="visually-hidden">Настройки профиля</legend>
           <div class="wrapper user-settings__wrapper">
             <label class="user-settings__change-photo-button">
-              <span class="user-settings__change-photo-button--hidden-word">Сменить</span>фото
+              <span class="user-settings__hidden-word">Сменить</span>фото
               <input class="visually-hidden" name="user-avatar" accept="image/*" type="file">
             </label>
             <fieldset class="user-settings__tags user-settings__fieldset" aria-label="Добавьте несколько тегов отражающих ваши интересы.">
@@ -212,7 +218,7 @@
             <ol class="plans__list">
               <li class="plans__item">
                 <p class="plans__countries">Франция, Италия</p>
-                <p class="plans__fellow-travelers"><span class="plan-card__fellow-travelers-counter">3</span> попутчика</p>
+                <p class="plans__fellow-travelers"><span class="plans__fellow-travelers-counter">3</span> попутчика</p>
                 <p class="plans__dates">
                   <span class="plans__dates plans__dates--day-from">26</span>
                   <span class="plans__dates plans__dates--mounth-from">мар</span>
@@ -224,7 +230,7 @@
               </li>
               <li class="plans__item">
                 <p class="plans__countries">Таиланд, Индонезия</p>
-                <p class="plans__fellow-travelers"><span class="plan-card__fellow-travelers-counter">1</span> попутчик</p>
+                <p class="plans__fellow-travelers"><span class="plans__fellow-travelers-counter">1</span> попутчик</p>
                 <p class="plans__dates">
                   <span class="plans__dates plans__dates--day-from">1</span>
                   <span class="plans__dates plans__dates--mounth-from">июл</span>
@@ -252,22 +258,26 @@
             <fieldset class="add-plan__step add-plan__step--current" id="step-1">
               <legend class="add-plan__step-title">Шаг 1. <br class="add-plan__step-title-br">Даты пребывания</legend>
               <p class="add-plan__description">Укажите предпочтительное количество попутчиков, которых<br>вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-              <label class="add-plan__fellow-travelers">
-                <span class="add-plan__fellow-travelers-description">Ищу попутчиков:</span><span class="add-plan__fellow-travelers-unit">чел.</span>
-                <span class="add-plan__fellow-travelers-controls">
-                  <input class="add-plan__input-number" type="number" name="number-of-fellow-travelers" min="0" max="50" value="2">
-                  <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--decrease"></span>
-                  <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--increase"></span>
-                </span>
-              </label>
-              <label class="add-plan__duration-of-travel">
-                <span class="add-plan__fellow-travelers-description">Длительность:</span><span class="add-plan__fellow-travelers-unit">дн.</span>
-                <span class="add-plan__fellow-travelers-controls">
-                  <input class="add-plan__input-number" type="number" name="number-of-fellow-travelers" min="0" max="50" value="3">
-                  <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--decrease"></span>
-                  <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--increase"></span>
-                </span>
-              </label>
+              <div class="add-plan__container">
+                <label class="add-plan__fellow-travelers">
+                  <span class="add-plan__fellow-travelers-description">Ищу попутчиков:</span><span class="add-plan__fellow-travelers-unit">чел.</span>
+                  <span class="add-plan__fellow-travelers-controls">
+                    <input class="add-plan__input-number" type="number" name="number-of-fellow-travelers" min="0" max="50" value="2">
+                    <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--decrease"></span>
+                    <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--increase"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="add-plan__container">
+                <label class="add-plan__duration-of-travel">
+                  <span class="add-plan__fellow-travelers-description">Длительность:</span><span class="add-plan__fellow-travelers-unit">дн.</span>
+                  <span class="add-plan__fellow-travelers-controls">
+                    <input class="add-plan__input-number" type="number" name="number-of-fellow-travelers" min="0" max="50" value="3">
+                    <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--decrease"></span>
+                    <span class="add-plan__fellow-travelers-button add-plan__fellow-travelers-button--increase"></span>
+                  </span>
+                </label>
+              </div>
               <div class="add-plan__having-children-container">
                 <div class="add-plan__having-children">
                   <input class="add-plan__having-children-input" id="having-children" type="checkbox" name="can-with-children">

@@ -92,10 +92,6 @@
     color: rgba($site-bg-color, 0.3);
   }
 
-  &--hidden-word {
-    margin-right: 6px;
-  }
-
   @media (min-width: $tablet-width) {
     order: 2;
     width: 618px;
@@ -118,10 +114,14 @@
     border-bottom-left-radius: 10px;
 
     letter-spacing: initial;
+  }
+}
 
-    &--hidden-word {
-      display: none;
-    }
+.user-settings__hidden-word {
+  margin-right: 6px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

@@ -281,9 +281,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    margin: 0 0 15px 0;
+    margin: 0 auto 15px 0;
   }
 }
 
@@ -292,8 +292,9 @@
   position: relative;
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    margin: 0 auto 0 0;
 
     .add-plan__fellow-travelers-description {
       margin-right: 79px;

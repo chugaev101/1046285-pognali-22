@@ -27,13 +27,18 @@
 .instructions__item {
   box-sizing: border-box;
   position: relative;
-  height: 140px;
 
-  padding: 4px 24px;
+  padding: 4px 24px 4px 24px;
   border-radius: 10px;
 
   &:last-child {
-    height: 80px;
+    min-height: 80px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &:not(:last-child) {
+      padding: 4px 24px 80px 24px;
+    }
   }
 
   &:nth-child(1) {
@@ -68,7 +73,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    height: 140px;
+    min-height: 140px;
     padding: 7px 32px;
     border-radius: 20px;
 
@@ -80,10 +85,6 @@
 
       font-size: 30px;
       line-height: 30px;
-    }
-
-    &:last-child {
-      height: 140px;
     }
 
     &:not(:first-child) {
@@ -110,7 +111,11 @@
 
   @media (min-width: $desktop-width) {
     width: 25%;
-    height: 107px;
+    min-height: auto;
+
+    &:not(:last-child) {
+      padding: 4px 24px 10px 30px;
+    }
 
     &::after {
       top: 29px;
@@ -140,11 +145,22 @@
     &:last-child {
       width: 317px;
       margin-left: -39px;
-      height: 107px;
 
       &::after {
         right: 33px;
       }
     }
+  }
+}
+
+.instructions__text {
+  margin: 20px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 25px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 24px 0 22px 0;
   }
 }
